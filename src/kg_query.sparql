@@ -1,0 +1,79 @@
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ster: <http://www.semanticweb.org/stereoGraph#>
+PREFIX odang: <https://purl.archive.org/o-dang>
+
+
+#java -jar sparql-anything.jar -q src/kg_query_.sparql > kg/output_new.ttl
+CONSTRUCT {
+    #TARGET
+    ?targetEntity a ster:Target; #questi vengono costruiti a partire da target NORMALIZZATI (vedi primo BIND)
+        rdfs:label ?targetLabel.
+        #skos:altLabel ?originalTarget;
+        #ster:hasStereotype ?stereotypeEntity;
+        #ster:hasType ?targetTypeURI.
+#    #STEREOTYPE
+    ?stereotypeEntity a ster:Stereotype;
+        rdfs:label ?originalImpliedStatement;
+#        ster:hasType ?stereotypeClassURI;
+        #ster:hasManifestation ?strTextID;
+        ster:involvesTarget ?targetEntity.
+        #ster:hasSocialDynamics ?socialDynamicsUri.
+#    #SITUATION
+    ?strTextID a dul:Situation;
+        rdfs:label ?full_text;
+        dul:hasTarget ?targetEntity;
+        #ster:hasMainPost ?mainPostID;
+        ster:hasStereotype ?stereotypeEntity;
+        ster:hasImpliedStatment ?implied_statementEntity.
+    #IMPLIED STATEMENT
+    ?implied_statementEntity a ster:ImpliedStatement;
+        rdfs:label ?implied_statement;
+        ster:involvesTarget ?targetEntity.
+}
+WHERE {
+    SERVICE <x-sparql-anything:csv.headers=true,location=/Users/liadraetta/Desktop/Projects/implicitHate_KG/DATA/data/dataset_for_KG.csv> {
+         #xyz:text ?text_label ;
+            [] xyz:id ?textID ;
+            xyz:target ?target ;
+            xyz:stereotype ?originalImpliedStatement ;
+            #xyz:normalized_target ?target ;
+            #xyz:target_category ?targetType ;
+            xyz:text ?full_text ;
+            xyz:stereotype ?stereotypeClass ;
+            xyz:text_implied ?implied_statement ;
+            #xyz:main_post ?mainPost ;
+            #xyz:social ?socialDynamics .
+    }
+
+
+    # Clean implied statement text if it starts with the target and has spaces
+#    BIND(
+#        IF(STRSTARTS(?originalImpliedStatement, ?originalTarget),
+#           REPLACE(REPLACE(SUBSTR(?stereotype, STRLEN(?originalTarget) + 1), "^\\s+", ""), "\\s+$", ""),
+#           ?originalImpliedStatement
+#        ) AS ?cleanedImpliedStatementText
+  #  )
+
+    # Generate URIs and cleaned labels for entities
+    BIND(IRI(CONCAT(STR(ster:), LCASE(REPLACE(REPLACE(?target, "[^a-zA-Z0-9 ]", ""), " ", "-")))) AS ?targetEntity) .
+    BIND(IRI(CONCAT(STR(ster:), LCASE(REPLACE(REPLACE(?cleanedImpliedStatementText, "[^a-zA-Z0-9 ]", ""), " ", "-")))) AS ?cleanedStereotypeURI) .
+    BIND(IRI(CONCAT(STR(ster:), LCASE(REPLACE(REPLACE(?targetType, "[^a-zA-Z0-9 ]", ""), " ", "-")))) AS ?targetTypeURI) .
+    BIND( IRI(CONCAT(STR(ster:), "main-post-", STR(?textID))) AS ?mainPostID )
+    BIND(IRI(CONCAT(STR(ster:), LCASE(REPLACE(REPLACE(?stereotypeClass, "[^a-zA-Z0-9 ]", ""), " ", "-")))) AS ?stereotypeClassURI) .
+    BIND(IRI(CONCAT(STR(ster:), LCASE(REPLACE(REPLACE(?originalImpliedStatement, "[^a-zA-Z0-9 ]", ""), " ", "-")))) AS ?stereotypeEntity) .
+        BIND(IRI(CONCAT(STR(ster:), LCASE(REPLACE(REPLACE(?implied_statement, "[^a-zA-Z0-9 ]", ""), " ", "-")))) AS ?implied_statementEntity) .
+    BIND(IRI(CONCAT(STR(ster:), LCASE(REPLACE(REPLACE(?socialDynamics, "[^a-zA-Z0-9 ]", ""), " ", "-")))) AS ?socialDynamicsUri) .
+#    BIND(LCASE(STR(?normTarget)) AS ?targetLabel) .
+    BIND(IRI(CONCAT(STR(ster:), ?targetType )) AS ?strTargetType) .
+    BIND(IRI(CONCAT(STR(ster:), ?textID )) AS ?strTextID) .
+#    BIND(IRI(CONCAT(STR(ster:), ?normTarget )) AS ?strNormTarget) .
+    BIND(LCASE(STR(?originalImpliedStatement)) AS ?cleanedStereotypeLabel)
+}

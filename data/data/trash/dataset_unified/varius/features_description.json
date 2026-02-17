@@ -1,0 +1,75 @@
+{
+  "dataset_field_coverage": {
+    "SBIC+": {
+      "id": true,
+      "text": true,
+      "label": true,
+      "stereotype": true,
+      "target": true,
+      "target_category": true,
+      "offensiveness": true,
+      "language": true,
+      "source_dataset": true
+    },
+    "Open-Stereotype-Corpus-ITA": {
+      "id": true,
+      "text": true,
+      "label": true,
+      "stereotype": true,
+      "target": true,
+      "target_category": true,
+      "offensiveness": true,
+      "language": true,
+      "source_dataset": true
+    },
+    "ImplicITMis": {
+      "id": true,
+      "text": true,
+      "label": true,
+      "stereotype": true,
+      "target": false,
+      "target_category": false,
+      "offensiveness": false,
+      "language": true,
+      "source_dataset": true
+    },
+    "Implicit-Hate-v1": {
+      "id": false,
+      "text": true,
+      "label": true,
+      "stereotype": true,
+      "target": true,
+      "target_category": false,
+      "offensiveness": false,
+      "language": true,
+      "source_dataset": true
+    }
+  },
+  "field_coverage_summary": {
+    "total_datasets": 4,
+    "field_presence_counts": {
+      "id": 3,
+      "text": 4,
+      "label": 4,
+      "stereotype": 4,
+      "target": 3,
+      "target_category": 2,
+      "offensiveness": 2,
+      "language": 4,
+      "source_dataset": 4
+    },
+    "universally_present_fields": [
+      "text",
+      "label",
+      "stereotype",
+      "language",
+      "source_dataset"
+    ],
+    "partially_present_fields": [
+      "id",
+      "target",
+      "target_category",
+      "offensiveness"
+    ]
+  }
+}

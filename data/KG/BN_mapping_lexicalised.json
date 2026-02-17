@@ -1,0 +1,84 @@
+{"muslims": {
+    "wn": {
+      "synset": "muslim.n.01",
+      "hypernyms": [
+        "religious_person.n.01"
+      ],
+      "id": "wn:09682291n"
+    },
+      "lex_properties": {
+        "has-part": [
+          "islam"
+        ],
+        "has-kind": [
+          "fatima",
+          "jihadist",
+          "shiite",
+          "rawi",
+          "sufi",
+          "caliph",
+          "mujahidin",
+          "salaam",
+          "islamist",
+          "mujaddid",
+          "moor",
+          "wahhabi",
+          "muslimah",
+          "sunnite",
+          "hakim",
+          "muezzin",
+          "tibetan_muslims",
+          "muhaddith",
+          "fakir",
+          "saracen",
+          "mullah",
+          "begum",
+          "muslim_slavs",
+          "mujahid",
+          "assassin",
+          "imam",
+          "mujtihad",
+          "apostasy_in_islam",
+          "hakim"
+        ],
+        "deriv": [
+          "muslim"
+        ],
+        "is-a": [
+          "religion",
+          "mohammedan",
+          "bracket",
+          "religious_person",
+          "monotheism",
+          "adjective"
+        ],
+        "manifestation_of": [
+          "islam"
+        ],
+        "opposite_of": [
+          "kafir"
+        ],
+        "different_from": [
+          "muslims"
+        ],
+        "religion": [
+          "islam"
+        ],
+        "has_part": [
+          "battle_of_badr",
+          "battle_of_uhud",
+          "battle_of_hamra_al-asad"
+        ],
+        "subclass_of": [],
+        "part_of": [
+          "muslim_diaspora"
+        ],
+        "gloss-related": [
+          "islam",
+          "believer",
+          "follower"
+        ]
+      }
+    }
+  }
+  

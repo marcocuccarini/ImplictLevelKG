@@ -1,0 +1,20 @@
+import pandas as pd
+
+# Load the datasets
+df = pd.read_csv("dataset_women_implied_with_ids.csv")
+df1 = pd.read_csv("implicitmis_sd_implied.csv")
+
+# ID of the row you want to update
+row_id = 1  # change this to the correct id
+
+# Get the main_post and text from df1 for that row
+main_post_value = df1.loc[df1["id"] == row_id, "main_post"].values[0]
+text_value = df1.loc[df1["id"] == row_id, "text"].values[0]
+
+# Update only that row in df
+df.loc[df["id"] == row_id, "text"] = f"Post: {main_post_value}\nComment: {text_value}"
+
+# Save the updated dataset
+df.to_csv("dataset_women_implied_with_ids_updated.csv", index=False)
+
+print("Only the specified row was updated and file saved.")

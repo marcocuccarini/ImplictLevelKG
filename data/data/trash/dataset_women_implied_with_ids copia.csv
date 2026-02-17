@@ -1,0 +1,19 @@
+import pandas as pd
+
+# Load the datasets
+df = pd.read_csv("dataset_women_implied_with_ids.csv")
+df1 = pd.read_csv("implicitmis_sd_implied.csv")
+
+# Find the IDs in df that exist in df1
+common_ids = df["id"][df["id"].isin(df1["id"])]
+
+# Update only those rows
+for row_id in common_ids:
+    main_post_value = df1.loc[df1["id"] == row_id, "main_post"].values[0]
+    text_value = df1.loc[df1["id"] == row_id, "text"].values[0]
+    df.loc[df["id"] == row_id, "text"] = f"Post: {main_post_value}\nComment: {text_value}"
+
+# Save the updated dataset
+df.to_csv("dataset_women_implied_with_ids_updated.csv", index=False)
+
+print("All matching rows updated successfully.")
