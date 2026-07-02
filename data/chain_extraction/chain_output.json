@@ -1,0 +1,241 @@
+[
+  {
+    "unique_id": "EN_train_stereo_text_7451",
+    "target": "non-white people",
+    "target_en": "non-white people",
+    "chain": [
+      "whites deserve it",
+      "for being mean",
+      "to brown people"
+    ],
+    "implied_statement": "non-white people are overly sensitive"
+  },
+  {
+    "unique_id": "EN_train_stereo_text_11155",
+    "target": "immigrants",
+    "target_en": "immigrants",
+    "chain": [
+      "3rd world type losers",
+      "make no effort to assimilate",
+      "not the best of the best"
+    ],
+    "implied_statement": "immigrants are not smart"
+  },
+  {
+    "unique_id": "EN_test_stereo_text_8092",
+    "target": "trump supporters",
+    "target_en": "trump supporters",
+    "chain": [
+      "white racist trump loving americans"
+    ],
+    "implied_statement": "trump supporters are white racists"
+  },
+  {
+    "unique_id": "EN_test_stereo_text_247",
+    "target": "non-white people",
+    "target_en": "non-white people",
+    "chain": [
+      "multiracial democracy or white nationalism",
+      "pick and prepare to fight"
+    ],
+    "implied_statement": "non-white people are inferior"
+  },
+  {
+    "unique_id": "EN_test_stereo_text_9003",
+    "target": "progressives",
+    "target_en": "progressives",
+    "chain": [
+      "white genocide as business",
+      "promoting race mixing",
+      "for white women"
+    ],
+    "implied_statement": "progressives are killing off the white race"
+  },
+  {
+    "unique_id": "EN_train_stereo_text_6609",
+    "target": "blacks",
+    "target_en": "blacks",
+    "chain": [
+      "white lives matter",
+      "boomer response"
+    ],
+    "implied_statement": "black people are inferior"
+  },
+  {
+    "unique_id": "EN_train_stereo_text_7097",
+    "target": "minorities",
+    "target_en": "minorities",
+    "chain": [
+      "drunk on your white tears",
+      "of pain"
+    ],
+    "implied_statement": "minorities are attacking whites"
+  },
+  {
+    "unique_id": "EN_trainclean_stereo_text_11260",
+    "target": "muslims",
+    "target_en": "muslims",
+    "chain": [
+      "jihadi justin",
+      "next settlement"
+    ],
+    "implied_statement": "muslims are violent"
+  },
+  {
+    "unique_id": "EN_train_stereo_text_11757",
+    "target": "blacks",
+    "target_en": "blacks",
+    "chain": [
+      "universities are european institutions",
+      "if they want to learn about africa",
+      "go back to africa"
+    ],
+    "implied_statement": "black folks should not expect to learn about africa in europe"
+  },
+  {
+    "unique_id": "EN_trainclean_stereo_text_10878",
+    "target": "muslims",
+    "target_en": "muslims",
+    "chain": [
+      "muslim paradigm",
+      "vapid perverted stain",
+      "soulless"
+    ],
+    "implied_statement": "muslims are soulless"
+  },
+  {
+    "unique_id": "EN_train_stereo_text_7410",
+    "target": "whites",
+    "target_en": "whites",
+    "chain": [
+      "north america and europe belong to us",
+      "white men conquered and colonized"
+    ],
+    "implied_statement": "white people rule everything"
+  },
+  {
+    "unique_id": "EN_train_stereo_text_268",
+    "target": "blacks",
+    "target_en": "blacks",
+    "chain": [
+      "black ou football player",
+      "pimps his white girlfriend",
+      "for $200"
+    ],
+    "implied_statement": "black people are pimps"
+  },
+  {
+    "unique_id": "EN_train_stereo_text_5823",
+    "target": "whites",
+    "target_en": "whites",
+    "chain": [
+      "proof of white genocide"
+    ],
+    "implied_statement": "white people are dying"
+  },
+  {
+    "unique_id": "EN_test_stereo_text_8457",
+    "target": "jews",
+    "target_en": "jews",
+    "chain": [
+      "jew larping as a white man",
+      "larping a catholic priest"
+    ],
+    "implied_statement": "jews are jealous of whites"
+  },
+  {
+    "unique_id": "EN_test_stereo_text_7746",
+    "target": "blacks",
+    "target_en": "blacks",
+    "chain": [
+      "thriving black communities",
+      "black people built"
+    ],
+    "implied_statement": "black people don't build their own communities"
+  },
+  {
+    "unique_id": "EN_trainclean_stereo_text_7980",
+    "target": "whites",
+    "target_en": "whites",
+    "chain": [
+      "white british",
+      "minority within 50 years"
+    ],
+    "implied_statement": "white people are becoming the minority"
+  },
+  {
+    "unique_id": "EN_train_stereo_text_3681",
+    "target": "non-white people",
+    "target_en": "non-white people",
+    "chain": [
+      "mixed race relationships",
+      "breeding out the white race",
+      "white racial genocide"
+    ],
+    "implied_statement": "non-white people are impure"
+  },
+  {
+    "unique_id": "EN_test_stereo_text_3887",
+    "target": "common people",
+    "target_en": "common people",
+    "chain": [
+      "liftwaffe marches on",
+      "crusade against bugmen"
+    ],
+    "implied_statement": "common people are incompetent"
+  },
+  {
+    "unique_id": "EN_trainclean_stereo_text_6776",
+    "target": "minorities",
+    "target_en": "minorities",
+    "chain": [
+      "white genocide in the united states",
+      "100 year history"
+    ],
+    "implied_statement": "minorities wipe out white culture"
+  },
+  {
+    "unique_id": "EN_trainclean_stereo_text_9959",
+    "target": "jews",
+    "target_en": "jews",
+    "chain": [
+      "irrelevant a minute ago",
+      "making you look bad",
+      "zionists moved your shoes"
+    ],
+    "implied_statement": "jews are zionists"
+  },
+  {
+    "unique_id": "ITA_test__1091845169522069505",
+    "target": "mussulmani",
+    "target_en": "muslims",
+    "chain": [
+      "Islam, ecc.",
+      "soci elitari massomafiosionisti",
+      "peggior feccia della criminalità"
+    ],
+    "implied_statement": "i musulmani sono criminali"
+  },
+  {
+    "unique_id": "ITA_test__1124703961120948229",
+    "target": "minoranza_etnica",
+    "target_en": "ethnic minorities",
+    "chain": [
+      "delinquenti stranieri",
+      "fuori da casa nostra"
+    ],
+    "implied_statement": "gli stranieri sono criminali"
+  },
+  {
+    "_errors": [
+      "ITA_test__1118590423071637504 (missing target/target_en)",
+      "ITA_joined__1075870739214016514 (missing target/target_en/implied_statement)",
+      "ITA_joined__785129756354342912 (missing implied_statement)",
+      "ITA_joined__1040912213882691584 (missing target/target_en/implied_statement)",
+      "ITA_graph__1074417486437728256 (missing target/target_en/implied_statement)",
+      "ITA_joined__1072620180713418752 (missing target/target_en/implied_statement)",
+      "ITA_joined__1051830042681053185 (missing target/target_en/implied_statement)",
+      "ITA_joined__1040908671272857600 (missing target/target_en/implied_statement)"
+    ]
+  }
+]
