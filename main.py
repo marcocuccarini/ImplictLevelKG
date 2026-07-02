@@ -14,7 +14,7 @@ from utils.normalization import normalize_target_list
 
 def main():
 
-    llm = OllamaChat(LLM_MODEL)
+    llm = OllamaChat(LLM_MODEL, top_logprobs=LOGPROBS_TOP_K)
     wikidata = WikidataClient(CACHE_FILE)
     conceptnet = ConceptNetClient()
     local_graph = LocalGraph(LOCAL_KG_PATH, STER_URI)
@@ -67,6 +67,8 @@ def main():
             step_num = step_info.get("step")
             parsed = step_info.get("parsed") or {}
             kg_by_source = step_info.get("kg_used_by_source", {})
+            entropy_confidence = step_info.get("entropy_confidence")
+            self_reported_confidence = step_info.get("self_reported_confidence")
 
             print("\n--- STEP", step_num, "---")
 
@@ -90,19 +92,19 @@ def main():
 
             # Print LLM structured output
             explanation = parsed.get("explanation", "N/A")
-            confidence = parsed.get("confidence", "N/A")
-            label = parsed.get("label", "N/A")
 
             print("\nLLM OUTPUT:")
-            print("  Label:", label)
-            print("  Confidence:", confidence)
             print("  Explanation:", explanation)
+            print("  Entropy confidence (token-level, used for decisions):", entropy_confidence)
+            print("  Self-reported confidence (model's own claim, informational only):", self_reported_confidence)
 
             # Save step
             step_record = {
                 "step": step_num,
                 "kg_used_by_source": kg_by_source,
-                "llm_output": parsed
+                "llm_output": parsed,
+                "entropy_confidence": entropy_confidence,
+                "self_reported_confidence": self_reported_confidence,
             }
             full_trace["steps"].append(step_record)
 
