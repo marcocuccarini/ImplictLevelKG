@@ -1,0 +1,2339 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ster: <http://example.org/stereotype-kg#> .
+
+ster:stereotype_ITA_0 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Quindi. per la sinistra lo spray al peperoncino andrebbe proibito perché \"pericoloso\" ma i loro amati \"migranti\" che girano con machete, coltelli, tirapugni, qualcuno anche fucili, e spacciano 24 ore su 24 vanno bene? Ma che problemi mentali avete? #Corinaldo" .
+
+ster:stereotype_ITA_1 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Premio \"Darwin\" 2019 per gli spacciatori immigrati che a Bologna si fanno il selfie davanti all'auto della Polizia con un mazzo di banconote, forse per pagarci le pensioni... A CASA! #tolleranzazero  URL" .
+
+ster:stereotype_ITA_10 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Assurdo! Oltre all’espulsione totale di tutta sta feccia, sequestrerei stipendi pensioni c. bancari beni immobili a tutti i parlamentari di #Sx sindacati complici e sostenitori che hanno accolto e incentivato l’immigrazione, come risarcimento allo Stato ed aiuto ad indigenti!" .
+
+ster:stereotype_ITA_100 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#StaseraItalia  #redditodicittadinanza  Se penso che i soldi delle mie #tasse finiscono nelle tasche dei #rom italiani prenderei i miei soldi e gli darei fuoco.  Va bene rispettare il #contrattodigoverno ma non trovo giusto che io debba lavorare anche x i fancazzisti. Basta. URL" .
+
+ster:stereotype_ITA_101 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Una commissione anti odio per chi come i comunisti odia gli italiani. Desirée muore come come Pamela, stuprata, violentata e uccisa da branchi di immigrati clandestini entrati illegalmente grazie a brutte persone come loro che uccidono gli italiani e li accusano di atti di odio." .
+
+ster:stereotype_ITA_102 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Sto cercando i tuoi tweet che condannino il cibo buttato per strada dagli immigrati in questi anni, ma non riesco a trovarli, per caso eri distratto? Testa di cazzo." .
+
+ster:stereotype_ITA_103 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Franco Bechis: Pensano ai migranti e dimenticano i terremotati di Amatrice" .
+
+ster:stereotype_ITA_104 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user la gente se ne va xkè la qualità della vita in Italia fa schifo, sl clandestini e rom la feccia di qst paese" .
+
+ster:stereotype_ITA_105 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Peccato ... peccato che è stata abolita!!!!! ..... adesso faceva MOLTO COMODO .... per gli immigrati spacciatori e stupratori ..... e anche per gente idiota come quella che lo ha scritto VERSO IL MINISTRO......" .
+
+ster:stereotype_ITA_106 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Accogliere significa mantenere ! Togliere a chi ha lavorato e dare a chi nn sa nemmeno cosa sia il lavoro e pure spaccia davanti a scuole e stazioni impunito! Stop immigrazione now !" .
+
+ster:stereotype_ITA_107 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "IL  POPOLO  VUOLE PROCESSARE  I CERTI  BUONISTI  CHE HANNO  SEMPRE TENUTO  APERTE  LE  FRONTIERE  ITALIANE AGLI  DI INVASORI STRANIERI TROVANDO  MILLE  SCUSE  PER  GIUSTIFICARE  LA  LORO  STRANA  APERTURA  VERSO   INVASIONE  SUL  POPOLO  ITALIANO  !!!  URL" .
+
+ster:stereotype_ITA_108 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#migranti #clandestini Mi chiedevo: Funzionerà ovunque come da noi? Se un Italiano va in congo, senegal, nigeria, marocco, tunisia, dove molti loro concittadini fanno la fame, lo piazzano in hotel all-inclusive per anni, con cuffiette bianche e smartphone per passare il tempo?🤔" .
+
+ster:stereotype_ITA_109 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Consegnano città a scimmie incivili con Donne,bambini,gay  Chiudono gli occhi su potenziali Terroristi islamici pronti a colpirci   Massacrano l'identità nazionale e cristiana  Coccolano gay,lesbo,gender, tossici,spacciatori  Però alzano la voce il 25aprile  #Sala #Vigliacchi" .
+
+ster:stereotype_ITA_11 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "L’islam moderato non esiste. Esistono #musulmani attendisti, che attendono pazientemente che il “mondo arabo” conquisti l’Occidente, da un lato finanziariamente e dall’altro terroristicamente. Parliamo dell’unica grande #religione che predica lo sterminio delle altre confessioni." .
+
+ster:stereotype_ITA_110 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Dai domiciliari in camper alla cella: il quartiere applaude all’arresto delle 2 ladre rom - URL URL" .
+
+ster:stereotype_ITA_111 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#Formigli esaltato immigrazionista non vede mai gli italiani poveri e discriminati. Il suo piccolo deviato mondo è fatto di soli migranti da integrare. Il punto è che questi migranti disintegrano la nostra società’ perché quasi tutti non integrabili e #clandestini  #piazzapulita" .
+
+ster:stereotype_ITA_112 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Chissa' perche' tutti questi fondi che ha avuto questo sindaco per l'integrazione dei migranti,non sono mai stati dati,ai disoccupati italiani per farli uscire fuori dalla loro poverta'.Integrazione per i migranti,Disintegrazione per gli italiani senza lavoro." .
+
+ster:stereotype_ITA_113 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Studentessa cinese morta a Roma: catturato un rom, denunciati altri due | URL | #Secolo #liberetcogitans" .
+
+ster:stereotype_ITA_114 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user Non mi pare che i nomadi pur vivendo in mezzo al sudicio abbiano  maggior incidenza s di mortalità infantile." .
+
+ster:stereotype_ITA_115 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Tra poco usano le lance e le fionde abbiamo la crema dell'umanità,vedremo i dromedari al colosseo diventeremo tutti parte di questa società  multirazziale tutti insieme perché i migranti portano benessere scabbia tubercolosi cosi avremo anticorpi con due p.... Cosi diranno" .
+
+ster:stereotype_ITA_116 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Cari #migranti che siete in Italia per delinquere, potreste gentilmente rivolgere le vostre criminali attenzioni invece che a povere e innocenti ragazzine, alle moltitudini di femministe, antirazziste, antifasciste... che non vedono l'ora di NON essere lasciate da sole? #Desiree URL" .
+
+ster:stereotype_ITA_117 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Ai rom casette con veranda, giardino e posto auto a Rimini, anche la Meloni all'attacco delle microaree per... URL" .
+
+ster:stereotype_ITA_118 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "«Eh perché sono immigrati, sono matti, hanno una cultura orribile» però, anche se fa male dirlo, quella senza cultura è lei." .
+
+ster:stereotype_ITA_119 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "L'EmiliaRomagna raggiunge i 5milioni con tutti i rom, spacciatori, clandestini che la riempiono.. Ufficialmente ne avrebbe 4,5mln #tagadala7" .
+
+ster:stereotype_ITA_12 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Ennesimo attacco a Bruxelles. Poliziotto accoltellato al collo da un islamico al grido di \"Allah Akbar\" (Allah è il più grande). Un altro squilibrato o forse no? #aquarius #migranti #islam #salvini #ong #pd #Belgium URL" .
+
+ster:stereotype_ITA_120 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#biancoenero  C'è un problema di cultura della legalità fra i rom: i bambini non vanno a rubare se non c'è dietro qualcuno che li spinge!" .
+
+ster:stereotype_ITA_121 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Stazione di #frosinone..anche qui #inps #pd con i migranti \"risorse.... risollevano l economia del paese e dormono e vivono negli #sprar mentre gli #italiani pagano vitto e alloggio ??#roma #Napoli ovunque.....sempre la stessa musica?... #SALVININONMOLLARE ? URL" .
+
+ster:stereotype_ITA_122 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "Vedo il video dell'esecuzione di una donna, perchè le si vedevano le caviglie. Immaginate quando i mediorientali e gli africani saranno tantissimi, causa immigrazione come vogliono i buonisti. Allora, chissà quante esecuzioni. E le vittime saremo noi." .
+
+ster:stereotype_ITA_123 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Svetlana è l'unica donna dell'est che viene in Italia non per cercare fortuna, ma per farsi raggirare da stranieri. #chilhavisto" .
+
+ster:stereotype_ITA_124 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "Toronto jihad terror leader is in prison, but was still on social media  ] sharia oppure democrazia: Onu ha detto [ che i cristiani sono sterminati (murtids) nella LEGA ARABA: se non trasformati in schiavi dhimmis URL" .
+
+ster:stereotype_ITA_125 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "I #rom tramandano il loro sapere sul borseggio e #Raggi stanzia fondi, assegnazione case e esenzioni tax I romani o… URL" .
+
+ster:stereotype_ITA_126 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user X anni @user e @user hanno appoggiato in Italia (da abusivi) e in UE il @user su africani rom islamici clandestini e stranieri criminali liberi impuniti.... hanno sempre tradito il popolo italiano autoctono sovrano e lo faranno sempre..." .
+
+ster:stereotype_ITA_127 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Se qualcuno di voi mi dimostra che negri, rom, islamici e clandestini sono davvero risorse, GIURO CHE BACIO IL CULO ALLA KYENGE!!!" .
+
+ster:stereotype_ITA_128 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "ROBERTO SAVIANO dichiara ad una radio francese: \"Centomila immigrati all'anno, non sono un'invasione, sono un dono Se ne è così tanto convinto li accolga a casa sua, gli Italiani sono stufi di accogliere e mantenere finti profughi. #chiudiamoiporti #stopinvasione #iostoconSalvini" .
+
+ster:stereotype_ITA_129 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "PER I MIGRANTI \"CIBO NON BUONO\" E LO HANNO GETTATO VIA. NESSUNO HA PENSATO AGLI ITALIANI POVERI IN FILA PER UN PASTO ALLA \"CARITAS\" Profughi non lo mangiano, cibo gettato a sacchi – FOTO CHOC URL" .
+
+ster:stereotype_ITA_13 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "beh gia una che si presenta vestita cosi a rappresentare non solo la propria Nazione ma pure l'EU andrebbe mandata fuori a calci nel sedere......tanto per cominciare ma se questa e' per l'immigrazione clandestina, prego ...che metta a disposizione anche CASA SUA E SOLDI SUOI!!!!" .
+
+ster:stereotype_ITA_130 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user C'e un limite al invasione indotta coercitiva e di massa esclusivamente mirata verso il nostro paese ? L'Italia già ospita 900mila finti profughi futuri criminali in hotel a 5miliardi annuali tolti ai poveri italiani lasciati crepare solo perche italiani ora basta invasione ?" .
+
+ster:stereotype_ITA_131 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user @user Peccato che questo governo riesce a risistemare un ponte in poco più di un anno i precedenti hanno lasciato i terremotati da soli per dare le case agli immigrati! #LaReteNonDimentica" .
+
+ster:stereotype_ITA_132 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "L'unico modo per integrare i rom nella nostra società è obbligarli anche con la forza a rispettare le regole e le... URL" .
+
+ster:stereotype_ITA_133 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user @user la soluzione era farli diventare amici...così non sono più terroristi...basta fare quello che vogliono loro...." .
+
+ster:stereotype_ITA_134 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:people ;
+    ster:sourceText "Ma stavamo tanto bene negli anni 60... boom economico e gli stranieri erano belle svedesi, inglesi o Tedeschi.... ora orde di negri arrapati, mussulmani arrabiati , filippini, pakistani... ma che cazzo ce li teniamo a fare ????" .
+
+ster:stereotype_ITA_135 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Scuola di borseggio' sulla metro di #Roma: sette nomadi arrestati, ... - URL - #Metropolitana #OperazioneCarabinieri" .
+
+ster:stereotype_ITA_136 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "Antonino a Strasburgo l'hanno ammazzato con un colpo alla nuca.Alle 2ragazze scandinave violentate e staccato direttamente la testa.Siamo la1^civiltà nella storia che aggredita  fa di tutto per giustificare chi ci macella.L'Islam moderato non esiste,l'Islam è morte.L'Islam è💩😐 URL" .
+
+ster:stereotype_ITA_138 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Hai romani che hanno votato la raggi vi va bene che vuole spendere 12 ml di euro per sistemare i rom..fate una riflessione" .
+
+ster:stereotype_ITA_14 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Banda di rom predoni di \"oro rosso\", arrestata anche 12enne URL" .
+
+ster:stereotype_ITA_141 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:italians ;
+    ster:sourceText "@user &gt; non è vero che non si pagano i biglietti, anzi negli ultimi anni i controlli sono aumentati. Non è vero che gli immigrati lo pagano, i controllori per i noti motivi tendono ad evitare di passare guai quando li vedono - passano avanti" .
+
+ster:stereotype_ITA_142 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "CORRIERE DELLA SERA - Ventenne nomade fermato e minore denunciato per la morte di Yao URL #PaginaNuova #Pre…" .
+
+ster:stereotype_ITA_143 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Certamente. In ogni caso,io non sono contrario all'#immigrazione purché arrivino individui compatibili con la nostra cultura e società. Questi sono individui che immessi in un sistema ,distruggono e razziano finché non rimane più niente. Abbiamo speso già 17 mlrd per loro..." .
+
+ster:stereotype_ITA_144 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user tutti braaaaaavi i rom, tutti rifugiati politici i migranti ..." .
+
+ster:stereotype_ITA_145 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Cioè questi #Rom che vivevano di furti e crimini vari, avevano accumulato un patrimonio di 2,4 mln di euro e i giudici glieli hanno restituiti perché non c'è correlazione tra le loro attività e il patrimonio. 🤔Quindi soldi, ville, oro sono stati un dono dello Spirito Santo. 🙏" .
+
+ster:stereotype_ITA_146 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user Devono pagare i mussulmani , i negri e quelli dell'est che lavorano in italia in nero e fanno case nei loro paesi." .
+
+ster:stereotype_ITA_147 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Devo sbrigarmi a prenotare #iphoneXSmax prima che li prendano tutti gli immigrati clandestini." .
+
+ster:stereotype_ITA_148 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user @user @user @user Nonne ho certezza, ma mi pare che ci sia qualche banca islamica (Roma?)" .
+
+ster:stereotype_ITA_149 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#staseraitalia Non solo Giuseppe e Maria erano a casa loro per il censimento ma gli unici immigrati del presepio erano i 3 Re Magi che però portavano doni e non criminalità malattie e degrado come da noi" .
+
+ster:stereotype_ITA_15 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Hai ragione, chi arriva da noi non è certo un immigrazione d'elite e controllata che spesso non scappa da nulla, stiamo accogliendo il peggio. Purtroppo però, tutto questo accade  grazie a chi ha molti ma molti interessi economici." .
+
+ster:stereotype_ITA_150 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Napoli, l'appello di de Magistris: «Pronti ad accogliere i migranti di Open Arms».E COME FAI..NN PUOI.. ON QUALE AUTORITÀ.PORTI A CASA NOSTRA STUPRATORI,ASSASSINI, E URL TI FAREI ARRESTARE.PER AVER FATTO ENTRARE CLADESTINI.E UN REATO E TU LO SAI BENISSIMO" .
+
+ster:stereotype_ITA_151 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "La sinistra non sfratta i nomadi: «Tornerebbero» URL #Milano" .
+
+ster:stereotype_ITA_152 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user RT @user #Roma 20 anni di borseggi sui bus arrestata nomade: 8 anni e 3 mesi … URL" .
+
+ster:stereotype_ITA_153 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma è in bancarotta ma regala 12 milioni ai rom URL" .
+
+ster:stereotype_ITA_154 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#Roma Via #Togliatti, nomade prende a pugni prostituta e le ruba la borsa: arrestato URL" .
+
+ster:stereotype_ITA_155 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user @user @user Ha detto bene !! Facciamo schifo a farci invadere da immigrati e delinquenti vari che non rispettano niente delka ns civiltà!!! Mi auguro che un giorno tutti aprano gli occhi!!! Ma se continua così le donne anche aprendo gli occhi verranno la stoffa del velo" .
+
+ster:stereotype_ITA_156 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#mattino5 nn solo diritti pure doveri!! Il rom dice ke i bambini sn a scuola a me nn sembra ne ho visti un mucchio e ragazzi a spasso" .
+
+ster:stereotype_ITA_157 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "URL #Marocco Finalmente un pò di civiltà. In un paese a maggioranza musulmana non capita di certo tutti i giorni. #islam" .
+
+ster:stereotype_ITA_158 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Se non l'avete ancora capito il piano è esattamente questo. Gli europei impoveriti non possono fare figli e vengono sostituiti dagli immigrati i cui figli vengono mantenuti dai sussidi statali. URL" .
+
+ster:stereotype_ITA_159 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Napoli, uomo preso a martellate in testa da immigrato | Tutti i Crimini degli Immigrati URL" .
+
+ster:stereotype_ITA_16 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user anche la dittatura ha i suoi pro noi ne abbiamo uno di pro la burocrazia si che è con il popolo e x il popolo chiediamo ai rom" .
+
+ster:stereotype_ITA_160 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Appena pubblicato in URL Milano: 90% Rom in campi nomadi è pregiudicato – VIDEO" .
+
+ster:stereotype_ITA_161 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "Per i quarant’anni della Rivoluzione islamica l’Iran testa il missile che può colpire l’Europa" .
+
+ster:stereotype_ITA_162 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:children ;
+    ster:sourceText "@user  bambini rom di otto anni felici di prostituirsi anche con persone anziane" .
+
+ster:stereotype_ITA_163 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user @user @user MA QUALE IMMIGRATI LARDOSA DI MERDA QUELLA FECCIA AFRICANA CON LA QUALE HAI RIEMPITO E DISTRUTTO INSIEME AL TUO COLLEGA FRANCESE NATO DA UN ESPERIMENTO IN PROVETTA INTERI PAESE PRIVANDOLI DEL LORO SPLENDORE ORIGINALE TE LI DEVI TENERE TU HITLER TRAVESTITO DA DONNA" .
+
+ster:stereotype_ITA_164 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:leftists ;
+    ster:sourceText "@user Complimenti! Eletta dai Romani primo pensiero i rom? Comunque uguale alla SX tanto vengono tutti da li...." .
+
+ster:stereotype_ITA_165 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Tranquilla @user nessuno tocca la #194. In questo #Paese il problema è che siamo invasi dagli immigrati che rubano , delinquono stuprano. E sono tutti qui. Anche , grazie a lei." .
+
+ster:stereotype_ITA_166 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "cioè hanno speso 10 miliardi di euro in 5 anni per i migranti ( tra i quali spacciatori, cannibali, terroristi etc.) e nessuno ha urlato al disastro economico, poi si investe per la povertà italiana e la sinistra sta facendo sfracelli contro chi non ha da mangiare!!!" .
+
+ster:stereotype_ITA_167 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#m5s a favore dei #rom se tu fare me incazare io spacare botilia a tuta familia. Un regalo di #raggi da 12 milioni… URL" .
+
+ster:stereotype_ITA_168 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:institutions ;
+    ster:sourceText "@user @user perche italiano.....i rom e tutti gli immigrati vengono lasciati in pace." .
+
+ster:stereotype_ITA_169 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:leftists ;
+    ster:sourceText "La sinistra vicina ai più deboli , non operai e gente comune , ma immigrati d'ogni sorta, ritiene giusto violare la legge.  E a noi ci fanno chiudere le piccole aziende per cavilli burocratici. Un grazie da chi non si è suicidato ma quasi . #Riace #MimmoLucano #Saviano URL" .
+
+ster:stereotype_ITA_17 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Gli stranieri prima sfornano figli a manetta poi cercano sussidi... Per gli italiani nessuno fa niente anzi se sei in difficoltà economica ti tolgono pure i figli..." .
+
+ster:stereotype_ITA_170 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "I rom adesso rubano pure i cani. In Italia un rapimento ogni 15 minuti Attraverso delle organizzazioni criminali i cani vengono poi smistati in \"allevamenti lagher\" nei paesi dell'Est   URL di @user" .
+
+ster:stereotype_ITA_171 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma: banda di rom gli chiedeva il pizzo da 2 anni, ristoratore esausto li uccide a colpi di mitra - URL permaloso... :)" .
+
+ster:stereotype_ITA_172 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#ottoemezzo Maiorino nuova affermazione assolutamente inapplicabile della Sinistra;  I migranti con il  loro profilo \"altamente professionale \" li IMPIEGHIAMO al CERN a Ginevra ?" .
+
+ster:stereotype_ITA_173 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:leftists ;
+    ster:sourceText "@user e hanno pure messo addosso agli immigrati i gilet gialli, vergogna  senza fine,  anti italiani ,certo che gli immigrati non vogliono il decreto vogliono continuare  a spacciare rubare aggredire,  continuando ad essere intoccabili protetti dal pd come prima" .
+
+ster:stereotype_ITA_174 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Solo in Italia gli immigrati  quasi tutti clandestini manifestano contro il governo e contro un nostro ministro della repubblica Con la complicità di una sinistra estrema sorretta da 4 falliti. SCHIFOSI" .
+
+ster:stereotype_ITA_175 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Barcaccia nel mirino (ancora): nomade sorpreso a rubare monetine nell’acqua URL" .
+
+ster:stereotype_ITA_176 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "I SOLDI DEI DISABILI AI MIGRANTI La regione Emilia Romagna destina la metà dei fondi destinati alle fasce deboli a progetti per i richiedenti asilo A Reggio Emilia il 69% delle risorse stanziate sono state utilizzate ai richiedenti asilo #PRIMAGLIITALIANI  URL" .
+
+ster:stereotype_ITA_177 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "La famosa \" cultura rom \" tanto apprezzata da una pazza scatenata di nome @user , qui in tutto il suo fulg… URL" .
+
+ster:stereotype_ITA_18 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user @user ROM PICOGLIONI. TUTTI FUORI DALL'ITALIA. BASTARDI. MA COSA VUOI INTEGRARE? LORO NON VOGLIONO, NOI ALTRETTANTO. CHE SIANO ITINERANTI A QUEL PAESE." .
+
+ster:stereotype_ITA_180 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Che cafone. Vuole più #migranti? Beh che se li prenda e poi li mantenga pure. Noi vogliamo chi ci restituisca la possibilità di costruirci una famiglia e non chi le importa dall'Africa. #stopinvasione #blocconavalesubito" .
+
+ster:stereotype_ITA_181 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Lo dovete dare solo agli italiani!che schifo sti stranieri voglio sempre e solo tutto gratis!@user non fare la cazzata di darlo a tutti dallo solo agli italiani nati in italia no stranieri!leggete ste merde straniere vogliono solo soldi facili!👇URL" .
+
+ster:stereotype_ITA_182 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user e noi abbiamo al governo Fico che vuol dare amore ai terroristi e agli assassini,Falco e generali che dicono che i confini non si proteggono altrimenti tutta la feccia d'Africa come fa ad invadere tutta l'eu?" .
+
+ster:stereotype_ITA_183 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Torino, i residenti crescono ma sono tutti stranieri URL" .
+
+ster:stereotype_ITA_184 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Un tesserino assicura cure gratis agli immigrati. E poi ci lamentiamo che ci stanno mangiando in testa! Escludere gli immigrati da un vantaggio è antocostituzionale, ma se un provvedimento li privilegia,e spesso avviene,nessun costituzionalista apre bocca. Finiremo mangiati!" .
+
+ster:stereotype_ITA_185 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user @user @user @user @user @user @user @user @user @user Chiudete i porti chiudete i portafogli e spediteli a calci in culo nelle patrie galere..basta far finta che va tutto bene per evitare che comincia la psicosi terrorismo viviamo ogni giorno di sopprusi e angherie di mano islamica dobbiamo aspettare che ci fanno saltare anche qui?" .
+
+ster:stereotype_ITA_186 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Anche i #rom a #Roma sono stati derubati.... ma pensa che gentaglia che c'è in Italia #QuintaColonna" .
+
+ster:stereotype_ITA_187 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Se si abbassa il prezzo della manodopera non è colpa degli imprenditori che sfruttano i migranti ma è colpa di costoro #coerenza #agorarai" .
+
+ster:stereotype_ITA_188 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user @user Viene da sorridere all'idea che si debbano spendere soldi degli italiani che lamentano la spesa per gli immigrati e ce ne fanno spendere un \"mare\" per educarli alla civiltà, da sorridere o da piangere." .
+
+ster:stereotype_ITA_189 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "E' una vergogna che l'immigrato sessista razzista sia ospite in tv, anche pubblica. URL" .
+
+ster:stereotype_ITA_19 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Se non sei un immigrato-migrante-richiedente ma un semplice italiano ex dipendente della Camera licenziato la… URL" .
+
+ster:stereotype_ITA_190 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user 2 NORD AFRICANI CHE HANNO PICCHIATO DURAMENTE 2 ANZIANI A CASA LORO X RAPINA A VENEZIA CONDANNATI SOLO A 7 ANNI INVECE DI 20. FINO AD OGGI SOLO ROMENI O ALBANESI CON RAPINE OMICIDE, ORA ANCHE I MIGRANTI. QUESTI MAGISTRATI BUONISTI E L'ACCOGLIENZA CAOTICA HANNO PERMES" .
+
+ster:stereotype_ITA_192 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#quartarepubblica I rom usano i bambini piccoli per rubare negli appartamenti come mi ha detto un carabiniere perché aprono le inferiate degli appartamenti dove noi italioti siamo costretti a vivere carcerati perché loro sono liberi di rubare" .
+
+ster:stereotype_ITA_193 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user L'ISLAM E'IL NOSTRO PERICOLO PIU' GRANDE! Questi tra piagnistei,lamentele,e razzismo degli italiani, ottengono tutto e un po' alla volta ci troveremo noi in minoranza! Prolificano come topi e noi a mantenerli! Ma noi i figli non possiamo permetterceli!" .
+
+ster:stereotype_ITA_194 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Ma come non venivano in quanto profughi, nullatenenti assistiti in tutto a scapito nostro? Ora hanno 450000 mila euro per acquistare uno stabile e magari spenderne altrettanti per rifarlo. Svegliamoci questi sono finanziati ci cacciano" .
+
+ster:stereotype_ITA_195 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Follonica, rinchiudono due nomadi in un gabbiotto: denunciati tre addetti della Lidl URL @user" .
+
+ster:stereotype_ITA_196 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user Maledetto. \"Servono i migranti per la competitività\". Ha pure la faccia tosta di dichiararlo apertamente. Con teste del genere l'Italia sarebbe finita. Destinata ad essere \"africanizzata\" e \"islamizzata\" nel giro di una generazione. Nn glielo dobbiamo permettere." .
+
+ster:stereotype_ITA_197 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user Spiegate al ragazzino che i suddetti Rom non hanno nessuna voglia di lavorare ma preferiscono vivere da parassiti e da ladri di appartamento. C'è una bella differenza..." .
+
+ster:stereotype_ITA_198 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#Roma #IIIMunicipio #MunicipioIII ennesima lite fra rom al #ParcodelleValli. Intervento della #Polizia -… URL" .
+
+ster:stereotype_ITA_199 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Sala butta un milione di euro per pagare le \"badanti\" ai rom - il Giornale URL #Milano #news" .
+
+ster:stereotype_ITA_2 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "ECCO LA MAPPA DI TUTTI GLI AEROPORTI LEGALI AFRICANI.  ORA MI CHIEDO E VI CHIEDO A VOI: PERCHÉ \"GLI IMMIGRATI\" PAGANO PROFUMATAMENTE GLI SCAFISTI ASSOLDATI DAL CRIMINE E NON PARTONO CON REGOLARE VIAGGIO CON RELATIVO BIGLIETTO CHE GLI COSTA PURE MENO DELLA SCENEGGIATA COL BARCONE? URL" .
+
+ster:stereotype_ITA_20 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "CENTRI ASOCIALI E ISLAMICI BRUCIANO LE CROCI PER SOLIDARIETÀ AI MIGRANTI LA SOLIDARIETÀ ANDATE A FARLA DOVE CE NE È BISOGNO NON POTETE ROMPERE I COGLIONI AD UNA NAZIONE INTERA AVETE SPOSATO LA STESSA CAUSA PREPOTENZA ARROGANZA ISLAM=RADICAL CHIC IDEM  URL" .
+
+ster:stereotype_ITA_200 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user I campi rom devono essere tutti rasi al suolo da nord a sud. Se quest'ordine perentorio arrivasse domani dal Viminale credo che nel giro di un mese scomparirebbero tutti e con essi gran parte di criminalità. Con determinazione e senza guardare in faccia nessuno SI PUÒ. Vedi Orban" .
+
+ster:stereotype_ITA_201 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Forlì Al culmine di un litigio per 100€  #senegalese si scaglia contro connazionale tentando di tagliargli la gola. Dopo l’aggressione, scappa ma è fermato dai carabinieri con i vestiti ancora sporchi di sangue  #immigrati    #violenza  URL" .
+
+ster:stereotype_ITA_202 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#agorarai il PD ha fatto entrere una invasione di immigrati che si saperva bene che è quasi impossibile rimpatriare perchè i paesi di origine non li vogliono perchè sanno che sono tutti criminali e dicono teneteveli URL" .
+
+ster:stereotype_ITA_203 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Il partito #comunista #cinese ha annunciato di rifiutare #immigrati e #rifugiati perchè i #cinesi sono etnicamen*e superiori.Fantastico😎Diciamolo ai nostri finti comunisti liberisti #piddioti #sbronzitutti URL" .
+
+ster:stereotype_ITA_204 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user questo è quel che si voleva nn amano subire le nostre leggi sti migranti devono sottostare alle nostre leggi perchè nn inviare l'esercito e reprimere" .
+
+ster:stereotype_ITA_205 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "CORRIERE DELLA SERA - Il designer circondato da nove ladre rom tutte incinte: colpo sventato URL #PaginaNuova #Press" .
+
+ster:stereotype_ITA_206 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:journalists ;
+    ster:sourceText "Ma guarda guarda! Migliaia di bambini in tutta la Penisola che non possono accedere alla mensa scolastica e i media non ne parlano ? Ah, ma certo, non sono stranieri che ricevono il servizio gratuitamente, bensì italiani!" .
+
+ster:stereotype_ITA_207 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Invece nei gulag andavano a farci le ferie...ma fammi il piacere,i rom sono cacciati in tutta europa,solo in italia… URL" .
+
+ster:stereotype_ITA_208 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Visto che sono in maggioranza #fintiprofughi speriamo che i futuri #clandestini possano esser rimpatriati. Nessuno può decidere dove vivere se i popoli europei non sono concordi.  L'#immigrazione non va imposta con la #violenza di scafisti e #Ong tra loro complici." .
+
+ster:stereotype_ITA_21 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "I #pecoroni di razza africana #CGIL URL" .
+
+ster:stereotype_ITA_210 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user Corano ed Islam  religione di pace e tolleranza. Primitivi" .
+
+ster:stereotype_ITA_211 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "35 €/die ad un immigrato per stare seduto a non fare un cazzo o 600€/die a #Salvini per stare seduto e dire cazzate? #maleminore #dilemma" .
+
+ster:stereotype_ITA_212 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "&lt;Gli immigrati non portano malattie&gt; Siamo noi che li facciamo ammalare. Così avevano sentenziato i #buonisti . Infatti... Ritorna il colera: due immigrati dal Bangladesh ricoverati a Napoli URL" .
+
+ster:stereotype_ITA_213 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "#stranieri  #scuola   Si presentano senza quaderni Senza materiale di cancelleria  Senza libri Chiedono aiuto  Suona la campanella  Escono Genitori ad aspettarli  Hanno Hoverboard e Smartphone da 800€  Quinta elementare. 10 anni.   Maledetti accoglioni bastardi." .
+
+ster:stereotype_ITA_214 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, far west a Corcolle: poliziotti aggrediti da una trentina di nomadi: 20 fermi URL" .
+
+ster:stereotype_ITA_215 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, Fidene: anziano rifiuta avances di una rom e lei lo rapina URL" .
+
+ster:stereotype_ITA_216 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Stazione e centro ancora sotto controllo: 13 nomadi fermate, 7 erano minorenni URL" .
+
+ster:stereotype_ITA_217 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user Pakistan sharia ma NOI? noi abbiamo 1400anni di storia per dimostrare che Islam è satanismo/imperialismo e islamici sono indemoniati: nazi assassini seriali dogmatici: teologia della sostituzione! sputare sugli israeliani? non dovevamo farlo! URL" .
+
+ster:stereotype_ITA_218 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "È legittima solo da migranti verso italiani, viceversa scatta aggravante razziale, lacrime rosse.. URL" .
+
+ster:stereotype_ITA_219 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Come sarebbe bella una norma che obblighi gli Immigrati clandestini di dare prova delle origini precise della loro provenienza e dell:origine con prove concrete, senza delle quali, o carcere o espulsione immediata." .
+
+ster:stereotype_ITA_22 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Ecco l’analisi di Mario Giordano sulla bufala che gli \"immigrati ci pagano la pensione\": siamo noi che paghiamo le pensioni agli immigrati che non hanno versato i contributi! Da ascoltare e condividere. URL" .
+
+ster:stereotype_ITA_220 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Con 700mila sbarcati negli ultimi anni (grazie PD!) e 5 milioni di italiani POVERI, non potevamo più permetterci un esercito di finti profughi in giro per le nostre città! Abbiamo dato un BEL TAGLIO. Da sinistra mi attaccano con cortei e insulti? Segno che siamo su strada giusta! URL" .
+
+ster:stereotype_ITA_222 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "CASTEL VOLTURNO: GLI IMMIGRATI MINACCIANO: \" SE NON CI VERRA' CONCESSO DI RIMANERE QUI CON IL PERMESSO UMANITARIO SCATENEREMO IL CAOS\".  QUESTI SI PERMETTONO DI MINACCIARE E DI COMANDARE A CASA NOSTRA! RIMANDIAMOLI AL LORO PAESE O IN QUALCHE ANNO SAREMO SOTTOMESSI DA QUESTE BELVE" .
+
+ster:stereotype_ITA_223 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user @user @user questa, dopo che le sono entrati in casa, è capace di andare al campo nomadi e portargl il resto" .
+
+ster:stereotype_ITA_224 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user Gli africani sono gli unici stranieri che reclamano diritti. Gli unici a rompere I coglioni." .
+
+ster:stereotype_ITA_225 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Riprendiamoci la nostra città ripulita da clandestini ,abusivi, delinquenti, migranti, spacciatori e nigeriani e zingari" .
+
+ster:stereotype_ITA_226 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#Milano non ne può più! Nuove #carovane, #periferie assediate: nomadi in via Tremelloni e via Anassagora. È #emergenza #rom" .
+
+ster:stereotype_ITA_227 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user potresti chiudere le pizzerie gestite da stranieri sino alle 3 di notte..?...( birra e botte quotidiane ) grazie" .
+
+ster:stereotype_ITA_228 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, vince la rivolta dei cittadini contro i rom: Virginia Raggi si arrende, dove \"piazza\" i nomadi" .
+
+ster:stereotype_ITA_229 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user @user Tipo Martina che va a Lodi a difendere i furbacchioni immigrati che non presentano la dichiarazione dei redditi....." .
+
+ster:stereotype_ITA_23 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Ora i migranti clandestini, diventeranno tutti gay! Non è  possibile farci prendere x il culo così ! Altro che noi italiani ci facciamo trattare così, siamo la barzelletta del mondo!" .
+
+ster:stereotype_ITA_230 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "I centri sociali difendono gli immigrati stupratori URL" .
+
+ster:stereotype_ITA_231 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "Il marocchino che ha ucciso 3 persone e ferito altri 13! Quando si bandirà l’islam almeno dal ns Paese finchè siamo in tempo? URL" .
+
+ster:stereotype_ITA_234 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Tanto a te che ti frega...In Svizzera,fuori dalla UE,i migranti clandestini non arrivano.Non devi vivere con un C.I.E. vicino casa,con all'interno 70 risorse,non devi subire il furto di 3 biciclette,e 2 furti in casa.Comodo farsi bella,con il culo degli altri.IPOCRITA..." .
+
+ster:stereotype_ITA_235 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "#Pakistan, 97% della popolazione: #musulmani.Omogeneità quindi \"pace #islamica\"? No. Eliminati gli \"infedeli\", si passa ai \"meno fedeli\".E quando tutto collassa, si corre nei paesi non-#islamici, a lamentarsi che \"c'è poco #Islam\".#NoGlobalCompact URL" .
+
+ster:stereotype_ITA_236 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Io mi chiedi invece che hanno fatto di male gli italiani per meritarsi I migranti vitelloni,nullafacenti.  Adamo: «Cosa hanno fatto i migranti per essere puniti così?» URL" .
+
+ster:stereotype_ITA_238 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, era diventato l'incubo degli studenti di Primavalle: arrestato 15enne rom URL" .
+
+ster:stereotype_ITA_239 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Così la Gran Bretagna ha finanziato \"l'opposizione moderata armata\" della Siria (i terroristi dal volto umano) -  URL" .
+
+ster:stereotype_ITA_24 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Milano, borseggia un'anziana in centro: rom arrestato da un carabiniere fuori servizio URL" .
+
+ster:stereotype_ITA_240 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Finisce la bella vita dei rom: via auto e beni di lusso per 300mila euro URL" .
+
+ster:stereotype_ITA_241 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#Alfano, dopo aver riempito l'Italia di immigrati, promosso a Ministro degli Esteri. Non è governo, è ammucchiata d… URL" .
+
+ster:stereotype_ITA_242 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user io a quello non ci credo e credo anche che poca gente si sarebbe fermata a comprare cibo a due rom." .
+
+ster:stereotype_ITA_243 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Temo che presto tutti questi stranieri mangiapane a tradimento si uniranno all'opposizione e allora sarebbe la fine.Combattterli ora!" .
+
+ster:stereotype_ITA_245 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "Bisogna avere il coraggio di dire basta all'Islam! Chi parla di cultura islamica è un decelebrato, un negazionista! Prima dell'Islam in Italia si stava con le porte aperte, si girava la sera e la notte!" .
+
+ster:stereotype_ITA_246 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Mentre il governatore della Sardegna cerca hotel per i migranti, un altro povero italiano si uccide URL via @user" .
+
+ster:stereotype_ITA_247 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, cinese morta, blitz al campo rom: davanti alla Questura resta una discarica... #news #Roma URL" .
+
+ster:stereotype_ITA_248 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "LOL. #Fassino \"il miglior sindaco d'Italia. Sì, dell'Italia dei rom, degli invasori e degli sprechi! URL" .
+
+ster:stereotype_ITA_249 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Retweeted Silvia Sardone (@user):  Vergognose carovane #rom a Lambrate a #Milano. Furti e aggressioni... URL" .
+
+ster:stereotype_ITA_25 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user ha portato in Italia, in un anno e mezzo, ben 5.088 immigrati affetti da malattie infettive come la scabbia, tubercolosi, sifilide e Aids. I dati distruggono la retorica delle anime belle. URL" .
+
+ster:stereotype_ITA_250 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Ancora 5 anni di governo delle sinistre e avremmo dovuto dividere le nostre abitazioni con famiglie di immigrati Africani e avremmo dovuto mettere i lucchetti alle pentole di minestra...come capitava abitualmente in Unione Sovietica!!!" .
+
+ster:stereotype_ITA_251 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user BASTA MIGRANTI ECONOMICI DA ACCOGLIERE.STANNO SPENNANDO LE CASSE DELLO STATO. L'ITALIA E IN DIFFICOLTÀ .SIAMO STUFI VEDERE TUTTO IL GIORNO SENZA FAR NIENTE   EXTRACOMUNITARI CON CUFFIE IN TESTA.LE VACANZE SI FANNO CON I PROPRI SOLDI NO  SOPRA LE SPALLE DEI CONTRIBUENTI  ITALIANI." .
+
+ster:stereotype_ITA_252 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#padova, ladre acrobate si arrampicano alla grondaia: fermate due nomadi, una incinta al 5 mese  URL rt padovaoggi…" .
+
+ster:stereotype_ITA_253 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Il segreto delle #rom  fanno figli come conigli e diventano intoccabili... URL" .
+
+ster:stereotype_ITA_254 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Ci attendono 10, 100, 1000 rivolte come a Cona.  E il comportamento degli immigrati offende l'Italia.… URL" .
+
+ster:stereotype_ITA_255 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user #rom #follonica vorrei informare tutti coloro che difendono le rom che sono le stesse che \"puliscono\" nelle ns e vs case!" .
+
+ster:stereotype_ITA_256 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Forse più che del 15enne #Simone, il sindaco ed i giornali dovrebbero parlarci di un bando di quasi un milione di euro di soldi pubblici destinato esclusivamente al sostegno di rom, sinti e caminanti. Non è discriminazione? Non è razzismo? #CasaPound #TorreMaura #Raggi URL" .
+
+ster:stereotype_ITA_257 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "I carabinieri della Compagnia di Carbonia hanno scoperto una “miniera d’oro” nei pressi del campo nomadi di Carbonia.URL" .
+
+ster:stereotype_ITA_258 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Roma spalanca le porte: 103 milioni per altri 8074 migranti - giornaleditalia URL" .
+
+ster:stereotype_ITA_259 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user questo gesù non è esistito però paragonare questi migranti a gesù mi sembra eccessivo, qualcuno di loro è decente ma molti non lo sono che commettono crimini a spron battuto." .
+
+ster:stereotype_ITA_260 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user @user @user Accettiamo scommesse sul tipo di \"lavoro\" che sta andando a fare il rom in… URL" .
+
+ster:stereotype_ITA_261 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user @user SI CERTO E TUTTIQUELLI CHE GIRANO A VUOTO SENZA FARE UNCAZZO CE LI DOBBIAMO TENERE!!!!!!!  ESPATRIOOOOOOO....LE GALERE SONO PIENE 80% SONO STRANIERI.... LI DOBBIAMO MANTENERE ANCHE LÌ.... BASTAAAAAA" .
+
+ster:stereotype_ITA_262 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "GRIDIAMOLO FORTE: SIAMO STUFI DI AVERE IMMIGRATI CHE NON PAGANO LA MENSA, NON PAGANO I LIBRI SCOLASTICI, NON PAGANO I MEZZI PUBBLICI, HANNO LA CASA POPOLARE GRATIS, LE SPESE MEDICHE GRATIS, VISITE OCULISTICHE GRATIS, OCCHIALI GRATIS. SIAMO STUFI DI PAGARE PER LORO! #stopinvasione" .
+
+ster:stereotype_ITA_263 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Il Giornale: Il funerale del terrorista a spese del Comune Il sindaco: non pagherò URL #milano" .
+
+ster:stereotype_ITA_264 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Agente di polizia inglese picchiato selvaggiamente da stranieri. Accade oggi in Europa invasa da orde di selvaggi. Grazie a Corbyn #boldrini e  Co. #migranti #islam #salvini #travaglio #Chilavisto URL" .
+
+ster:stereotype_ITA_265 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user @user L'IMMIGRAZIONE C'E' STATO UN CALO FISIOLOGICO QUANTI RINPATRII HA FATTO ? CI SONO MIGLIAIA DI IMMIGRATI IRREGOLARI CHE DELINQUONO TUTTI I GIORNI SUL TERRITORIO ITALIANI NON POSSONO ESSERE PUNITI DALLA GIUSTIZIA  IN QUANTO PROFUGHI QUINDI ?" .
+
+ster:stereotype_ITA_266 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Il Pd ha lasciato 700mila italiani senza casa e 170mila immigrati in hotel.. BASTARDI! URL" .
+
+ster:stereotype_ITA_267 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user Aveva promesso via i campi rom, quando a via Salviati? Sono anni che si chiede, rubano fuori la staziine, fanno roghi rovistano nei cassonetti e buttano a terra. Gia' qui e' pieno d'immigrati almeno i rom via  si vive male qui . C'e' paura ad uscire x gli scippi! Faccia qualcosa" .
+
+ster:stereotype_ITA_268 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user avete perso perchè nonostante che i stranieri, commettevano furti,stupri,cannibalismo,degrado dovunque ,invece di fermare tutto questo ci avete dato dei razzisti,se siam razzisti provi a chiedersi perchè di cinesi e altri popoli non diciamo niente forse perchè si comportono bene?" .
+
+ster:stereotype_ITA_269 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:children ;
+    ster:sourceText "#Roma sempre più baby ladri  rom: la fuga  dai centri per minori  URL cultura millenaria non imputabile" .
+
+ster:stereotype_ITA_27 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "MODENA, il sindaco PD regala la benzina alle famiglie rom per portare i bambini a scuola - Notiziario Online... URL" .
+
+ster:stereotype_ITA_270 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user Vaglielo a dire ai parenti del povero ragazzo ucciso da quel pezzo di ? Unico vero razzista nei confronti degli italiani visto che voluto deliberatamente ammazzare un italiano..Questi non sono malati psichiatrici finitela di giustificarli, questi sono TERRORISTI...?" .
+
+ster:stereotype_ITA_272 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:women ;
+    ster:sourceText "Le poche immigrate nei cara hanno figli concepiti e nati qui, sono incinte subito di nuovo. Ma chi credono gli mantengano tutti sti figli? Fatti a cottimo? Gli italiani? Che figli non ne fanno perché non possono mantenerli? Qui bisogna mettere ordine. É un casino" .
+
+ster:stereotype_ITA_273 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user Nelle zone attorno a Bologna siamo vessati da rom organizzati,specializzati in furti che arrafando tutto quello che capita! Verità" .
+
+ster:stereotype_ITA_274 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Farmaci: 4000 vaccini tifo e 1000 test Tbc a centro richiedenti asilo Sicilia (2)" .
+
+ster:stereotype_ITA_275 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Migrante\" ubriaco dà di matto e si spoglia in mezzo alla strada. Ecco \"l'avanguardia culturale\" della sinistra. Non cercano lavoro, non scappano dalla guerra..FeniceNews24 puoi vedere il video URL" .
+
+ster:stereotype_ITA_276 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#Roma, cinese morta: da oggi la bonifica nel campo rom. I residenti: «Raggi venga a vedere» URL @user" .
+
+ster:stereotype_ITA_278 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "TV egiziana, la conduttrice \"SPERO CHE LA SHARIA SIA IMPLEMENTATA OVUNQUE\" Questa è terrorista? Integralista? Fondamentalista? NO: è la classica musulmana MODERATA. Ve lo dicono in faccia, più chiaro di così. Ma le anime belle negano, ne sanno più loro che i musulmani. URL" .
+
+ster:stereotype_ITA_279 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Ci pagano le pensioni! A #Torino MSF aiuta i #MIGRANTI ad avere accesso al Servizio Sanitario Naz., dove per loro è ovviamente tutto gratuito. Poi non stupitevi se voi pagatori di tasse da generazioni avete ticket salati e attese infinite... #Stopinvasione URL" .
+
+ster:stereotype_ITA_28 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma: arrestati cinque ladri rom acrobati, mentre si arrampicavano su un balcone URL" .
+
+ster:stereotype_ITA_280 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user E tutti pagheremo anche per far mangiare a scrocco i figli dei migranti.Gli unici che non pagano saranno loro." .
+
+ster:stereotype_ITA_281 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:institutions ;
+    ster:sourceText "Roma, cinese morta: niente carcere per i rom che la derubarono. Uno è già libero URL" .
+
+ster:stereotype_ITA_282 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Amigi italiani perché  #SanFrancesco era povero e avere fatto santo e noi immigrati poveri odiare noi? Perché io no parlare con animali?" .
+
+ster:stereotype_ITA_284 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "SOLO A ROMA I CAMPI ROM NEGLI ULTIMI ANNI CI SONO COSTATI OLTRE 200 MILIONI. LUCE GAS SCUOLABUS BONIFICHE  E NOI ITALIANI PAGHIAMO ANCHE L'ARIA CHE RESPIRIAMO. RUBERIE BORSEGGI ELEMOSINA VERGOGNA.  I nomadi ci costano duecento milioni URL" .
+
+ster:stereotype_ITA_285 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "La Spagna è un paese serio... l'Italia NO... #migranti #invasione URL" .
+
+ster:stereotype_ITA_286 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:journalists ;
+    ster:sourceText "Che strano Paese è il nostro, dove un uomo viene sgozzato da un marocchino, ma i media tacciono perché la vittima ha la sfortuna di esser un italiano dalla pelle bianca mentre i media urlano alle leggi razziali solo perché si sostiene che i Rom non rispettano le  norme giuridiche" .
+
+ster:stereotype_ITA_287 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#TorreMaura #Orfini #PD: “I neo-fascisti ci fanno schifo”. Ma che strano. Non si sono mai espressi in questi termini contro terroristi islamici, killer di ragazzine e sgoxxatori di ragazzi felici. (#StefanoLeo)  Chissà perché...  URL" .
+
+ster:stereotype_ITA_288 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#Roma  16enne stuprata e uccisa da immigrati occupanti clandestini e spacciatori, #femministe  contestano #Salvini. Capito le (finte) femministe? Non protestano contro gli stupratori assassini, ma contro Salvini che li vuole sbattere in galera! 🤬🤦‍♀️ #Desiree #giustiziaperDesiree" .
+
+ster:stereotype_ITA_289 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Migranti, tutti bravi ragazzi, desiderosi di integrarsi e pagare le tasse. Nessuna paura, tutto bene...spezzettamenti a parte, poca roba... URL" .
+
+ster:stereotype_ITA_29 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "IL PD HA RIEMPITO L'ITALIA DI MIGRANTI CLANDESTINI CHE CIONDOLANO TUTTO IL GIORNO,CON LA SCUSA DELL'ACCOGLIENZA. HANNO DOVUTO RICOPRIRE LE FIORERE. Panchine ingabbiate a Parma: i commercianti della Ghiaia la pensano così URL di @user" .
+
+ster:stereotype_ITA_290 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Non vogliamo questi migranti che portano soli malattie e altre disgrazie varie" .
+
+ster:stereotype_ITA_292 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "ROMA – I carabinieri scoprono un gruppo di ladri nomadi sul fatto al Celio, durante il saccheggio di un furgone.... URL" .
+
+ster:stereotype_ITA_293 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user @user lo zucchero te lo da il tuo amico negro oppure rom visto che vi fate tutti senza problemi" .
+
+ster:stereotype_ITA_294 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Danimarca.Poi danno dei razzisti a quei danesi che sono favorevoli a mandare i migranti su di un'isola vista la loro incompatibilità con il vivere civile.Giovani rifugiati picchiano una donna danese   👇URL" .
+
+ster:stereotype_ITA_296 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user per il discorso del barbone che non fa del male a nessuno mi vergogno, che un cittadino lo agredisca, poi per me L ITALIA DEVE ESSERE RIPULITA CACCIANDO TUTTI I FINTI PROFUGHI," .
+
+ster:stereotype_ITA_297 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Diciamo la verità una volta tanto  I ROM FANNO SCHIFO A TUTTI  Sono fatti così: puzzano, sporcano e rubano. Non si vogliono integrare e non vogliono cambiare  A nessuno dev'essere concesso un comportamento simile. Una società che funziona prevede diritti e DOVERI  #CasalBruciato" .
+
+ster:stereotype_ITA_298 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user @user @user Immigrati rom e tutti quei liberi professionisti che guadagnano e… URL" .
+
+ster:stereotype_ITA_299 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, studentessa cinese morta: fermato un rom del campo nomadi  URL" .
+
+ster:stereotype_ITA_3 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Al mio paese una ragazza ha visto immigrati spacciare e donne prostituirsi. Purtroppo i sindaci non seè ne fregano perché ci guadagnano. E noi dobbiamo subire. Grazie al pd" .
+
+ster:stereotype_ITA_30 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:leftists ;
+    ster:sourceText "#Librandi, per non farsi mancare nulla, è anche filo-rom... MA PERCHE' NON VAI A CAGARE? #dallavostraparte" .
+
+ster:stereotype_ITA_300 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Padova, invasione di rom all'ospedale: il capofamiglia dona rene alla moglie - Blitz quotidiano URL #Padova #news" .
+
+ster:stereotype_ITA_301 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#CriminiImmigrati: Finisce la bella vita dei rom: via auto e beni di lusso per 300mila euro URL  #IFantasmiDiPortopalo" .
+
+ster:stereotype_ITA_302 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Io vi farei vivere a 300 metri da un campo rom come è successo a me. Con il contenuto dei cassonetti costantemente rivoltato a terra, gli incendi, la paura. Vi farei fare i pendolari sulle metro di Roma come ho fatto per anni io. Con gli scippi, la puzza, gli insulti.  Bastardi. URL" .
+
+ster:stereotype_ITA_303 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:institutions ;
+    ster:sourceText "#raggi = tutta chiacchiere e campi #rom URL" .
+
+ster:stereotype_ITA_304 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user Lo ha guardato bene? Uno così è meglio averlo come avversario. Se è così magnanimo dia il suo indirizzo di casa, ai rom." .
+
+ster:stereotype_ITA_305 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Surreale. Arrestate a Milano 30 donne Rom che si erano date appuntamento da tutta Italia per borseggiare i turisti in occasione della Design Week. 13 di queste 30 sono incinte. Questo modo di vivere è incompatibile con noi. Punto. Chi sostiene il contrario è un mentecatto." .
+
+ster:stereotype_ITA_306 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user Fossi straniera verrei anch'io in Italia. Si vive gratis. Io devo sopravvivere con l'aiuto dei miei." .
+
+ster:stereotype_ITA_307 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user Nostalgia di Andrea Doria che il 7 ottobre 1571 respinse l'orda mussulmana a Lepanto. Adesso pretendono di entrare in Italia e se non ci riescono con facilità fanno pure causa! Se non fosse reale sarebbe solo ridicolo, invece è tragica realtà! Basta sbarchi! #SalviniNonMollare" .
+
+ster:stereotype_ITA_31 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Mai , anzi, già vuole mettere all'asta i beni confiscati alle mafie , poi non ha detto dove andranno gli immigrati a scaduto soggiorno Cie ,suppongo in strada ,giusto per esacerbare di più la gente, aumentare consensi e coprire gli altri problemi" .
+
+ster:stereotype_ITA_310 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user @user ma si, un po' di soldi ai rom, fanno sempre bene.   ��������������������������" .
+
+ster:stereotype_ITA_312 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user @user @user Ormai ci sono rimasti solo gli squallidi stranieri africani a delinquere in Italia." .
+
+ster:stereotype_ITA_313 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user @user Schifoso gruppo di esseri decerebrati uomini e donne, feccia della peggior specie come del resto lo è la religione che li rappresenta! Islam ed islamici incompatibili con il resto del mondo!" .
+
+ster:stereotype_ITA_314 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#Svezia Il suicidio svedese:immigrazione, violenza, terrorismo e criminalità arrivano al parossismo. URL" .
+
+ster:stereotype_ITA_315 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Mai Tg e i giornaloni hanno parlato di questa ennesima porcata fatta da immigrati ?? ⤵️⤵️⤵️⤵️  Sanremo, Segregata e stuprata per mesi. La giovane sequestrata da sei immigrati. Legata al letto e stuprata a turno per due mesi. Poi ceduta ad altri \"clienti\"  URL" .
+
+ster:stereotype_ITA_316 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user @user @user Meglio la che qua! Questo problema non deve neppure porsi. Se sono animali schiavi del Corano,si facciano saltare in aria tra loro. Ripeto il  medioevo è morto e sepolto e non abbiamo bisogno di nuove crociate;Per noi sono terminate secoli fa,per loro di tragica attualità." .
+
+ster:stereotype_ITA_317 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Il 4 marzo 2018 abbiamo smesso di farci prendere in giro da voi, i #porti sono #chiusi andatevene da chi vi ha concesso la bandiera. Basta finti profughi mantenuti a vita da noi. BASTA.  #seawacht3" .
+
+ster:stereotype_ITA_318 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#Foggia poliziotti aggrediti da migranti: l'ira del SAP Una cinquantina di cittadini extracomunitari li hanno accerchiati, colpendoli ripetutamente con calci, pugni e oggetti contundenti. Una Legge punitiva, concreta,  per queste #nuoverosorse quando?  URL" .
+
+ster:stereotype_ITA_32 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Cara Sindaca, premi per chi assume ITALIANI no è? Roba da matti. Sti caxxo di finti profughi, sono diventati una vera e propria ossessione per tanti, troppi anti italiani. URL" .
+
+ster:stereotype_ITA_320 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Basta che una strilli e sbraiti, se rom, per mobilitare una minoranza di stolti, abituati a difendere l'indifendibi… URL" .
+
+ster:stereotype_ITA_321 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Bologna, sputi e insulti alla commessa per non aver dato soldi al nomade - Il Resto del Carlino URL #Bologna #news" .
+
+ster:stereotype_ITA_322 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "URL Roma, aggrediscono e rapinano anziano di 81 anni in ascensore: arrestati due rom #ansa #news" .
+
+ster:stereotype_ITA_323 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#dallavostraparte signora lasci suo figlio nei campi rom qualche giorno vediamo che ne pensa dopo" .
+
+ster:stereotype_ITA_324 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:people ;
+    ster:sourceText "#roma Rissa coi bastoni nel campo rom #LaBarbuta, fermato un bosniaco: è accusato di tentato omicidio URL" .
+
+ster:stereotype_ITA_325 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user due marocchini a milano dopo una serata di divertimento e di lavoro di italiani solo le forze dell'ordine" .
+
+ster:stereotype_ITA_326 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Non hanno ancora capito che la maggioranza degli italiani è stanca del degrado delle città e di spendere soldi per immigrati clandestini. Neppure nel santuario dei comunisti sono riusciti a prevalere gli accoglioni." .
+
+ster:stereotype_ITA_327 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Passo davanti alla scuola elementare della mia città e noto che a prendere i figli degli stranieri ci sono le madri mentre per gli italiani ci sono i nonni. Significa che le madri italiane devono lavorare per poter campare. E gli stranieri? Ah già...per loro si raccolgono soldi!" .
+
+ster:stereotype_ITA_328 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user e siccome tutti i clandestini sono musulmani......" .
+
+ster:stereotype_ITA_329 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Bella idea quella del lungo muro,muraglia marina,così non possono più romperci el cazzo ne migranti, ne scafisti e ne mafia nigeriana presunti terroristi" .
+
+ster:stereotype_ITA_33 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user MAI  PIU'  ISIS   PD  E LEU  AL GOVERNO  SI SPERA  - HANNO  FATTO  I PATTI   CON   LA  UE   CHE  DOBBIAMO  ACCOGLIERE  TUTTI  I MIGRANTI  E TENERLI.  E HANNO  LASCIATO 16 MILIONI  DI ITALIANI  SENZA  CASA  SENZA LAVORO." .
+
+ster:stereotype_ITA_331 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user @user .... e il Vaticano tace sulla continua uccisione ad opera di mussulmani feccia" .
+
+ster:stereotype_ITA_332 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Insomma con sti finti profughi o con i barconi o con le barchette o con i corridoi umanitari nn se ne può più in ogni.modo trovano il sistema di islamizzarci nn c è un cazzo da fare" .
+
+ster:stereotype_ITA_333 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Trovano una #rom in casa a rubare ma non la denunciano xchè temono ritorsioni da parte dei #rom URL succede in #Italia" .
+
+ster:stereotype_ITA_334 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user @user I mussulmani hanno rotto le balle. In Italia il maiale si mangia, se non gli va bene cazzi loro." .
+
+ster:stereotype_ITA_336 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Il blitz di 30 migranti al market. Si mangiano tutto senza pagare URL URL" .
+
+ster:stereotype_ITA_337 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user @user @user SCARCERANO GLI STRANIERI E GLI ITALIANI LI LASCIANO MORIRE IN GALERA !!! RUBI UNA GALLINA ERGASTOLO ,PENSI AD UNA STRAGE ASSOLTO ...MA SOLO SE NON SEI ITALIANO" .
+
+ster:stereotype_ITA_338 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Vladimir Luxuria “circondata e derubata da 20 rom in Stazione Centrale a Milano” – webitalia360... URL" .
+
+ster:stereotype_ITA_339 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:institutions ;
+    ster:sourceText "@user INAIL persecutorio e rom in libertà! Ma in che paese viviamo! Anche da morti l’INAL persegui (cont) URL" .
+
+ster:stereotype_ITA_34 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Sai che c'è per quel 1,7% vi siete venduti l'Italia all'immigrazione barbara e selvaggia importando persone che stanno sbranando il nostro stato sociale il nostro welfare la nostra cultura. Davvero vale la pena di mangiare pane e cipolle piuttosto che distruggere il paese." .
+
+ster:stereotype_ITA_340 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "Cosa aspettiamo avrendere l'Islam illegale??? Chiaramente non è compatibile con le democrazie occidentali. Aspettiamo che abbiano la maggioranza a forza di figliare ed importare africani?" .
+
+ster:stereotype_ITA_341 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Purtroppo alcuni immigrati creano ancora forti problemi a dire il poco \"animaleschi\"....  Occorre mettere ordine, dobbiamo tutelare le nostre famiglie..." .
+
+ster:stereotype_ITA_342 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Il peggio dal \"Mai più senza...\" in onda nel Punto Politico odierno  Il rom che derubò Ermes dà fuoco alla sua... URL" .
+
+ster:stereotype_ITA_343 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user @user Rimpatri  Rimpatri Rimpatri Rimpatri L'emergenza oggi sono i rimpatri. L'Italia è piena di delinquenti stranieri! L'esercito a #castelvolturno e in tutti i ghetti degradati pieni zeppi di immigrati che delinquono. RIMPATRI!!!" .
+
+ster:stereotype_ITA_344 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:institutions ;
+    ster:sourceText "Non andranno in carcere i due rom di 20 anni accusati di aver derubato la ragazza cinese morta a Roma @user URL" .
+
+ster:stereotype_ITA_345 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user È semplice: vuoi fare la tua vita? Benissimo, ma non delinquere e manda i tuoi figli a scuola e non a chiedere elemosina. Ti farei vedere i campi rom verso Afragola cosa sono." .
+
+ster:stereotype_ITA_346 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Musei Vaticani arrestate 3 nomadi borseggiatrici URL #Roma #News #Notizie" .
+
+ster:stereotype_ITA_347 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Scusate, ma è inaccettabile. Questa è mistificazione della realtà. Gli ebrei erano deportati in campi di concentramento e uccisi nelle camere a gas. I migranti arrivano con lo smartphone e, prima di partire, pagano per il viaggio.  Davvero, basta! #27gennaio URL" .
+
+ster:stereotype_ITA_348 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Rubano oro e gioielli in abitazione del Centro storico, denunciate due rom, una minorenne: leggi tutto l'articolo URL" .
+
+ster:stereotype_ITA_349 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "A Napoli regnano gli immigrati, la situazione è drammatica. (video) URL" .
+
+ster:stereotype_ITA_35 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "L’onu che consiglia di alleggerire le pene dei migranti, la Caritas di sminuirli, e i giornali eseguono!  #Desiree come #Pamela  Drogata violentata in branco e poi ammazzata!  Se voi tacere noi urliamo  #basta bestie in Italia" .
+
+ster:stereotype_ITA_350 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Non ha nessuna importanza la nazionalità...l'importante è che vadano in galera per sempre.  A parte che a me piacerebbe se ognuno si facesse la galera nel proprio paese. Vediate come cambierebbero le cosa.  Ho una amica Rumena che mi ha raccontato come sono le prigioni là." .
+
+ster:stereotype_ITA_351 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user #EdicolaFiore Buon Natale a lui! Gesu' e' qui, non lo uccidiamo ancora una volta per colpa della 'sensibilita' dei musulmani" .
+
+ster:stereotype_ITA_353 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Oltre A ROMA CASE POPOLARI AI ROM E IMMIGRATI PURE LAVORO DETENUTI E IMMIGRATI ROMANI DIFENDIAMO LA NOSTRA CITTÀ. DAGLI INVASORI" .
+
+ster:stereotype_ITA_354 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Pensione agli immigrati senza versare contributi, numeri in aumento denunciati dall'INPS con il trucco dei ricongiungimenti e questa \" dico questa perchè mi manda in bestia per me pronunciare il suo nome\" ha il fiato di rompere ancora agli Italiani e non una parola al caso" .
+
+ster:stereotype_ITA_355 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Possibile che nessuno abbia inteso come son fatte le prenotazioni sui traghetti ong dagli scafi/schiavisti che li avvisano in modo da trovarsi nel punto giusto al momento giusto per la \"pesca\" dei sedicenti profughi/migranti?! #PortiChiusi #BastaONGComplici a #StaseraItalia" .
+
+ster:stereotype_ITA_356 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "ALTRI 180 CLANDESTINI POTENZIALI CRIMINALI E/O TERRORISTI APPRODATI SULLA NOSTRA AMATA TERRA!!" .
+
+ster:stereotype_ITA_357 a ster:Stereotype ;
+    rdfs:label "0.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user La bella domanda è: se sono profughi, come fanno a sapere dove rivolgersi per denunciare una persona, da parte un ministro del governo italiano???? Chi li sta guidando???? Ci scommetterei una mano che proviene tutto dal pdisastro!!!!!" .
+
+ster:stereotype_ITA_358 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Barletta: Trasferimento campo Rom, Forza Italia critica: «Più attenzione ai rom che ai cittadini» URL" .
+
+ster:stereotype_ITA_359 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user Bene, ma la zona adiacente il campo rom di via Lombroso non viene bonificata?" .
+
+ster:stereotype_ITA_36 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, incubo sassi vicino al campo rom sulla Pontina: danneggiate 15 auto - Il Messaggero URL #Roma #news" .
+
+ster:stereotype_ITA_360 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "OGNI GIORNO MI SENTO STRANIERO NELLA MIA CITTA'. SUI BUS, SUI TRENI, SULLA METROPOLITANA VEDO SOLO STRANIERI, CLANDESTINI, AFRICANI CHE NON PAGANO MAI IL BIGLIETTO E CON ARROGANZA PRETENDONO DI VIAGGIARE GRATIS. SONO STUFO DI PAGARE PER MANTENERE QUESTI PARASSITI!  #stopinvasione" .
+
+ster:stereotype_ITA_361 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Spero che il M5s abbia un calo vertiginoso di consensi.COME CAZZO SI FA A DARE IL REDDITO DI CITTADINANZA AI ROM?!?RAZZA DI LADRI E ASSASSINI?!?Eh no,caro Luigi.Mi hai URL LEGA è l'unica scelta! #Salvini  #Lega  #romladri" .
+
+ster:stereotype_ITA_362 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Sei proprio STUPIDO CAZZO Ma chi cazzo li vuole gli aiuti per i MIGRANTI CLANDESTINI?????? Solo voi SINISTRI TRADITORI VENDUTI IPOCRITI VIGLIACCHI" .
+
+ster:stereotype_ITA_363 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Se l'icona antirazzista della sinistra francese è un fan dei terroristi URL #news" .
+
+ster:stereotype_ITA_364 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Piccoli immigrati CLANDESTINI a ..... casa in Africa! Chi non paga non mangia: ciò che è purtroppo valido per TUTTI lo sia anche per loro! #parassiti URL" .
+
+ster:stereotype_ITA_365 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Disoccupazione alle stelle,aziende che chiudono una dopo l'altra,centri per immigrati pieni zeppi di giovani da mantenere a spese dei contribuenti,ma il problema per la sinistra è il selfie di Salvini che mangia nutella,capite perché la gente li ha mandati a casa?" .
+
+ster:stereotype_ITA_366 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Il TGPuglia dovreste guardarlo tutti: ogni giorno strutture fatiscenti occupate da disperati africani o rom, un degrado da quarto mondo." .
+
+ster:stereotype_ITA_367 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Gestione repressiva del fenomeno migratorio.meglio chi vi ha permesso con bandiere di tutta ue di portarli solo qua. In tutti i paesi i vostri amici migranti irregolari che delinquono,spacciano,stuprano verrebbero rimpatriati.Andate in francia da Macron #AmnestyInternational" .
+
+ster:stereotype_ITA_368 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user E' proprio così. E il delinquente spaventatissimo alla consegna del foglio, lascia immediatamente il paese. Perché si sa, sono delinquenti ma quando gli si dice di fare qualcosa, obbediscono. Immigrati delinquenti \"brava gente\" ." .
+
+ster:stereotype_ITA_37 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Sentire dire che contro il terrorismo dobbiamo avere più rispetto x i diritti umani , sapendo che x diritti umani intendono tollerare l'orrendo degrado e crimine importato, mi fa inorridire !! Ma basta propaganda agli araboafricani, basta !! #NOGlobalCompactforMigration" .
+
+ster:stereotype_ITA_370 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:women ;
+    ster:sourceText "@user @user E beh, perché è giusto andare in giro con il burka? È l’Islam tesoro, la donna deve sottomettersi, ditelo a quelle sinistroidi che bagnano piantagioni di cotone delle loro mutande quando vedono un muslim...." .
+
+ster:stereotype_ITA_371 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Altro che #giletgialli dovremo indossare 😠 nessuno fa notare alla signora che i terroristi sono tutti legalizzati, integrati con sussidi, casa, pensioni, e gli illegali, spacciatori e stupratori ? Ue di pace che ha portato la guerra fra popoli !! Infami 😠" .
+
+ster:stereotype_ITA_372 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Ma vi stupite ancora? I ROM sono la peggio razza, CE l’hanno nel sangue di voler sempre inculare gli italiani.... CE l’hanno nel DNA. Loro in lista per la casa popolare non ci devono proprio essere. Caravan e via.. Nomadi come devono essere! #sinistri del cavolo sveglia!" .
+
+ster:stereotype_ITA_373 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Dobbiamo essere noi a difendere le nostre Chiese, anche se l'Europa ci invita ad accogliere gli immigrati, quando gli stessi ATTENTANO alle nostre tradizioni cultura e religione. Senza se senza ma \"RIMPATRIO VELOCE\" prima che prendono INSANE abitudini mussulmane FUORI CONTROLLO." .
+
+ster:stereotype_ITA_374 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Questi esempi di immigrati senza rispetto di Nessuno  tanto meno delle regole noi non gli vogliamo. Rispetto a chi lavora e rispetta persone,ambiente e paga le tasse,fannulloni e clandestini fuori dalla palle" .
+
+ster:stereotype_ITA_375 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Per gli Uomini Giusti non e`mai stato facile....Forza Salvini il popolo Italiano e`con Te....L`Italia merita il cambiamento...Al diavolo i finti profughi..Al diavolo L`Europa unita...Unita solo nel palazzo..Al diavolo le Ingiustizie...Vogliamo una ITALIA ....ITALIA 🌟🌟🌟🌟🌟" .
+
+ster:stereotype_ITA_376 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user @user @user i tuoi eroi nona avrebbero dovuto svendere l'italia per una mancetta elettorale di 80 euro e far arrivare qui 700000 manzi che profughi non sono...-bello combinar casini e poi qualcuno deve affannarsi per colpa vostra" .
+
+ster:stereotype_ITA_377 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Vorrei sapere da quelli che difendono l'accoglienza, cosa vedono di buono per gli immigrati accolti. Non li vedete chiedere elemosina, lavorare per quattro soldi, spacciare, bighellonare, rubare, delinquere e fare risse, o siete tutti ciechi??? ?" .
+
+ster:stereotype_ITA_378 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "La Germania è sull’orlo di guerra civile grazie alle violenze degli immigrati islamici. Guerriglie urbane, accoltellamenti di feccia straniera, sostenuta da antifascisti di estrema sinistra sempre dalla parte di criminali e terroristi. #MovimentOnesti URL" .
+
+ster:stereotype_ITA_379 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, campi nomadi dappertutto. Persino sottoterra a Trastevere URL" .
+
+ster:stereotype_ITA_38 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user 5mila rom italiani aspettano reddito cittadinanza! Se pensi che io mi spacco la schiena, pago tasse che manterranno 'sta gente, hai capito male! Eserciterò il mio diritto alla disobbedienza e non verserò più neanche 1 cent. Me li spendo in abiti griffati! Voi non ci state dentro!" .
+
+ster:stereotype_ITA_380 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Lecco, immigrato fra cacca e pipì tra i mezzi dei vigili: poi le botte all'agente di polizia" .
+
+ster:stereotype_ITA_381 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "LN Padania: Modena, immigrato spacca sedia addosso alla madre: arrestato URL" .
+
+ster:stereotype_ITA_382 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user metterei anche a te insieme ai rom" .
+
+ster:stereotype_ITA_383 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Hai centrato il punto, e nessuno di loro si è preoccupato dei migranti della Diciotti che se ne sono andati in giro x l’Italia infetti da Scabbia, ne tanto meno il pm che aveva lanciato l’allarme. URL" .
+
+ster:stereotype_ITA_384 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Mentre gli italiani muoiono di fame... #rom #zingari #ONU URL" .
+
+ster:stereotype_ITA_385 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Ma se avete tanto a cuore gli immigrati perché non andate direttamente da loro piuttosto che impoverire e sterminare le nostre civiltà con queste feroci importazioni di massa. Fanculo l’Europa" .
+
+ster:stereotype_ITA_386 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user @user I mostri figli pagheranno le vostre politiche sciagurate l'invasione di immigrati che avete provocato e il servilismo all'unione europea delle banche" .
+
+ster:stereotype_ITA_387 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "all'arrivo dei #carabinieri le #donne #immigrate li hanno aggrediti con morsi, bastoni, calci e pugni URL" .
+
+ster:stereotype_ITA_389 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Lo spray al peperoncino salva da diversi stupri.. dobbiamo ringraziare il PD..e la sua politica di immigrazione selvaggia, se oggi ci dobbiamo difendere con lo spray al peperoncino! Grazie PD..grazie Alfano!#MovimentOnesti URL" .
+
+ster:stereotype_ITA_39 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Siamo stanchi di stranieri che dettano legge a casa nostra o ci scherniscono.  Stanchi di Italiani che non fanno il nostro interesse.   Esigiamo il rispetto che meritiamo ! #15settembre #SalviniNonMollare #ONU #StuPD URL" .
+
+ster:stereotype_ITA_391 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "I nomadi illuminavano le abitazioni dopo essersi allacciati abusivamente a un palo Enel.. #canavesenews URL" .
+
+ster:stereotype_ITA_392 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user @user il reddito di cittadinanza SOLO x italiani autoctoni dopo serrati controlli x non darlo a spacciatori parcheggiatori abusivi che sono disoccupati solo x finta... niente a ROM e stranieri e abolire pensioni regalate da PD ad afroislamici!!!" .
+
+ster:stereotype_ITA_393 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Vieni dall'estero in Italia e da 20anni vivi in mezzo alla merda di un campo nomadi  Lasci la cacca per andare nella merda #chilhavisto" .
+
+ster:stereotype_ITA_394 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Erano immigrati clandestini e possono essere trattenuti dove, quando, quanto e come meglio ritenuto. Io li avrei lasciati ancora sulla nave ma facendoli sbarcare almeno si è dimostrato che razza di persone sono, assieme a chi li supporta" .
+
+ster:stereotype_ITA_395 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user in Italia abbiamo un furto al minuto molte volte con collegate violenze gratuite sui Ns anziani. Gentaglia (rom) violenta impunita" .
+
+ster:stereotype_ITA_397 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#Roma, rapine ai turisti: fermate sei #nomadi @user @user @user URL" .
+
+ster:stereotype_ITA_398 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "L'ennesima truffa dei rom Fiasché agli anziani, arrestata zingara pluripregiudicata - Secolo d'Italia... URL" .
+
+ster:stereotype_ITA_399 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Quelli a Roma hanno DIRITTOOO.Hanno un contratto e pagato.Guardate le case dal 1990 a chi danno case.Solo immigrati e non pagano. #mattino5" .
+
+ster:stereotype_ITA_4 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:people ;
+    ster:sourceText "Così il terrorista di Strasburgo era musulmano, di origini africane, nato in Francia che ha attaccato un simbolo della religione Cristiana,  ma se mi oppongo allo ius soli sono razzista, perché l’Islam è una religione di pace? Ma andate a cagare!" .
+
+ster:stereotype_ITA_40 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "VoxNews: Assessore PD fonda ONG che aiuta profughi a fare ricorso a spese nostre: Da una ricerca condotta dall… URL" .
+
+ster:stereotype_ITA_400 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Per i #cialtroni #PD e #UE 36 Euro al giorno per ogni migrante in albergo sono sacrosanti. Pensioni sociali per i genitori over 65 dei migranti sono sacrosante. Pensioni e #RedditodiCittadinanza per gli italiani invece sono assistenzialismo. Razzisti e nemici dell'Italia!" .
+
+ster:stereotype_ITA_402 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "In Italia ci sono 5.000.000 di poveri e centinaia di migliaia di migranti mantenuti dallo stato, alcuni bivaccano, alcuni spacciano, alcuni stuprano... ma se lo dici ad alta voce : sei razzista e fottesega dei poveri. Basta sinistra!" .
+
+ster:stereotype_ITA_403 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user i rom in germania hanno buoni privilegi ma x loro il diritto di rubare e restare impuni nn ha prezzo (meglio l'italia)" .
+
+ster:stereotype_ITA_405 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user Ora mi chiedo,dopo questo ennesimo omicidio orrendo,com'è possibile avere sindaci come a Palermo e Milano che offrono spazi sempre più vasti ai mussulmani...dove sono le proteste dei cittadini...ancora pensano che da noi sarà diverso ?!?" .
+
+ster:stereotype_ITA_406 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Dramma-Striscia la Notizia, la mossa tragica di Brumotti: aggredito da dieci immigrati, finisce malissimo" .
+
+ster:stereotype_ITA_407 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Roma, madre e figlia aggredite in centro: immigrato pakistano  le palpeggia e le insegue URL @user" .
+
+ster:stereotype_ITA_408 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Dacci i soldi, lurido italiano: due immigrati accoltellano un uomo a Roma URL" .
+
+ster:stereotype_ITA_409 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user Ormai sunt de Milan anca mi. E a Milano non facciamo i piangina per uno sbuffetto d'aria. L'huricano ha evitato i campi rom di rogoredo per due motivi: -non imbrattare la citta'spalmandola di sta merda -non essere considerato rassista" .
+
+ster:stereotype_ITA_410 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user LE PRIME DUE LEGGI SONO DA RIDERE, ANCHE PERCHE' I MUSSULMANI IN REALTA' VOGLIONO COMANDARE E DISTRUGGERE QUELLO CHE PER LORO E' OFFENSIVO,MA LA TERZA LEGGE MI FA RIDERE PERCHE' DI PARTECIPARE ALLE LORO \"COSE\"NON SOLO NON MI INTERESSA MA LO TROVO RIDICOLO E PERICOLOSO......" .
+
+ster:stereotype_ITA_411 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "In difesa dei fuorilegge:  Rom  Ladri  Clandestini  Spacciatori  Mafiosi Stupratori  Truffatori Evasori  Sindaci  Sezionatori  Assassini  Ma vogliono rappresentare lo Stato, la legge e gli italiani" .
+
+ster:stereotype_ITA_412 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Striscia pizzica migranti che ritirano il cibo pagato dallo Stato e lo rivendono agli italiani (POVERI) URL" .
+
+ster:stereotype_ITA_413 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Identificato l'autore della rapina all'anziano di Annone Veneto: è un giovane nomade URL #venezia" .
+
+ster:stereotype_ITA_414 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "I giornaloni sull’#attentato di #Strasburgo parlano di un \"radicalizzato\" e \"forse\" di #terrorismo. Guai a pronunciare la parola Islam. Ingiusti con i lettori e con le vittime. Perché è anzitutto per loro che dobbiamo chiamare gli assassini con il loro nome: terroristi ISLAMICI. URL" .
+
+ster:stereotype_ITA_416 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Correggimi questo, tu e i tuoi familiari organizzatevi ed andate dai vostri amici immigrati ed aiutateli veramente soddisfandoli sessualmente, invece di lasciarli in giro a molestare e violentare le donne che non li vogliono. Andate in qualsiasi stazione e divertitevi..." .
+
+ster:stereotype_ITA_417 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Allarme terrorismo: mille fantasmi a  Milano, senza vera identificazione URL via @user" .
+
+ster:stereotype_ITA_418 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user agente della polizia locale ucciso da un nomade a Milano non ha preso nessun risarcimento è giustizia questa?" .
+
+ster:stereotype_ITA_419 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Una offesa ai poveri d'Italia 😣 il PD va in piazza x questo e contro i poveri che ha creato !! 9, 900 milirdi spesi in 3 anni x i clandestini 😣😣 Spesi 400mila euro per mantenere famiglia di 6 profughi ghanesi URL" .
+
+ster:stereotype_ITA_420 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user @user non capisco tutta sto ipocrisia !!  vedere l'Italia sommersa dal peggio che può offrire l'africa e da mussulmani che ci schifano è una cosa indecente !! non ci costringano ad arrivare ai fatti !!" .
+
+ster:stereotype_ITA_421 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:terrorists ;
+    ster:sourceText "Non tutti gli islamici sono terroristi...ma...tutti i terroristi sono islamici." .
+
+ster:stereotype_ITA_422 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user @user ... ma tutti i psicolabili stranieri li dobbiamo tenere noi in Italia?... se non sanno reprimere i loro istinti vanno tenuti segregati per non nuocere più... invece stanno liberi..." .
+
+ster:stereotype_ITA_423 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, quei podisti perseguitati dai rom URL URL" .
+
+ster:stereotype_ITA_425 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Siamo #italiani per noi non ci sono strutture, servizi sociali, bandi milionari, hotel e residenze di lusso.  I nostri connazionali  lasciati a marcire e morire di freddo per strada, le passerelle solo per i #migranti. URL" .
+
+ster:stereotype_ITA_427 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user @user #Salvini #Asselborn I nostri nonni erano emigrati non #clandestini in cerca di documenti e #welfare ed è appena il caso di sottolineare come la cultura dei migranti, normalmente africani e/o musulmani, contrasti per lo più e drammaticamente con la cultura europea #merde_alors" .
+
+ster:stereotype_ITA_428 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "I falsi comunisti con I'll rolex che odiano gli italiani. Su metta la supposta e prenda un traghetto assieme ai falsi migranti e torni a casa in Africa." .
+
+ster:stereotype_ITA_429 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Naturalmente meglio omettere che il 27 era una risorsa migrante del Gambia. Tranquillo sindaco il centro di #Cagliari è ancora sicuro...come no." .
+
+ster:stereotype_ITA_43 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Francé... anche tu fai il gioco del nemico? Insistendo a chiamarli, migranti, immigrati, profughi... diffondi la NON REALE PERCEZIONE DEL PERICOLO IMMINENTE DEI CLANDESTINI MUSULMANI NEL NOSTRO PAESE.  Sono CLAN-DE-STI-NI e molti Criminali fuggiti dalle patrie galere. ...e lo sai URL" .
+
+ster:stereotype_ITA_430 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#Torino Via Germagnano, spunta anche la bisca clandestina al campo nomadi URL URL" .
+
+ster:stereotype_ITA_431 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Tentano di violentarla mentre va al lavoro: caccia a due stranieri a Grosseto" .
+
+ster:stereotype_ITA_432 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Fico portateli a casa tua sti finti.profughi che hanno.sconvolto le ns vite e le ns citta" .
+
+ster:stereotype_ITA_433 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "I MODERATI INTEGRATI-Sharia per la Francia (e tutto l'occidente)-L'islam dominerà il mondo-Morte alla libertà e alla democrazia-I musulmani conquisteranno la Francia-L'esercito di Maometto si scatenerà ecc.Non tutti sono terroristi, infatti: nel resto ci sono anche questi URL" .
+
+ster:stereotype_ITA_434 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Tutti i giorni furti sui treni, molto spesso giovani ROM con in tasca il certificato di essere in stato di GRAVIDANZA. Molte volte sono minorenni. Poi la gente perde sì la pazienza. Ma i primi da picchiare sarebbero i loro uomini che aspettano il denaro a casa. URL" .
+
+ster:stereotype_ITA_435 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user @user Quelli nei campi rom sono già in Italia, quindi non blocchi nessuna invasione, è giusto chiuderli ma solo se si ha un’altra soluzione, se no lasci un sacco di questa gente in strada, e quindi o occuperanno altri luoghi abusivamente o creeranno degrado nelle nostre strade e piazze" .
+
+ster:stereotype_ITA_436 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Perché aiutiamo solo gli italiani?  Perché ormai i contributi pubblici finiscono a stranieri e gli italiani sono gli ultimi nelle graduatorie di case, asili e servizi sociali. Lo Stato dovrebbe essere un padre che pensa prima ai suoi figli e se non lo fa, allora ci siamo noi. URL" .
+
+ster:stereotype_ITA_437 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Padova, decifrato il codice \"criminale\" di sinti e rom: da \"soldi\" a \"borsa\" - Il Fatto Quotidiano URL" .
+
+ster:stereotype_ITA_438 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "RENZI: \"non buttate via i soldi con il reddito di cittadinanza\"  I soldi non vanno dati agli italiani,  ma agli Africani che arrivano sprovvisti di documenti, tra i quali ci sono  Terroristi Trafficanti  Latitanti Assassini Nullafacenti senza arte ne parte  Giusto Sig. Renzi ?" .
+
+ster:stereotype_ITA_439 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Sinora abbiamo visto distrutti i tessuti sociali di tanti centri urbani proprio a causa dell'immigrazione incontrollata di soggetti, pressoché esclusivamente di sesso maschile, poco inclini all'accettazione delle regole che garantiscono i rapporti sociali in Italia." .
+
+ster:stereotype_ITA_44 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "vorrei sapere  quale ministro  geniale ha ideato la tessera anonima degli  immigrati  quindi  interscambiabile tra loro con la quale ottengono protessi cure odontoiatriche   oculiste  e accessori   e cure varie tutto GRATIS e perché SALVINI lo permette ancora,diamo un taglio,???" .
+
+ster:stereotype_ITA_440 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#dallavostraparte siamo l'unico paese al mondo ad accettare l'immigrazione irregolare e ancora non sappiamo come risolverla? STOP INVASIONE" .
+
+ster:stereotype_ITA_441 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "Guai a voi se permetterete uno scempio del genere. Questi cialtroni non devono arrivare in Italia. Sig. Ministro, cacci via subito tutti gli islamici, abbatta tutte le moschee. Liberiamoci da questi terroristi e codardi che picchiano le donne perché dagli uomini le prenderebbero." .
+
+ster:stereotype_ITA_442 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user @user Io non temo tanto l’immigrazione in genere, se arrivano e lavorano ben vengano, io tempo l’immigrazione “dei barconi”, perché c’è dentro di tutto e gli islamici che rispettano solo le loro leggi coraniche e pretendono la supremazia dell’Islam" .
+
+ster:stereotype_ITA_443 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user @user Belpietro ha ragione. La sinistra ha un germe negativo nel cervello che non gli permette di riconoscere il bene dal male, il giusto dall’ingiusto, gli italiani dagli stranieri! E in questa negatività favoriscono gli ingiusti, i malefici e gli stranieri!" .
+
+ster:stereotype_ITA_444 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Torino, ragazza violentata da un migrante nel parco dopo la discoteca" .
+
+ster:stereotype_ITA_445 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "non possono essere chiamati per quello che sono, come quando un clandestino stupra e ammazza una donna..non dicono mai la razza.Salvini in Israele: 'Hezbollah terroristi'. La Difesa italiana: 'Dichiarazioni preoccupanti' - PoliticaURLCondiviso da Discover" .
+
+ster:stereotype_ITA_446 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Basta sovvenzionare alberghi che ospitano \"profughi\".  Gli hotel ospitino turisti, non migranti  a carico nostro. Accoglienza...i neri fuori da bar e alimentari a elemosinare! Porci chi li ha fatti venire per farli e farci soffrire @user #stopinvasione" .
+
+ster:stereotype_ITA_447 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Arricchimento culturale in Italia panico per le strade di Milano come un  migrante islamico africano minaccia i passanti con un coltello.   Dell'Italia, Matteo Salvini, continua a  fermare le ONG finanziate da Soros che inondano l'italia e l'europa di  clandestini e terroristi. URL" .
+
+ster:stereotype_ITA_448 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:leftists ;
+    ster:sourceText "Irruzione in casa disoccupato per minacce alla Serracchiani coccola profughi: L’ha fatto… URL" .
+
+ster:stereotype_ITA_449 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user quindi 2/2 il nomade subappalta il posto per elemosina al \"richiedente asilo\" ovvero \"utente\" della coop @user" .
+
+ster:stereotype_ITA_450 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "Sono i grullini la quinta colonna delle invasioni islamiche pe rla sostituzione etnica e la difesa dei Rom considernadoli un bacino di loro voti" .
+
+ster:stereotype_ITA_451 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Attentatore #Istanbul #Reina #CercateliQui Come sempre #Italia rifugio sicuro per terroristi!  #accoglienza #buonisti #malaGiustizia" .
+
+ster:stereotype_ITA_453 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Dal campo rom di Castel Romano alla Capitale per rubare portafogli: arrestate due donne ‘in trasferta’ URL" .
+
+ster:stereotype_ITA_454 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user Questo dovrebbe farci capire, qualora ce ne fosse bisogno, che loro(l’Islam) non cedono di un millimetro. In Italia invocano la libertà di religione, di pensiero, ecc.. Tutte balle. Quando avranno i numeri giusti vedremo se non ci integriamo noi a loro cosa ci fanno. #poverinoi" .
+
+ster:stereotype_ITA_455 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Tanto a #Roma ci pensano i #rom a svuotare i cassonetti, giusto #Virginia?... URL" .
+
+ster:stereotype_ITA_456 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user I BUONISTI IPOCRITI ACCOLGANO NELLE LORO CASE LE FAMIGLIE STRANIERE, NON NELLE SCUOLE CON I SOLDI DEGLI ITALIANI, MENTRE L'ISLAM DISTRUGGE LE CHIESE E NON PERMETTE LA LORO COSTRUZIONIE, PERCIO' TUTTI A CASA VOSTRA...." .
+
+ster:stereotype_ITA_457 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Sono”salvataggi”sotto regia” guarda caso adesso che questa sottospecie di traghettatore di falsi migranti è ferma a Catania, non ci sono in giro gommoni sgonfi e nè elicotteri che riprendono questi pseudo naufragi!!Ma smettiamola di farci prendere in giro  da questi individui!!" .
+
+ster:stereotype_ITA_458 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "In romania 200mila in piazza x protestar contro corruzione..In Italia 4 gov non eletti, disoccupazione, immigrazione e tasse al max, nulla 😈" .
+
+ster:stereotype_ITA_459 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#rifugiati # propaganda tour # Salvini. se questi profughi arrivano dalle galere libiche dopo essere stati \" torturati \" chi gli ha dato i 5000 euri per pagare  l'attraversata??? In omaggio cellulari" .
+
+ster:stereotype_ITA_46 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "L'umanità si sottometterà all' #islam «Quando verrà l'ausilio di #Allah e la vittoria, e vedrai le genti entrare in massa nella religione di Allah, glorifica il tuo Signore (…) » (Corano - 110, 1-3)  Lo puoi acquistare solo su: URL URL" .
+
+ster:stereotype_ITA_460 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, donna picchiata dalle ladre rom che aveva denunciato URL URL" .
+
+ster:stereotype_ITA_462 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#agorarai @user ai nomadi si regala il terreno x costruirsi le case,se lo chiede un italiano qualunque NON SI PUO' FARE. perche'?" .
+
+ster:stereotype_ITA_463 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user @user @user Nella società che abbiamo in mente noi,le moschee non dovrebbero neppure esistere. Tutto sanno che predicano radicalizzazione perché l'Islam moderato lo devono ancora inventare. È solo faida tra sciiti,sunniti e l'infedele occidente.  Per me è ruspa in ogni caso." .
+
+ster:stereotype_ITA_464 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Qui Radio Londra: Roma, cinese morta, ore contate per chi l'ha scippata: «Vengono dal campo rom» - Il Messaggero URL" .
+
+ster:stereotype_ITA_465 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Decine di mafie straniere e soldi agli invasori: Italia, vergognati!!!!!!!! URL" .
+
+ster:stereotype_ITA_466 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "SALUTE #italiani A RISCHIO CAUSA #immigrazione AFRICANA !!!!!!!!!!!! AUMENTO MALATTIE INFETTIVE E DIFFUSIVE !!!!   #StopInvasione URL" .
+
+ster:stereotype_ITA_467 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Avete rotto l'anima con la storia pietosa dei migranti bisognosi. E che solo 300 ce ne sono? Poi altri 300 e altri ancora e ancora. In 10 anni di governi di merda piddina ne abbiamo accolti a migliaia. Perché non salite voi sulla #OpenArms e ve ne andate per sempre in Africa?" .
+
+ster:stereotype_ITA_469 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Salvini pensa ai migranti 😡 QUANDO CACCERÀ QUESTI DELINQUENTI? MENO CIBO E PIÙ CONCRETEZZA😡" .
+
+ster:stereotype_ITA_47 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Ma pensa te! I ladri rampicanti sono rom quelli che portano cultura!! #Roma URL" .
+
+ster:stereotype_ITA_470 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "La sinistra dovrebbe ripartire dal ripulire il paese dai negri e da tutta la feccia straniera che impesta questo paese.  E se non fa così non ripartirà mai.    #propagandalive" .
+
+ster:stereotype_ITA_471 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Ancora con sta storia che scappano dalla guerra. Visto l'età  ed il sesso di chi \"scappa\" direi che sono un branco di vigliacchi visto che lasciano in patria anziani, donne e bambini. Ma sai benissimo che la guerra non centra nulla. Sono migranti economici, stiano a casa loro." .
+
+ster:stereotype_ITA_472 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Secondo quanto riportato dalla stampa, lo scorso anno i ricorsi dei migranti che si sono visti negare lo status di rifugiato sono aumentati del 512%. Il ricorso non è altro che un espediente per rimanere in Italia e continuare ad truffare il popolo italiano. Inaccettabile." .
+
+ster:stereotype_ITA_473 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, carabinieri arrestano rapinatore nomade URL" .
+
+ster:stereotype_ITA_474 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Solita #demagogia confusionaria che sposta il problema. I migranti che arrivano con i barconi non lavorano... URL" .
+
+ster:stereotype_ITA_475 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "#Milano Ora arriva pure il matrimonio rom in limousine: \"Beffa a chi fa fatica a pagare l'affitto\" URL le ultime foto scattate dai residenti esasperati immortalano un matrimonio rom con tanto di limousine bianca parcheggiata nel cortile delle case popolari" .
+
+ster:stereotype_ITA_476 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "La questione non é #rom si  rom no #migranti si  migranti no. NON VOGLIAMO I DELINQUENTI. Cinesi, neri, italiani, indiani non importa. NON É DIFFICILE. URL" .
+
+ster:stereotype_ITA_477 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Questa minoranza è il CESSO D’ITALIA. Grazie a loro siamo pieni di immigrati fancazzisti che stuprano e ammazzano x soldi e noia" .
+
+ster:stereotype_ITA_479 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "#OTTOBRE 1571 Lepanto! La Storia ci insegna che  l’Islam si sconfigge con le armi, non con l’accoglienza o la sottomissione, URL" .
+
+ster:stereotype_ITA_48 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Altro che farne sbarcare altri o andarli a prendere con barconi e aerei, stiamo lavorando per rimandarne a casa un bel po’😊 Scafisti e terroristi: a casa!!! URL" .
+
+ster:stereotype_ITA_480 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Basta, poi,cn tutti qs sconosciuti dai nomi impronunciabili e illeggibili che ci vogliono dominare!ma chi c sono?Devono sparire per sempre dalle ns vite, smetterla di condizionarle,restare fuori dai ns confini geo e mentali.Cognomi stranieri, solo di artisti, quando li invitiamo!" .
+
+ster:stereotype_ITA_481 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Furti alla RomaOstia, l'odissea dei podisti nel campo rom per recuperare zaini rubati URL" .
+
+ster:stereotype_ITA_482 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "versiamo 640 milioni di euro a pensionati immigrati che non hanno mai lavorato in Italia o che non hanno mai versato contributi. URL" .
+
+ster:stereotype_ITA_483 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Se a queste associazioni, preti e pretini piacciono tanto gli IMMIGRATI rapinatori, stupratori e assassini è SOLO UN PROBLEMA LORO, NON NOSTRO. #IoStoConSalvini #IoVotoLEGA" .
+
+ster:stereotype_ITA_486 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "Dopo l'attentato all'autobus dei turisti vicino alle piramidi in Egitto che rischia di danneggiare il turismo l'esercito uccide 40 terroristi islamici.Dimostrazione che nei paesi medievali islamici è meglio un regime militare laico a una \"democrazia\" islamica" .
+
+ster:stereotype_ITA_487 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#PamelaMastropietro  Davanti ai tribunali d'Italia il manifesto delle donne di Forza Nuova, a #Macerata la rabbia delle #donne contro uno dei cannibali assassini e stupratori. Le #femministe? Sempre assenti quando, ogni giorno di più, si tratta di carnefici immigrati. [R. Fiore] URL" .
+
+ster:stereotype_ITA_488 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user Il \"pubico\" di Renzi sono topi voltagabbana rom islamici ebrei Confinbanche Genitalici di ogni arte ma tutti di una parte (€)" .
+
+ster:stereotype_ITA_489 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Ma com'è che ogni volta che dei mostri #immigrati spacciatori torturano stuprando per ore una povera ragazza italiana, e non contenti la uccidono, i dementi di #sinistra fanno una manifestazione #antirazzista? Ma saranno proprio stronzi, scemi e pagliacci??? #Desiree URL" .
+
+ster:stereotype_ITA_49 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Ostia, gli spezzano il dito per rubargli la fede: è caccia a due rom URL" .
+
+ster:stereotype_ITA_491 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Migrante molesta ragazzina, parenti lo gonfiano di botte Preso a pugni dai parenti di una bambina che aveva molestato URL" .
+
+ster:stereotype_ITA_493 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Il messaggero oggi ha scoperto l'acqua calda #Svuotacantine #rom  URL" .
+
+ster:stereotype_ITA_494 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "#26settembre  Tre cittadini stranieri  davano stupefacenti in favore di richiedenti asilo afghani e pakistani - ospiti del Cara di Gradisca d'Isonzo -, di cittadini originari della Moldova e del Bangladesh e di giovani del posto...  spero che vengano espulsi grazie a D Sicurezza" .
+
+ster:stereotype_ITA_496 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Ogni #migrante costa all’Italia 13.308 euro all’anno.  (35,9 euro al giorno portano a un costo annuo di 13.104 euro, cui si sommano i 204 euro per la valutazione della domanda d’#asilo).  URL URL" .
+
+ster:stereotype_ITA_497 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Ora i migranti fanno i pirati.Quattro nigeriani si imbarcano di nascosto su una nave della Grimaldi Lines e una volta scoperti minacciano l'equipaggio costringendoli a portarli in UK. Ora è bloccata nell'estuario del Tamigi e sono in trattative con la polizia." .
+
+ster:stereotype_ITA_498 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "La storia dei #migranti che ci pagano le #pensioni è una cagata pazzesca cara agli immigrazionisti duri e puri. Per pagare le pensioni gli africani dovrebbero prima lavorare e versare i contributi. Per adesso siamo NOI CHE PAGHIAMO LORO e ci COSTANO 5 MILIARDI l'anno URL" .
+
+ster:stereotype_ITA_499 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "Il Belgio vuole bandire il Partito Islamico dal Paese: @user l'Islam che lede e vuole eliminare principi base di libertà e di democrazia dei ns Paesi" .
+
+ster:stereotype_ITA_5 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Alfano dice che non è invasione e che è tutto sotto controllo, li chiama profughi non clandestini siamo la barzelletta d'Europa." .
+
+ster:stereotype_ITA_50 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Vivevano lungo i binari della ferrovia: sgomberati 13 rom | Il Cittadino di Lodi URL" .
+
+ster:stereotype_ITA_500 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Due turiste sono state violentate, picchiate, uccise e riprese in un video mentre subivano tutto questo orrore. Le femministe tacciono, tutto il mondo tace e censurano il fatto che si tratti di terrorismo islamico. #Marocco #terrorismo #metoo #nonunadimeno" .
+
+ster:stereotype_ITA_501 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user La maggior parte dei stupratori : o romeni o immigrati africani ( fateci caso ). Limitiamo questo reato con pene più severe e condanne veloci" .
+
+ster:stereotype_ITA_502 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user Sono anni ed anni che sbarcano con i cellulari nuovi ma nessun giornalista o magistrato indaga per saperne la provenienza? TUTTO REGOLARE, o non bisogna fare chiarezza, perchè i TELEFONINI sono strumenti che istigano all'immigrazione clandestina, penalmente perseguibile per legge" .
+
+ster:stereotype_ITA_503 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Parlate con qualsiasi medico di ospedale che non sia sotto ricatto per interessi o carriera, e vi dirà che da dieci anni in Italia stanno tornando malattie che avevamo eradicato da tempo. Portate dagli immigrati da paesi dove sono endemiche @user @user" .
+
+ster:stereotype_ITA_504 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Non conoscono la benché minima nozione di IGIENE i #migranti !!!!!! URL" .
+
+ster:stereotype_ITA_505 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Questi  buonisti che si ergono a paladini di finti profughi ci portano dritti dritti verso il baratro" .
+
+ster:stereotype_ITA_506 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Al bel presidio organizzato dal Municipio 7 a #Milano per protestare contro la presenza aggressiva dei #Rom davanti all’ospedale San Carlo e contro l’immobilismo della sinistra di fronte ai problemi di #degrado e #delinquenza. L’unica soluzione è mandare a casa #Sala e il #Pd URL" .
+
+ster:stereotype_ITA_507 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user @user @user e tutti gli stranieri afroislamici rom scrocconi e criminali sono ancora qui a farsi mantenere..... @user quando uscirai dal coma sarà sempre troppo tardi.. ." .
+
+ster:stereotype_ITA_508 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, presa la banda dei topi d'auto: arrestati 3 rom - Il Messaggero URL #Roma #news" .
+
+ster:stereotype_ITA_509 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:muslims ;
+    ster:sourceText "@user cacciamo fuori dall'Europa tutti gli islamici e non avremo più terrorismo in casa nostra!" .
+
+ster:stereotype_ITA_51 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Da notare i \"segni delle terribili torture\" subite dai migranti nei centri di detenzione governativi libici. La retorica delle anime belle smontata a colpi di verità. URL" .
+
+ster:stereotype_ITA_510 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Fanno degli scambi con i documenti...#quartogrado tra Ucraini e Rumeni..🙈🙈" .
+
+ster:stereotype_ITA_52 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#staseraitalia alla fine della fiera...sono contraria a pagare reddito a fannulloni...x via della magistratura toccherà pagarlo anche a zingari e immigrati..come sentenza cassazione x invalidità..hanno eliminato residenza 10 anni..quindi a tutti indistintamente a prescindere." .
+
+ster:stereotype_ITA_53 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:terrorists ;
+    ster:sourceText "Vuole il caso che spesso siano più gli accoglioni degli islamici a crepare per mano degli attentatori/terroristi culallahria. Agli altri però tocca subire delitti e crimini quotidiani della marmaglia accumulata per le vie europee. URL" .
+
+ster:stereotype_ITA_54 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Ceprano- Arpino-Pontercorvo, retata 5 di nomadi donne dopo un pericoloso inseguimento in A1... #news #Ciociaria URL" .
+
+ster:stereotype_ITA_55 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#StaseraItalia ma possiamo vivere tutti i giorni pensando a parlare di migranti nullafacenti quando noi italiani siamo alla fame fate schifo" .
+
+ster:stereotype_ITA_56 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user a Milano siamo terrorizzati dai rom , continuano a rubare dentro gli appassionati delle periferie milanesi" .
+
+ster:stereotype_ITA_57 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "I migranti hanno sempre il posto e non pagano URL" .
+
+ster:stereotype_ITA_58 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "FATE SCHIFO. Io come altre mi sono salvata da un'aggressione grazie allo #sprayurticante.Piuttosto, chi ha sdoganato i coltelli con lama di 20 cm con cui vanno in giro tanti immigrati? URL" .
+
+ster:stereotype_ITA_59 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Un altra conquista dei #PD👀 dare le case popolari in mano ai #Rom .🙈 Risultato : #degrado e #sopprusi Si ringrazia il sindaco #Salah 🤦‍♂️ URL" .
+
+ster:stereotype_ITA_6 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Per i #sinistrati tutto è cultura.La merda #africana, la #MafiaNigeriana e relativi #Stupri, #Spaccio, #Prostituzione,l'#islam con i suoi precetti, #SposeBambine, #Infibulazioni, #DonneVelate...Tutto ciò che è diverso dalla nostra civiltà avanzata, per loro è #Cultura. URL" .
+
+ster:stereotype_ITA_60 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user @user Va ricordato a certi idioti in Europa che gli italiani, pur migranti,  si mantenevano da soli respirando merda anche nelle miniere e non girando a sbafo per le strade a spese altrui #JeanAsselborn 💩@OllaPiero @user @user @user @user" .
+
+ster:stereotype_ITA_61 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "La cosa più aberrante del #GlobalCompact ❓  Sarà REATO parlare di #immigrazione - #migranti   \"SOPPRESSA PER LEGGE LA LIBERTA' D'OPINIONE\"  Ora sapete perché le elites #sorosiane lo vogliono, vogliono poter IMPORRE milioni e milioni di #primitivi ed IMPEDIRE che se ne parli." .
+
+ster:stereotype_ITA_63 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Immigrazione, Viminale: 500 euro a testa ai 13mila profughi per farli uscire dai centri d'accoglienza" .
+
+ster:stereotype_ITA_64 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, nomade tenta di investire gli agenti, loro sparano all'auto: far west al campo rom di Salone URL" .
+
+ster:stereotype_ITA_65 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Trovato il tesoro della \"regina rom\", la cifra è da capogiro... URL" .
+
+ster:stereotype_ITA_66 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "Crotone, arrestato egiziano ricercato per droga: Rissa tra stranieri e gli uomini della Squadra Volante arrestano… URL" .
+
+ster:stereotype_ITA_67 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Attenzione non per i terremotati, non per i genovesi del ponte Morandi, non per gli alluvionati, bensì per i migranti,feccia che viene a delinquere, spacciare,uccidere È proprio vero la Chiesa non ha nulla a che vedere con Dio, ormai è sempre più un covo di estremisti di sinistra URL" .
+
+ster:stereotype_ITA_69 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Trasferimento campo Rom, Forza Italia critica: «Più attenzione ai rom che ai cittadini» URL #Barletta #News #PugliaLink" .
+
+ster:stereotype_ITA_7 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "“Ingabbiano” due rom: immagini shock sui social [VIDEO] (Velvet News Italia) URL URL" .
+
+ster:stereotype_ITA_70 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user Salve Matteo,non possiamo piu permettere a codeste bestie di merda di varie nazionalità  di poter spacciare,ammazzare,far prostituire,rubare e farla da padrone. Ci vogliono leggi speciali! Il  terrorismo(rosso)lo abbiamo distrutto con leggi speciali!      Pugno di ferro.." .
+
+ster:stereotype_ITA_71 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Vorrei vedere quanta di questa violenza e’ di italiani e quanta da immigrati clandestini..." .
+
+ster:stereotype_ITA_72 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Attenzione nelle ultime 72 ore Il gov.excomunista hanno fatto sbarcare 8.500 illegali da navi straniere nn si rende conto dei ns problemi!" .
+
+ster:stereotype_ITA_73 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "*** Novara News *** Ancora nomadi accampati a Cerano  leggi tutto... URL" .
+
+ster:stereotype_ITA_74 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user Il risarcimento ai criminali è stato sicuramente il gesto più vergognoso che alcuni giudici potessero fare contro le vittime, un premio di consolazione elargito a CHI in Italia doveva portare ricchezza e cultura anziché morte e paura, Un vero incentivo a delinquere x i migranti!" .
+
+ster:stereotype_ITA_75 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Italia, depredata, usata come discarica di immigrazione selvaggia, di scorie nucleari europee, tradita dai due partiti liberisti che l'hanno governata per 30 anni portandola a questo disastro, ora ex  città simbolo dell'economia da bere, trasformata in CESSO.!!!! ITALEXIT SUBITO" .
+
+ster:stereotype_ITA_76 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Roma, cinese morta: da oggi la bonifica nel campo rom. I residenti: «Raggi venga a vedere» - Il Messaggero URL #Roma #…" .
+
+ster:stereotype_ITA_77 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "I rom sono sporchi e rubano e drogano i bambini. Alessandra Mussolini a #lazanzara  Anche questa è \"libertà di parola\". Giusto? Quindi MUTI" .
+
+ster:stereotype_ITA_78 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user I migranti senza QUARANTENA portono e porteranno MALATTIE!E noi cosa facciamo....vacciniamo a iosa i nostri bambini , creando  problemi a loro in un futuro  e INGRASSANDO le casse dei PIDIOTI da parte delle case farmaceutiche!😡😡😡" .
+
+ster:stereotype_ITA_79 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Avete sentito bene?Siamo noi, a trasmettere malattie agli immigrati! Tbc, scabbia...Loro arrivano senza documenti, ma con libretto vaccinale in regola.Qualcuno fa le analisi ad uno per uno per verificare gli anticorpi creati dai vaccini.Oh! Guardate l'elefante rosa che vola! URL" .
+
+ster:stereotype_ITA_8 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Toscana, regalati 30mila euro ai rom per fare la spesa in una Coop URL" .
+
+ster:stereotype_ITA_80 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Far West a Roma: rom 25 enne senza patente semina il panico, inseguimento, incidenti e feriti – webitalia360... URL" .
+
+ster:stereotype_ITA_81 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Rapper Rom di 9 anni canta: \"Scuola no, piscio sul tuo mondo, comando io\". Oggi ARRESTATI padre e nonno dediti a traffico di cocaina, ricettazione di gioielli e rivendita di auto rubate. Bella famiglia! Altro che rap, qui servono servizi sociali... VIDEO &gt; URL URL" .
+
+ster:stereotype_ITA_83 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Una attivista di #alterego grida “Sciacallo”a #Salvini all’ex #penicillina.\"Lo #sgombero farà sì che i #migranti andrannoAdelinquere\"... comeSeTutto il giornoRimangono li dentro a fare il rosario😁😆Loro che li si andati a prendere e noi dovremmo tollerareZoneFrancheDi degrado? URL" .
+
+ster:stereotype_ITA_84 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Forza ragazzi,180mila clandestini all'anno,rom da tutte le parti, illegalità totale, Coop rosse e bianche che lucrano.ora sapete cosa votare" .
+
+ster:stereotype_ITA_85 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "MINISTRO @user  , questo ITALIANO michele mangiacotti   @user DORME IN MACCHINA E, LE CASE POPOLARI VENGONO ASSEGNATE AGLI STRANIERI, LE SEMBRA GIUSTO? PER FAVORE LO AIUTI. GRAZIE #primagliitaliani URL" .
+
+ster:stereotype_ITA_86 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "I politici di centro e sinistra non capiscono che lasciandoci invadere dai migranti ci troveremo con 3 gravi problemi: Povertà, islam, lotte razziali!  STOP IMMEDIATA A IMMIGRAZIONE AFROISLAMICA! URL" .
+
+ster:stereotype_ITA_87 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Roma: immigrati tagliano alberi secolari riserva naturale URL" .
+
+ster:stereotype_ITA_88 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "@user immigrati come francia-germania:delusi in mano isis x attentati.Harakiri merkel:aiuti in Africa:tanto da fare:berlusca sveglia" .
+
+ster:stereotype_ITA_89 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user i rimpatri difficili da che? E che stato è l'Italia? Andate nei campi rom: Mercedes, audi, porsche.LO STATO È MAFIA IN ITALIA" .
+
+ster:stereotype_ITA_9 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "@user In Italia li chiamano nomadi in quanto ricercati quindi si spostano da una città all'altra" .
+
+ster:stereotype_ITA_90 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:ethnic_minorities ;
+    ster:sourceText "@user È questo il dramma,complice la sinistra pd!!Vogliono far mandare i nostri ragazzi laureati all’estero e a noi ci obbligano a sostituirli con feccia africana!!Capito perché l’Europa ci tratta da merda!!??Perché vuole,d’accordo con il papa,che noi facciamo arrivare solo migranti!!!" .
+
+ster:stereotype_ITA_91 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "tutti i giorni ci sono rapine aggressioni  stupri  compiute x  la maggior parte da immigrati, ma i medii hanno il silenzio stampa, loro parlano solo della sinistra  che ha fermato un pullman  per un secondo o se un italiano insulta un nero,, questo a reti unificate ,il resto 0" .
+
+ster:stereotype_ITA_93 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Piano piano salta fuori la verità la massa di immigrati che senza controlli medici hanno fatto sbarcare in questi anni sta’ impestando tutta l’Italia URL" .
+
+ster:stereotype_ITA_95 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "#Austria. Nightclub a Regau. Migrante viene cacciato dal locale. Arrivano anche due poliziotte, ma lui se ne frega e prende a calci la porta. Alla fine l'unica lingua possibile che capiscono é quella dei buttafuori...          👇 URL" .
+
+ster:stereotype_ITA_96 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:children ;
+    ster:sourceText "ROMA – Ragazzini rom si divertono a prendere a pallonate un gregge di pecore. Il pastore inferocito spari in... URL" .
+
+ster:stereotype_ITA_97 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Trieste, profughi cacciano disabile dal bus: arrivano le pattuglie di Forza Nuova sui mezzi pubblici URL" .
+
+ster:stereotype_ITA_98 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:roma_people ;
+    ster:sourceText "Adesso se l'italia è piena di rom la colpa è del sindaco, ma solo quello di roma URL" .
+
+ster:stereotype_ITA_99 a ster:Stereotype ;
+    rdfs:label "1.0" ;
+    ster:involvesTarget ster:immigrants ;
+    ster:sourceText "Devo ancora sentire la buonista ke da del razzista o fascista al poliziotto francese ke ha sparato al terrorista Poverino il terrorista caro" .
+
+ster:italians a ster:Target ;
+    rdfs:label "italians" .
+
+ster:journalists a ster:Target ;
+    rdfs:label "journalists" .
+
+ster:terrorists a ster:Target ;
+    rdfs:label "terrorists" .
+
+ster:women a ster:Target ;
+    rdfs:label "women" .
+
+ster:children a ster:Target ;
+    rdfs:label "children" .
+
+ster:people a ster:Target ;
+    rdfs:label "people" .
+
+ster:institutions a ster:Target ;
+    rdfs:label "institutions" .
+
+ster:leftists a ster:Target ;
+    rdfs:label "leftists" .
+
+ster:muslims a ster:Target ;
+    rdfs:label "muslims" .
+
+ster:ethnic_minorities a ster:Target ;
+    rdfs:label "ethnic minorities" .
+
+ster:roma_people a ster:Target ;
+    rdfs:label "roma people" .
+
+ster:immigrants a ster:Target ;
+    rdfs:label "immigrants" .
+
