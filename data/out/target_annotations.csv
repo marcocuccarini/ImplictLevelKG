@@ -1,0 +1,1266 @@
+target,source,llama_classification,ann_bea,ann_lia,ann_marco,majority_vote
+aryan people,EN,Race,Race,Race,Race,Race
+baptists,EN,Religion,Religion,Religion,Religion,Religion
+biharis,EN,Disability,Nationality,Nationality,Race,Nationality
+india,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+anti-gun activist,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+third world people,EN,Class,Class,Class,Nationality,Class
+ideologues,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+foreign,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+native american,EN,Race,Race,Nationality,Race,Race
+mother,EN,Gender,NONE,Gender,NONE,NONE
+women who get abortions,EN,Gender,Gender,Gender,Gender,Gender
+people of color/immigrants,EN,Nationality,Race,Nationality,NONE,NONE
+ethnomasochists,EN,Sexuality,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+people from texas,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+country people,EN,Nationality,Nationality,Class,Class,Class
+liberal scientists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+everyone,EN,NONE,NONE,NONE,NONE,NONE
+anti white people,EN,Race,Political_Identity,Race,Race,Race
+immigrants from europe,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+refugees,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+sfgfsfgf,EN,NONE,NONE,NONE,NONE,NONE
+msulims,EN,Religion,Religion,Religion,Religion,Religion
+humans,EN,NONE,NONE,NONE,NONE,NONE
+syrian immigrants,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+people from nigerian,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+protestors,EN,NONE,NONE,Religion,Political_Identity,Religion
+protestants,EN,Religion,Religion,Religion,Religion,Religion
+antifa members,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+thin-skinned people,EN,Body,NONE,Disability,Body,Body
+gulf citizens,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+people with aids,EN,Disability,Disability,Disability,Sexuality,Disability
+singular woman,EN,Gender,Gender,Gender,Gender,Gender
+missouri residents,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+somalis,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+working class people,EN,Class,Class,Class,Class,Class
+gender crisis people,EN,Gender,Gender,Gender,Sexuality,Gender
+islamic,EN,Religion,Religion,Nationality,Religion,Religion
+antifas,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+hikers,EN,NONE,NONE,NONE,NONE,NONE
+white supremacy,EN,Race,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+people in the tech field,EN,Gender,Class,Organisation_or_Institution,NONE,Class
+ivy league schools,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+young black men,EN,Race,Race,Race,Race,Race
+black women,EN,Race,Race,Race,Race,Race
+prisoner,EN,Class,Class,NONE,NONE,NONE
+white south africans,EN,Nationality,Nationality,Race,Nationality,Nationality
+alcoholics,EN,Gender,Disability,Disability,NONE,Disability
+people in other countries,EN,Nationality,Nationality,Nationality,NONE,Nationality
+immature people,EN,Age,NONE,Age,NONE,NONE
+radicals,EN,Disability,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+slaves,EN,Class,Class,Class,Class,Class
+non-christian minorities,EN,Religion,Religion,Religion,Religion,Religion
+secularists,EN,Religion,Political_Identity,Religion,Religion,Religion
+liberians,EN,Nationality,Nationality,Political_Identity,Political_Identity,Political_Identity
+mexicans,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+queers,EN,Sexuality,Sexuality,Sexuality,Sexuality,Sexuality
+non black,EN,Race,Race,Race,Race,Race
+norwegians,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+indian movies,EN,Nationality,NONE,Nationality,Nationality,Nationality
+grotesque libs,EN,Class,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+white americans,EN,Nationality,Nationality,Political_Identity,Race,Race
+doctors,EN,NONE,Class,Class,Organisation_or_Institution,Class
+liberal journalists,EN,Political_Identity,Organisation_or_Institution,Political_Identity,Organisation_or_Institution,Organisation_or_Institution
+meat eaters,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+conservative jews,EN,Religion,Religion,Political_Identity,Race,Race
+gang members,EN,Class,NONE,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+black teens,EN,Race,Race,Race,Race,Race
+rich jews,EN,Religion,Class,Religion,Religion,Religion
+black conservative,EN,Political_Identity,Political_Identity,Political_Identity,Race,Political_Identity
+religion,EN,Religion,Religion,Religion,Religion,Religion
+in this case jews,EN,Religion,Religion,Religion,Religion,Religion
+british bankers,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+poor uneducated people,EN,Class,Class,Class,Class,Class
+normal people,EN,NONE,NONE,NONE,NONE,NONE
+lgbts supporters,EN,Sexuality,Political_Identity,Political_Identity,Sexuality,Political_Identity
+govern,EN,Class,Organisation_or_Institution,Political_Identity,Organisation_or_Institution,Organisation_or_Institution
+white police,EN,Race,Organisation_or_Institution,Organisation_or_Institution,Race,Organisation_or_Institution
+tea party,EN,Class,Political_Identity,Organisation_or_Institution,Political_Identity,Political_Identity
+white children,EN,Race,Race,Race,Race,Race
+mixed race people,EN,Race,Race,Race,Race,Race
+arabs,EN,Nationality,Race,Nationality,Race,Race
+old white people,EN,Race,Race,Race,Race,Race
+intellectuals,EN,Class,Class,Class,NONE,Class
+tea party supporters,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+trump supporters,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+welsh people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+bible publishers,EN,Organisation_or_Institution,Religion,Religion,Organisation_or_Institution,Religion
+female,EN,Gender,Gender,Gender,Gender,Gender
+people who aren't white,EN,Race,Race,Race,NONE,Race
+mentally ill people,EN,Disability,Disability,Disability,NONE,Disability
+icelanders,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+biracials,EN,Race,Race,NONE,Race,Race
+mainstream conservatives,EN,Political_Identity,Political_Identity,Political_Identity,NONE,Political_Identity
+stupid people,EN,Class,NONE,Disability,NONE,NONE
+non-believers,EN,Religion,Religion,Religion,Religion,Religion
+californians,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+splc,EN,Class,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+white people. as the person addresses is white,EN,Race,Race,Race,Race,Race
+antifa,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+criminals,EN,NONE,NONE,Organisation_or_Institution,NONE,NONE
+pakistan,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+muslims,EN,Religion,Religion,Religion,Religion,Religion
+facsists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+congress,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+muslim immigrants,EN,Religion,Nationality,Nationality,Religion,Nationality
+hindu indians,EN,Religion,Nationality,Religion,Religion,Religion
+latino/latina people,EN,Race,Race,Nationality,Nationality,Nationality
+sanctuary cities,EN,Nationality,Nationality,Organisation_or_Institution,Religion,Religion
+realists,EN,Gender,NONE,Political_Identity,Political_Identity,Political_Identity
+people who study islam,EN,Religion,NONE,Religion,NONE,NONE
+elderly people,EN,Age,Age,Disability,Age,Age
+california,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+poor people,EN,Class,Class,Class,Class,Class
+transracials,EN,Race,Race,Political_Identity,Race,Race
+splc members,EN,NONE,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+outsiders,EN,NONE,Nationality,Class,NONE,Class
+non whites,EN,Race,Race,Race,Race,Race
+white race,EN,Race,Race,Race,Race,Race
+america,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+libertarians,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+individual,EN,NONE,NONE,NONE,NONE,NONE
+americans,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+non-whites immigrants,EN,Nationality,Nationality,Nationality,Race,Nationality
+religious groups,EN,Religion,Religion,Organisation_or_Institution,Religion,Religion
+latinas,EN,Nationality,Nationality,Race,Nationality,Nationality
+anti gay people,EN,Sexuality,Political_Identity,Sexuality,Political_Identity,Political_Identity
+gay jews,EN,Sexuality,Religion,Sexuality,Sexuality,Sexuality
+rohingyas & bangladeshis,EN,Nationality,Nationality,Nationality,Race,Nationality
+white liberals,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+middle east people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+pro abortion people,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+british people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+fair immigration members,EN,Nationality,Organisation_or_Institution,Nationality,NONE,NONE
+all other races,EN,Race,Race,Race,Race,Race
+white lives matter protesters,EN,Race,Political_Identity,Political_Identity,Race,Political_Identity
+black athletes,EN,Race,Race,Race,Race,Race
+democrates,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+mainly black people,EN,Race,Race,Race,Race,Race
+homeless people,EN,Class,Class,Class,Class,Class
+blacks,EN,Race,Race,Race,Race,Race
+white countries,EN,Nationality,Organisation_or_Institution,Race,Race,Race
+female politicians,EN,Gender,Organisation_or_Institution,Gender,Gender,Gender
+orthodox muslims,EN,Religion,Religion,Religion,Religion,Religion
+federates,EN,Class,Organisation_or_Institution,Political_Identity,Political_Identity,Political_Identity
+mixed race,EN,Race,Race,Race,Race,Race
+group,EN,Class,NONE,Organisation_or_Institution,NONE,NONE
+people who wear glasses,EN,Body,Disability,Disability,NONE,Disability
+multiracials,EN,Race,Race,Race,Race,Race
+armed people,EN,Class,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+nationalist,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+idealists,EN,Political_Identity,NONE,Political_Identity,Political_Identity,Political_Identity
+white people who adopt other races,EN,Race,Race,Race,Race,Race
+muslims terrorists,EN,Religion,Religion,Religion,Religion,Religion
+progressive whites,EN,Race,Race,Political_Identity,Political_Identity,Political_Identity
+boy scout members,EN,Organisation_or_Institution,NONE,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+hondurian,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+overweight people,EN,Body,Body,Body,Body,Body
+latinos,EN,Race,Race,Race,Nationality,Race
+impossible to determine without more information or context,EN,NONE,NONE,NONE,NONE,NONE
+harvard,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+keralites,EN,Nationality,Nationality,Nationality,Race,Nationality
+handicaped people,EN,Disability,Disability,Disability,Body,Disability
+trump,EN,Nationality,Organisation_or_Institution,Political_Identity,Political_Identity,Political_Identity
+minority immigrants,EN,Nationality,Nationality,Nationality,NONE,Nationality
+mestizos,EN,Race,Race,Race,Race,Race
+swedans,EN,Disability,Nationality,Nationality,Nationality,Nationality
+girls,EN,Gender,Gender,Gender,Gender,Gender
+white men,EN,Race,Race,Race,Race,Race
+holocaust survivors,EN,Race,NONE,NONE,NONE,NONE
+children,EN,Class,Age,Age,Age,Age
+unsure but most likely black people,EN,Race,Race,Race,NONE,Race
+african immigrants,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+hispanics,EN,Race,Race,Race,Nationality,Race
+heterosexual christian republicans,EN,Religion,Religion,Religion,Sexuality,Religion
+moderates,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+right wing whites,EN,Race,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+israelis,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+left-wing whites,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+sharia,EN,Religion,Religion,Religion,Religion,Religion
+furries,EN,Sexuality,NONE,NONE,Sexuality,NONE
+racists,EN,Race,Political_Identity,Political_Identity,Race,Political_Identity
+fascists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+aryan mothers,EN,Gender,Race,Race,Race,Race
+albanians,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+iraqis,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+trans people,EN,Gender,Gender,Sexuality,Gender,Gender
+elders,EN,NONE,Age,Age,Age,Age
+non-hindu people,EN,Religion,Religion,Religion,Religion,Religion
+black panthers,EN,Race,Political_Identity,NONE,Race,Race
+natives,EN,Nationality,Nationality,Race,Race,Race
+islamic cultures,EN,Religion,Religion,Nationality,Religion,Religion
+muslim people,EN,Religion,Religion,Religion,Religion,Religion
+black girls,EN,Race,Race,Race,Race,Race
+whit supremacists,EN,Race,Political_Identity,Political_Identity,Race,Political_Identity
+womanists,EN,Gender,Political_Identity,Political_Identity,Gender,Political_Identity
+anti-fascist groups,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+indian-muslims,EN,Religion,Political_Identity,Religion,Religion,Religion
+politically outspoken people,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+white rich people,EN,Class,Class,Class,Race,Class
+feminists,EN,Gender,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+lefties,EN,Gender,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+special needs people,EN,Disability,Disability,Disability,Body,Disability
+common people,EN,Class,NONE,NONE,NONE,NONE
+no specific group,EN,NONE,NONE,NONE,NONE,NONE
+northern black people,EN,Race,Race,Race,Race,Race
+people from middle east,EN,Nationality,Nationality,Nationality,NONE,Nationality
+brown people,EN,Race,Race,Race,Race,Race
+rich minorities,EN,Class,Class,Class,Class,Class
+non-whites in south africa,EN,Race,Race,Race,Race,Race
+polish immigrants,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+south african white refugees,EN,Nationality,Nationality,Nationality,Race,Nationality
+political criminals,EN,Political_Identity,Political_Identity,Political_Identity,Organisation_or_Institution,Political_Identity
+degenerates,EN,Class,NONE,Disability,NONE,NONE
+conservative males,EN,Gender,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+non-white marxists,EN,Race,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+cross-straddlers,EN,Class,NONE,NONE,NONE,NONE
+gypsies,EN,Race,Race,Race,Race,Race
+non-white people,EN,Race,Race,Race,Race,Race
+southern poverty law center,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+northerners,EN,Nationality,Nationality,Nationality,Political_Identity,Nationality
+rham,EN,Nationality,NONE,NONE,NONE,NONE
+rich blacks,EN,Race,Class,Class,Race,Class
+pakistanis,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+catholics,EN,Religion,Religion,Religion,Religion,Religion
+illegal hispanics,EN,Nationality,Race,Race,Nationality,Race
+anti-white supporters,EN,Race,Political_Identity,Political_Identity,Race,Political_Identity
+people in sweeden,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+white citizens,EN,Race,Race,Race,Race,Race
+elite,EN,Class,Class,Class,Class,Class
+latina/latina people,EN,Race,Race,Race,Nationality,Race
+social justice warriors,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+jhadists,EN,Religion,Religion,Religion,Religion,Religion
+gangsters,EN,Class,NONE,Organisation_or_Institution,NONE,NONE
+islamic students,EN,Religion,Religion,Religion,Religion,Religion
+haitian immigrants,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+people for diversity,EN,Race,NONE,Political_Identity,Political_Identity,Political_Identity
+people in higher education,EN,Class,Class,Age,NONE,Class
+conservative people,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+white lives matter,EN,Race,Political_Identity,Political_Identity,Race,Political_Identity
+white non-muslims,EN,Race,Religion,Religion,Religion,Religion
+irish,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+middle-easterners,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+white russians,EN,Sexuality,Nationality,Nationality,Nationality,Nationality
+boko haram,EN,Religion,Religion,Organisation_or_Institution,Religion,Religion
+feminism,EN,Gender,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+people that want a wall,EN,Political_Identity,Political_Identity,Political_Identity,NONE,Political_Identity
+specific person,EN,Gender,NONE,NONE,NONE,NONE
+africans,EN,Race,Nationality,Nationality,Nationality,Nationality
+drug addicts,EN,Class,NONE,Disability,NONE,NONE
+black men,EN,Race,Race,Race,Race,Race
+buddhists,EN,Religion,Religion,Religion,Religion,Religion
+white southerners,EN,Race,Race,Race,Race,Race
+communists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+chinese people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+progressive jews,EN,Religion,Religion,Political_Identity,Race,Race
+nazists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+republicans,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+progressives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+white people in south africa,EN,Race,Race,Race,Race,Race
+black immigrants,EN,Nationality,Race,Race,Race,Race
+fat white women,EN,Body,Body,Body,Gender,Body
+latino immigrants,EN,Nationality,Nationality,Race,Nationality,Nationality
+religious conservatives,EN,Political_Identity,Religion,Political_Identity,Religion,Religion
+vandals,EN,Class,NONE,NONE,NONE,NONE
+black africans,EN,Race,Nationality,Race,Race,Race
+north people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+people of color,EN,Race,Race,Race,Race,Race
+third world countries,EN,Nationality,Class,Class,Nationality,Class
+muslims refugees,EN,Religion,Nationality,Religion,Religion,Religion
+white/rich liberals,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+white progressives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+killers,EN,Class,NONE,NONE,NONE,NONE
+planned parenthood,EN,Organisation_or_Institution,NONE,NONE,NONE,NONE
+southern whites,EN,Race,Race,Race,Race,Race
+pro-white people,EN,Race,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+powerful people,EN,Class,Class,Class,NONE,Class
+activists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+iranians,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+illegal/undocumented people,EN,Nationality,Nationality,NONE,NONE,NONE
+lbgt,EN,Sexuality,Sexuality,Sexuality,Sexuality,Sexuality
+young white men,EN,Race,Race,Race,Gender,Race
+labron,EN,Nationality,NONE,NONE,NONE,NONE
+bible publisher,EN,Organisation_or_Institution,Organisation_or_Institution,Religion,Organisation_or_Institution,Organisation_or_Institution
+white democrats,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+white handicapped people,EN,Race,Disability,Disability,Body,Disability
+non-christians,EN,Religion,Religion,Religion,Religion,Religion
+right-wing whites,EN,Political_Identity,Political_Identity,Political_Identity,Race,Political_Identity
+non-western countries,EN,Nationality,Organisation_or_Institution,Nationality,Nationality,Nationality
+anti-racists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+media,EN,NONE,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+white protestants,EN,Religion,Race,Political_Identity,Race,Race
+old people,EN,Age,Age,Age,Age,Age
+spanish,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+spanish people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+poor whites,EN,Class,Class,Class,Class,Class
+politicans,EN,NONE,Political_Identity,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+mexican nationalists,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+progressive journalists,EN,Political_Identity,Organisation_or_Institution,Political_Identity,Political_Identity,Political_Identity
+young,EN,Age,Age,Age,Age,Age
+right wing,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+confederates,EN,Class,Political_Identity,Organisation_or_Institution,Political_Identity,Political_Identity
+blacks in south africa,EN,Race,Nationality,Race,Race,Race
+white christian males,EN,Religion,Religion,Religion,Gender,Religion
+conservative whites,EN,Race,Political_Identity,Political_Identity,Race,Political_Identity
+anti-nationals,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+latino people,EN,Race,Race,Race,Nationality,Race
+european refugees,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+muslim extremists,EN,Religion,Religion,Religion,Religion,Religion
+indians,EN,Race,Nationality,Nationality,Nationality,Nationality
+right wing conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+police,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+obese people,EN,Body,Body,Body,Body,Body
+progressive people,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+many races,EN,Race,Race,Race,Race,Race
+white group,EN,Race,Race,Race,Race,Race
+poc,EN,Body,Race,Race,NONE,Race
+black conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+white nationalist,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+white america,EN,Race,Race,Nationality,Nationality,Nationality
+not specified,EN,Gender,NONE,NONE,NONE,NONE
+new yorkers,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+corporate leaders,EN,Class,Class,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+press,EN,Class,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+white aryans,EN,Race,Race,Race,Race,Race
+older people,EN,Age,Age,Age,Age,Age
+minorities in general,EN,Race,Race,NONE,NONE,NONE
+young atheists,EN,Religion,Religion,Age,Religion,Religion
+europeans,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+yankees,EN,Nationality,Nationality,Nationality,Race,Nationality
+james craig,EN,Nationality,NONE,NONE,NONE,NONE
+non-americans,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+anti-whites,EN,Race,Political_Identity,Political_Identity,Race,Political_Identity
+socialists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+south africans,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+white christians,EN,Race,Religion,Religion,Religion,Religion
+mexican immigrants,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+non white people,EN,Nationality,Race,Race,Race,Race
+pedophiles,EN,Sexuality,NONE,Sexuality,NONE,NONE
+white cops,EN,Race,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+conservative southerners,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+right-wing americans,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+third worlders,EN,Nationality,Class,Class,NONE,Class
+arabians,EN,Nationality,Race,Nationality,Race,Race
+white people are rapists,EN,Race,NONE,NONE,Race,NONE
+non-white refugees,EN,Nationality,Nationality,Race,Race,Race
+hillary clinton,EN,Political_Identity,NONE,Political_Identity,Organisation_or_Institution,NONE
+white immigrants,EN,Nationality,Nationality,Race,Race,Race
+northern people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+millennials,EN,Age,Age,Age,Age,Age
+moderate conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+whores,EN,Class,NONE,Sexuality,Gender,Gender
+fdgfsf,EN,NONE,NONE,NONE,NONE,NONE
+russians,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+gays,EN,Sexuality,Sexuality,Sexuality,Sexuality,Sexuality
+minority marxists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+white heterosexuals,EN,Race,Sexuality,Sexuality,Sexuality,Sexuality
+islamist savages,EN,Religion,Religion,Religion,Religion,Religion
+older whites,EN,Race,Age,Age,Race,Age
+third world citizens,EN,Nationality,Class,Class,Nationality,Class
+non muslims,EN,Religion,Religion,Religion,Political_Identity,Religion
+albino asians,EN,Race,Race,Race,Nationality,Race
+britains,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+chinese guards,EN,Nationality,Organisation_or_Institution,Organisation_or_Institution,Nationality,Organisation_or_Institution
+non-black people,EN,Race,Race,Race,Race,Race
+kanye west,EN,Nationality,NONE,NONE,NONE,NONE
+progressive males,EN,Gender,Gender,Gender,Gender,Gender
+white males,EN,Gender,Gender,Gender,Gender,Gender
+protesters,EN,Gender,NONE,Political_Identity,NONE,NONE
+italians,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+black muslims,EN,Religion,Religion,Religion,Religion,Religion
+migrants,EN,Nationality,Nationality,Nationality,NONE,Nationality
+nationalists,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+terrorists,EN,Religion,NONE,Political_Identity,NONE,NONE
+aap,EN,Body,Political_Identity,NONE,NONE,NONE
+right-wing intellectuals,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+daca activists,EN,Gender,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+indians immigrants,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+american gun owner,EN,Nationality,NONE,Political_Identity,Nationality,NONE
+society,EN,NONE,NONE,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+white democrat men,EN,Political_Identity,Political_Identity,Political_Identity,Gender,Political_Identity
+zoggies,EN,NONE,Religion,NONE,NONE,NONE
+their children,EN,Class,NONE,Age,Age,Age
+muslim children,EN,Religion,Religion,Religion,Age,Religion
+people with hiv/aids,EN,Disability,Disability,Disability,Sexuality,Disability
+politicians?,EN,Class,Political_Identity,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+right-wing conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+asians,EN,Race,Race,Nationality,Nationality,Nationality
+poor democrats,EN,Class,Political_Identity,Class,Political_Identity,Political_Identity
+blue eyes people,EN,Race,Body,NONE,Body,Body
+white women,EN,Race,Gender,Gender,Gender,Gender
+men,EN,Gender,Gender,Gender,Gender,Gender
+fatherless people,EN,Gender,NONE,Disability,NONE,NONE
+white antifa members,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+us citizens,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+alt right nationalists,EN,Political_Identity,Political_Identity,Political_Identity,Nationality,Political_Identity
+heterosexual whites,EN,Sexuality,Sexuality,Sexuality,Gender,Sexuality
+us government,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+indian journalists,EN,Nationality,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+southerners,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+white nationalism,EN,Race,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+white nationals,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+black activists,EN,Race,Race,,Political_Identity,Political_Identity
+people of color/everyone else,EN,Race,Race,Race,Race,Race
+3rd world countries,EN,Nationality,Class,Class,Nationality,Class
+black south africans,EN,Race,Nationality,Race,Nationality,Nationality
+aryans,EN,Nationality,Race,Race,Race,Race
+white seniors,EN,Race,Age,Age,Age,Age
+progressive westerners,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+gingers,EN,"Class 
+
+Body",NONE,Body,Body,Body
+diverse people,EN,Race,NONE,Disability,NONE,NONE
+mormons,EN,Religion,Religion,Religion,Religion,Religion
+anti-gun activists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+rohingyas,EN,Nationality,Race,Nationality,,Nationality
+people of portland,EN,Age,Nationality,Nationality,Nationality,Nationality
+white anti-white people,EN,Race,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+arabian muslims,EN,Religion,Religion,Religion,Religion,Religion
+liberals,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+right wing protesters,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+skinny white kids,EN,Body,Race,Age,Age,Age
+male conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+non-patriotic people,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+secular people,EN,Religion,Race,Religion,Age,Religion
+ngos,EN,Organisation_or_Institution,Organisation_or_Institution,Race,NONE,Race
+white conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Organisation_or_Institution,Political_Identity
+chineses,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+autistic people,EN,Disability,Disability,Disability,Body,Disability
+atheists,EN,Religion,Religion,Religion,Religion,Religion
+religious people,EN,Religion,Religion,Religion,Religion,Religion
+multicultured people,EN,Race,Race,Race,Race,Race
+black progressives,EN,Political_Identity,Race,Race,Political_Identity,Race
+muslim women,EN,Religion,Religion,Religion,Gender,Religion
+turkish people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+rich people,EN,Class,Class,Class,Class,Class
+middle easterners,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+old white men,EN,Race,Gender,Age,Gender,Gender
+neocons,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+unemployed people,EN,Class,Class,Class,NONE,Class
+right,EN,Body,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+colored immigrants,EN,Nationality,Race,Race,Race,Race
+syrians,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+boy scout leaders,EN,Organisation_or_Institution,NONE,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+saudis immigrants,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+christians,EN,Religion,Religion,Religion,Religion,Religion
+yankee womens,EN,Gender,Race,Gender,Gender,Gender
+latin americans,EN,Race,Race,Race,Nationality,Race
+missourians,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+foreign labor,EN,Nationality,Nationality,Political_Identity,Nationality,Nationality
+no specific group without context,EN,Disability,NONE,NONE,NONE,NONE
+religious figures,EN,Religion,Religion,Religion,Religion,Religion
+scottish people play the bagpipes,EN,Nationality,NONE,NONE,Nationality,NONE
+wealthy jews,EN,Religion,Religion,Class,Race,Religion
+hispanic people,EN,Race,Race,Race,Race,Race
+minorities,EN,Race,Race,NONE,NONE,NONE
+soviets,EN,Nationality,Political_Identity,Nationality,Nationality,Nationality
+alt-right people,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+islam,EN,Religion,Religion,Religion,Religion,Religion
+people who work in sanctuary cities,EN,Nationality,NONE,Religion,NONE,NONE
+twitter,EN,Nationality,NONE,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+neo nazis,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+unclear,EN,Disability,NONE,NONE,NONE,NONE
+blm supporters,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+muslim refugees,EN,Religion,Religion,Religion,Religion,Religion
+white europeans,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+white devils,EN,Race,Race,Race,Race,Race
+journalists,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+anti-lgbtq organizations,EN,Sexuality,Political_Identity,Political_Identity,Sexuality,Political_Identity
+lgbqti,EN,Sexuality,Sexuality,Sexuality,Sexuality,Sexuality
+polish people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+felons,EN,Class,NONE,Class,NONE,NONE
+indigenous people,EN,Race,Race,Nationality,Race,Race
+white genocide,EN,Race,NONE,Race,Race,Race
+cops,EN,Class,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+progressive indians,EN,Race,Nationality,Political_Identity,Nationality,Nationality
+rancids,EN,Body,NONE,NONE,NONE,NONE
+marxists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+non-hindus,EN,Religion,Race,Nationality,Race,Race
+left-wing progressives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+refugees immigrants,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+germans,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+non-whites,EN,Race,Race,Race,Race,Race
+jews,EN,Religion,Religion,Religion,Race,Religion
+probably lgbt,EN,Sexuality,Sexuality,Sexuality,Sexuality,Sexuality
+people in poverty situation,EN,Class,Class,Class,Class,Class
+right-wing extremists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+indigenous,EN,Race,Race,Nationality,NONE,NONE
+african muslims,EN,Religion,Religion,Religion,Religion,Religion
+hinduists,EN,Religion,Religion,Religion,Religion,Religion
+hindus,EN,Religion,Religion,Religion,Race,Religion
+white jews,EN,Religion,Religion,Religion,Race,Religion
+conservative men,EN,Political_Identity,Political_Identity,Political_Identity,Gender,Political_Identity
+australian aboriginals,EN,Race,Race,Nationality,Race,Race
+african refugees,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+left-wing liberals,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+white nationalists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+millenials,EN,Age,Age,Age,Age,Age
+foreign people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+white kids,EN,Race,Race,Age,Age,Age
+rural people,EN,Class,NONE,Class,Class,Class
+right wing media,EN,Political_Identity,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+mideasterners,EN,Nationality,Nationality,Nationality,NONE,Nationality
+jewish activists,EN,Religion,Religion,Religion,Political_Identity,Religion
+people in california,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+fat women,EN,Body,Body,Body,Gender,Body
+semites,EN,Race,Race,Nationality,Race,Race
+heterosexual white men,EN,Sexuality,Gender,Race,Gender,Gender
+lesbians,EN,Sexuality,Sexuality,Sexuality,Sexuality,Sexuality
+lgbtq,EN,Sexuality,Sexuality,Sexuality,Sexuality,Sexuality
+working white class,EN,Class,Class,Class,Class,Class
+aclu,EN,Organisation_or_Institution,Organisation_or_Institution,Political_Identity,Organisation_or_Institution,Organisation_or_Institution
+non-white,EN,Race,Race,Race,Race,Race
+fair complected people,EN,Body,Race,Race,NONE,Race
+people with left political views,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+non-aryans,EN,Race,Race,Race,Race,Race
+khazars,EN,Nationality,Nationality,Nationality,Race,Nationality
+white babies,EN,Race,Race,Age,Race,Race
+aliens,EN,Nationality,NONE,Nationality,Nationality,Nationality
+puritans,EN,Religion,Political_Identity,Religion,Religion,Religion
+old white guys,EN,Race,Race,Age,Race,Race
+puerto ricans,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+latino/latina immigrants,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+syrian refugees,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+gen z,EN,Age,Age,Age,Age,Age
+haitians,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+not specfied,EN,Gender,NONE,NONE,NONE,NONE
+canadians,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+antifa people,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+israel,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+illegal crop migrants,EN,Class,Nationality,Nationality,NONE,Nationality
+poor white people,EN,Class,Class,Class,Race,Class
+senators,EN,Class,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+people working for the new york times,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Class,Organisation_or_Institution
+low testosterone males,EN,Gender,Gender,Disability,Sexuality,Gender
+indian women,EN,Gender,Nationality,Nationality,Gender,Nationality
+federal government,EN,Nationality,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+kkk,EN,Body,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+liberal media,EN,Political_Identity,Organisation_or_Institution,Political_Identity,Organisation_or_Institution,Organisation_or_Institution
+people in seattle,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+illegal muslim immigrants,EN,Religion,Religion,Nationality,Religion,Religion
+sjw,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+supremacists,EN,Political_Identity,Political_Identity,Political_Identity,Race,Political_Identity
+media members,EN,Class,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+latinx,EN,Race,Race,Race,NONE,Race
+palestinians,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+anti-white people,EN,Race,Political_Identity,Political_Identity,Race,Political_Identity
+immigrants,EN,Nationality,Nationality,Nationality,NONE,Nationality
+pedos,EN,Disability,NONE,Sexuality,NONE,NONE
+alt-leftists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+non-white women,EN,Race,Race,Race,Gender,Race
+american indians,EN,Race,Race,Race,Race,Race
+non-muslims,EN,Religion,Religion,Religion,Religion,Religion
+other minority groups,EN,Race,Race,Nationality,NONE,NONE
+white celtic,EN,Race,Race,Nationality,Race,Race
+stubborn people,EN,Gender,NONE,NONE,Class,NONE
+government,EN,Nationality,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+women,EN,Gender,Gender,Gender,Gender,Gender
+working class white people,EN,Class,Class,Class,Race,Class
+nazis,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+disables,EN,Disability,Disability,Disability,Body,Disability
+rich black stars,EN,Class,Class,Class,Race,Class
+catholics & jews,EN,Religion,Religion,Religion,Religion,Religion
+islamist,EN,Religion,Religion,Religion,Religion,Religion
+genid,EN,Gender,NONE,NONE,NONE,NONE
+irish people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+whites,EN,Race,Race,Race,Race,Race
+zionists,EN,Political_Identity,Political_Identity,Religion,Political_Identity,Political_Identity
+racial minorities,EN,Race,Race,Race,Race,Race
+leftists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+white working class people,EN,Class,Class,Class,Class,Class
+swedish people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+entire race,EN,Race,Race,Race,Race,Race
+brown,EN,Body,Race,Race,Race,Race
+illegal people,EN,Nationality,Nationality,Nationality,NONE,Nationality
+liberal black people,EN,Race,Race,Political_Identity,Race,Race
+obama administration,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+french people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+politicians,EN,Political_Identity,Political_Identity,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+ethnonationalists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+zhid,EN,Nationality,Religion,Religion,Race,Religion
+rich white people,EN,Class,Class,Class,Race,Class
+chuck e cheese,EN,Organisation_or_Institution,NONE,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution
+dutch people,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+ashkinazi,EN,Nationality,Religion,Political_Identity,Race,Race
+poor countries,EN,Nationality,Nationality,Class,Class,Class
+southern white men,EN,Race,Gender,Nationality,Gender,Gender
+white liberal women,EN,Gender,Political_Identity,Political_Identity,Gender,Political_Identity
+claire,EN,Gender,NONE,NONE,NONE,NONE
+these people,EN,Race,NONE,NONE,NONE,NONE
+non-jews,EN,Religion,Religion,Religion,Race,Religion
+fat men,EN,Body,Body,Body,Body,Body
+black lives matter,EN,Race,Political_Identity,Political_Identity,Race,Political_Identity
+perkins,EN,NONE,NONE,Organisation_or_Institution,NONE,NONE
+white people who have interracial relationships,EN,Race,NONE,Race,Race,Race
+ommogrants,EN,Age,Nationality,NONE,NONE,NONE
+white boys,EN,Race,Race,Race,Race,Race
+social democrats,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+secular indians,EN,Race,Race,Religion,Political_Identity,Religion
+islanders,EN,Nationality,Nationality,,Nationality,Nationality
+progressive egyptians,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+robert,EN,NONE,NONE,NONE,NONE,NONE
+capitalists,EN,Class,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+polish citizens,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+white males in interracial couples,EN,Race,Race,Race,Gender,Race
+left,EN,Disability,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+poor minorities,EN,Race,Class,Class,Class,Class
+al-queda,EN,Religion,Organisation_or_Institution,Political_Identity,Religion,Religion
+isis,EN,Religion,Organisation_or_Institution,Political_Identity,Religion,Religion
+white farmers,EN,Race,Race,Class,Race,Race
+interracials,EN,Race,Race,Race,Race,Race
+working class,EN,Class,Class,Class,Class,Class
+non-white immigrants,EN,Race,Race,Race,Race,Race
+people who express racial pride,EN,Race,Political_Identity,Race,NONE,Race
+shemale,EN,Gender,Gender,Sexuality,Sexuality,Sexuality
+islam people,EN,Religion,Religion,Religion,Religion,Religion
+non-christian whites,EN,Race,Religion,Religion,Race,Religion
+white supremacist,EN,Political_Identity,Political_Identity,Political_Identity,Race,Political_Identity
+usa,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+dwarves,EN,Nationality,Body,Organisation_or_Institution,Body,Body
+jihadists,EN,Religion,Religion,Political_Identity,Religion,Religion
+white separatists,EN,Political_Identity,Political_Identity,Political_Identity,Race,Political_Identity
+non-aryan people,EN,Race,Race,Race,Race,Race
+anti-liberals,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,Political_Identity
+english white jew,EN,Race,Religion,Religion,Race,Religion
+young immigrants,EN,Nationality,Nationality,Nationality,Age,Nationality
+obama,EN,Nationality,Organisation_or_Institution,Political_Identity,Organisation_or_Institution,Organisation_or_Institution
+turks,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+white supremacists,EN,Political_Identity,Political_Identity,Political_Identity,Race,Political_Identity
+lesbian,EN,Sexuality,Sexuality,Sexuality,Sexuality,Sexuality
+foreigners,EN,Nationality,Nationality,Nationality,Nationality,Nationality
+black jews,EN,Race,Religion,Religion,Race,Religion
+aryan people,EN,Race,Race,Race,Race,
+baptists,EN,Religion,Religion,Religion,Religion,
+biharis,EN,Disability,Nationality,Nationality,Race,
+india,EN,Nationality,Nationality,Nationality,Nationality,
+anti-gun activist,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+third world people,EN,Class,Class,Class,Nationality,
+ideologues,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+foreign,EN,Nationality,Nationality,Nationality,Nationality,
+native american,EN,Race,Race,Nationality,Race,
+mother,EN,Gender,NONE,Gender,NONE,
+women who get abortions,EN,Gender,Gender,Gender,Gender,
+people of color/immigrants,EN,Nationality,Race,Nationality,NONE,
+ethnomasochists,EN,Sexuality,Political_Identity,Political_Identity,Political_Identity,
+people from texas,EN,Nationality,Nationality,Nationality,Nationality,
+country people,EN,Nationality,Nationality,Class,Class,
+liberal scientists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+everyone,EN,NONE,NONE,NONE,NONE,
+anti white people,EN,Race,Political_Identity,Race,Race,
+immigrants from europe,EN,Nationality,Nationality,Nationality,Nationality,
+refugees,EN,Nationality,Nationality,Nationality,Nationality,
+sfgfsfgf,EN,NONE,NONE,NONE,NONE,
+msulims,EN,Religion,Religion,Religion,Religion,
+humans,EN,NONE,NONE,NONE,NONE,
+syrian immigrants,EN,Nationality,Nationality,Nationality,Nationality,
+people from nigerian,EN,Nationality,Nationality,Nationality,Nationality,
+protestors,EN,NONE,NONE,Religion,Political_Identity,
+protestants,EN,Religion,Religion,Religion,Religion,
+antifa members,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+thin-skinned people,EN,Body,NONE,Disability,Body,
+gulf citizens,EN,Nationality,Nationality,Nationality,Nationality,
+people with aids,EN,Disability,Disability,Disability,Sexuality,
+singular woman,EN,Gender,Gender,Gender,Gender,
+missouri residents,EN,Nationality,Nationality,Nationality,Nationality,
+somalis,EN,Nationality,Nationality,Nationality,Nationality,
+working class people,EN,Class,Class,Class,Class,
+gender crisis people,EN,Gender,Gender,Gender,Sexuality,
+islamic,EN,Religion,Religion,Nationality,Religion,
+antifas,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+hikers,EN,NONE,NONE,NONE,NONE,
+white supremacy,EN,Race,Political_Identity,Political_Identity,Political_Identity,
+people in the tech field,EN,Gender,Class,Organisation_or_Institution,NONE,
+ivy league schools,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+young black men,EN,Race,Race,Race,Race,
+black women,EN,Race,Race,Race,Race,
+prisoner,EN,Class,Class,NONE,NONE,
+white south africans,EN,Nationality,Nationality,Race,Nationality,
+alcoholics,EN,Gender,Disability,Disability,NONE,
+people in other countries,EN,Nationality,Nationality,Nationality,NONE,
+immature people,EN,Age,NONE,Age,NONE,
+radicals,EN,Disability,Political_Identity,Political_Identity,Political_Identity,
+slaves,EN,Class,Class,Class,Class,
+non-christian minorities,EN,Religion,Religion,Religion,Religion,
+secularists,EN,Religion,Political_Identity,Religion,Religion,
+liberians,EN,Nationality,Nationality,Political_Identity,Political_Identity,
+mexicans,EN,Nationality,Nationality,Nationality,Nationality,
+queers,EN,Sexuality,Sexuality,Sexuality,Sexuality,
+non black,EN,Race,Race,Race,Race,
+norwegians,EN,Nationality,Nationality,Nationality,Nationality,
+indian movies,EN,Nationality,NONE,Nationality,Nationality,
+grotesque libs,EN,Class,Political_Identity,Political_Identity,Political_Identity,
+white americans,EN,Nationality,Nationality,Political_Identity,Race,
+doctors,EN,NONE,Class,Class,Organisation_or_Institution,
+liberal journalists,EN,Political_Identity,Organisation_or_Institution,Political_Identity,Organisation_or_Institution,
+meat eaters,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+conservative jews,EN,Religion,Religion,Political_Identity,Race,
+gang members,EN,Class,NONE,Organisation_or_Institution,Organisation_or_Institution,
+black teens,EN,Race,Race,Race,Race,
+rich jews,EN,Religion,Class,Religion,Religion,
+black conservative,EN,Political_Identity,Political_Identity,Political_Identity,Race,
+religion,EN,Religion,Religion,Religion,Religion,
+in this case jews,EN,Religion,Religion,Religion,Religion,
+british bankers,EN,Nationality,Nationality,Nationality,Nationality,
+poor uneducated people,EN,Class,Class,Class,Class,
+normal people,EN,NONE,NONE,NONE,NONE,
+lgbts supporters,EN,Sexuality,Political_Identity,Political_Identity,Sexuality,
+govern,EN,Class,Organisation_or_Institution,Political_Identity,Organisation_or_Institution,
+white police,EN,Race,Organisation_or_Institution,Organisation_or_Institution,Race,
+tea party,EN,Class,Political_Identity,Organisation_or_Institution,Political_Identity,
+white children,EN,Race,Race,Race,Race,
+mixed race people,EN,Race,Race,Race,Race,
+arabs,EN,Nationality,Race,Nationality,Race,
+old white people,EN,Race,Race,Race,Race,
+intellectuals,EN,Class,Class,Class,NONE,
+tea party supporters,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+trump supporters,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+welsh people,EN,Nationality,Nationality,Nationality,Nationality,
+bible publishers,EN,Organisation_or_Institution,Religion,Religion,Organisation_or_Institution,
+female,EN,Gender,Gender,Gender,Gender,
+people who aren't white,EN,Race,Race,Race,NONE,
+mentally ill people,EN,Disability,Disability,Disability,NONE,
+icelanders,EN,Nationality,Nationality,Nationality,Nationality,
+biracials,EN,Race,Race,NONE,Race,
+mainstream conservatives,EN,Political_Identity,Political_Identity,Political_Identity,NONE,
+stupid people,EN,Class,NONE,Disability,NONE,
+non-believers,EN,Religion,Religion,Religion,Religion,
+californians,EN,Nationality,Nationality,Nationality,Nationality,
+splc,EN,Class,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+white people. as the person addresses is white,EN,Race,Race,Race,Race,
+antifa,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+criminals,EN,NONE,NONE,Organisation_or_Institution,NONE,
+pakistan,EN,Nationality,Nationality,Nationality,Nationality,
+muslims,EN,Religion,Religion,Religion,Religion,
+facsists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+congress,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+muslim immigrants,EN,Religion,Nationality,Nationality,Religion,
+hindu indians,EN,Religion,Nationality,Religion,Religion,
+latino/latina people,EN,Race,Race,Nationality,Nationality,
+sanctuary cities,EN,Nationality,Nationality,Organisation_or_Institution,Religion,
+realists,EN,Gender,NONE,Political_Identity,Political_Identity,
+people who study islam,EN,Religion,NONE,Religion,NONE,
+elderly people,EN,Age,Age,Disability,Age,
+california,EN,Nationality,Nationality,Nationality,Nationality,
+poor people,EN,Class,Class,Class,Class,
+transracials,EN,Race,Race,Political_Identity,Race,
+splc members,EN,NONE,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+outsiders,EN,NONE,Nationality,Class,NONE,
+non whites,EN,Race,Race,Race,Race,
+white race,EN,Race,Race,Race,Race,
+america,EN,Nationality,Nationality,Nationality,Nationality,
+libertarians,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+individual,EN,NONE,NONE,NONE,NONE,
+americans,EN,Nationality,Nationality,Nationality,Nationality,
+non-whites immigrants,EN,Nationality,Nationality,Nationality,Race,
+religious groups,EN,Religion,Religion,Organisation_or_Institution,Religion,
+latinas,EN,Nationality,Nationality,Race,Nationality,
+anti gay people,EN,Sexuality,Political_Identity,Sexuality,Political_Identity,
+gay jews,EN,Sexuality,Religion,Sexuality,Sexuality,
+rohingyas & bangladeshis,EN,Nationality,Nationality,Nationality,Race,
+white liberals,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+middle east people,EN,Nationality,Nationality,Nationality,Nationality,
+pro abortion people,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+british people,EN,Nationality,Nationality,Nationality,Nationality,
+fair immigration members,EN,Nationality,Organisation_or_Institution,Nationality,NONE,
+all other races,EN,Race,Race,Race,Race,
+white lives matter protesters,EN,Race,Political_Identity,Political_Identity,Race,
+black athletes,EN,Race,Race,Race,Race,
+democrates,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+mainly black people,EN,Race,Race,Race,Race,
+homeless people,EN,Class,Class,Class,Class,
+blacks,EN,Race,Race,Race,Race,
+white countries,EN,Nationality,Organisation_or_Institution,Race,Race,
+female politicians,EN,Gender,Organisation_or_Institution,Gender,Gender,
+orthodox muslims,EN,Religion,Religion,Religion,Religion,
+federates,EN,Class,Organisation_or_Institution,Political_Identity,Political_Identity,
+mixed race,EN,Race,Race,Race,Race,
+group,EN,Class,NONE,Organisation_or_Institution,NONE,
+people who wear glasses,EN,Body,Disability,Disability,NONE,
+multiracials,EN,Race,Race,Race,Race,
+armed people,EN,Class,Political_Identity,Political_Identity,Political_Identity,
+nationalist,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,
+idealists,EN,Political_Identity,NONE,Political_Identity,Political_Identity,
+white people who adopt other races,EN,Race,Race,Race,Race,
+muslims terrorists,EN,Religion,Religion,Religion,Religion,
+progressive whites,EN,Race,Race,Political_Identity,Political_Identity,
+boy scout members,EN,Organisation_or_Institution,NONE,Organisation_or_Institution,Organisation_or_Institution,
+hondurian,EN,Nationality,Nationality,Nationality,Nationality,
+overweight people,EN,Body,Body,Body,Body,
+latinos,EN,Race,Race,Race,Nationality,
+impossible to determine without more information or context,EN,NONE,NONE,NONE,NONE,
+harvard,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+keralites,EN,Nationality,Nationality,Nationality,Race,
+handicaped people,EN,Disability,Disability,Disability,Body,
+trump,EN,Nationality,Organisation_or_Institution,Political_Identity,Political_Identity,
+minority immigrants,EN,Nationality,Nationality,Nationality,NONE,
+mestizos,EN,Race,Race,Race,Race,
+swedans,EN,Disability,Nationality,Nationality,Nationality,
+girls,EN,Gender,Gender,Gender,Gender,
+white men,EN,Race,Race,Race,Race,
+holocaust survivors,EN,Race,NONE,NONE,NONE,
+children,EN,Class,Age,Age,Age,
+unsure but most likely black people,EN,Race,Race,Race,NONE,
+african immigrants,EN,Nationality,Nationality,Nationality,Nationality,
+hispanics,EN,Race,Race,Race,Nationality,
+heterosexual christian republicans,EN,Religion,Religion,Religion,Sexuality,
+moderates,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+right wing whites,EN,Race,Political_Identity,Political_Identity,Political_Identity,
+israelis,EN,Nationality,Nationality,Nationality,Nationality,
+left-wing whites,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+sharia,EN,Religion,Religion,Religion,Religion,
+furries,EN,Sexuality,NONE,NONE,Sexuality,
+racists,EN,Race,Political_Identity,Political_Identity,Race,
+fascists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+aryan mothers,EN,Gender,Race,Race,Race,
+albanians,EN,Nationality,Nationality,Nationality,Nationality,
+iraqis,EN,Nationality,Nationality,Nationality,Nationality,
+trans people,EN,Gender,Gender,Sexuality,Gender,
+elders,EN,NONE,Age,Age,Age,
+non-hindu people,EN,Religion,Religion,Religion,Religion,
+black panthers,EN,Race,Political_Identity,NONE,Race,
+natives,EN,Nationality,Nationality,Race,Race,
+islamic cultures,EN,Religion,Religion,Nationality,Religion,
+muslim people,EN,Religion,Religion,Religion,Religion,
+black girls,EN,Race,Race,Race,Race,
+whit supremacists,EN,Race,Political_Identity,Political_Identity,Race,
+womanists,EN,Gender,Political_Identity,Political_Identity,Gender,
+anti-fascist groups,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+indian-muslims,EN,Religion,Political_Identity,Religion,Religion,
+politically outspoken people,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+white rich people,EN,Class,Class,Class,Race,
+feminists,EN,Gender,Political_Identity,Political_Identity,Political_Identity,
+lefties,EN,Gender,Political_Identity,Political_Identity,Political_Identity,
+special needs people,EN,Disability,Disability,Disability,Body,
+common people,EN,Class,NONE,NONE,NONE,
+no specific group,EN,NONE,NONE,NONE,NONE,
+northern black people,EN,Race,Race,Race,Race,
+people from middle east,EN,Nationality,Nationality,Nationality,NONE,
+brown people,EN,Race,Race,Race,Race,
+rich minorities,EN,Class,Class,Class,Class,
+non-whites in south africa,EN,Race,Race,Race,Race,
+polish immigrants,EN,Nationality,Nationality,Nationality,Nationality,
+south african white refugees,EN,Nationality,Nationality,Nationality,Race,
+political criminals,EN,Political_Identity,Political_Identity,Political_Identity,Organisation_or_Institution,
+degenerates,EN,Class,NONE,Disability,NONE,
+conservative males,EN,Gender,Political_Identity,Political_Identity,Political_Identity,
+non-white marxists,EN,Race,Political_Identity,Political_Identity,Political_Identity,
+cross-straddlers,EN,Class,NONE,NONE,NONE,
+gypsies,EN,Race,Race,Race,Race,
+non-white people,EN,Race,Race,Race,Race,
+southern poverty law center,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+northerners,EN,Nationality,Nationality,Nationality,Political_Identity,
+rham,EN,Nationality,NONE,NONE,NONE,
+rich blacks,EN,Race,Class,Class,Race,
+pakistanis,EN,Nationality,Nationality,Nationality,Nationality,
+catholics,EN,Religion,Religion,Religion,Religion,
+illegal hispanics,EN,Nationality,Race,Race,Nationality,
+anti-white supporters,EN,Race,Political_Identity,Political_Identity,Race,
+people in sweeden,EN,Nationality,Nationality,Nationality,Nationality,
+white citizens,EN,Race,Race,Race,Race,
+elite,EN,Class,Class,Class,Class,
+latina/latina people,EN,Race,Race,Race,Nationality,
+social justice warriors,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+jhadists,EN,Religion,Religion,Religion,Religion,
+gangsters,EN,Class,NONE,Organisation_or_Institution,NONE,
+islamic students,EN,Religion,Religion,Religion,Religion,
+haitian immigrants,EN,Nationality,Nationality,Nationality,Nationality,
+people for diversity,EN,Race,NONE,Political_Identity,Political_Identity,
+people in higher education,EN,Class,Class,Age,NONE,
+conservative people,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+white lives matter,EN,Race,Political_Identity,Political_Identity,Race,
+white non-muslims,EN,Race,Religion,Religion,Religion,
+irish,EN,Nationality,Nationality,Nationality,Nationality,
+middle-easterners,EN,Nationality,Nationality,Nationality,Nationality,
+white russians,EN,Sexuality,Nationality,Nationality,Nationality,
+boko haram,EN,Religion,Religion,Organisation_or_Institution,Religion,
+feminism,EN,Gender,Political_Identity,Political_Identity,Political_Identity,
+people that want a wall,EN,Political_Identity,Political_Identity,Political_Identity,NONE,
+specific person,EN,Gender,NONE,NONE,NONE,
+africans,EN,Race,Nationality,Nationality,Nationality,
+drug addicts,EN,Class,NONE,Disability,NONE,
+black men,EN,Race,Race,Race,Race,
+buddhists,EN,Religion,Religion,Religion,Religion,
+white southerners,EN,Race,Race,Race,Race,
+communists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+chinese people,EN,Nationality,Nationality,Nationality,Nationality,
+conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+progressive jews,EN,Religion,Religion,Political_Identity,Race,
+nazists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+republicans,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+progressives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+white people in south africa,EN,Race,Race,Race,Race,
+black immigrants,EN,Nationality,Race,Race,Race,
+fat white women,EN,Body,Body,Body,Gender,
+latino immigrants,EN,Nationality,Nationality,Race,Nationality,
+religious conservatives,EN,Political_Identity,Religion,Political_Identity,Religion,
+vandals,EN,Class,NONE,NONE,NONE,
+black africans,EN,Race,Nationality,Race,Race,
+north people,EN,Nationality,Nationality,Nationality,Nationality,
+people of color,EN,Race,Race,Race,Race,
+third world countries,EN,Nationality,Class,Class,Nationality,
+muslims refugees,EN,Religion,Nationality,Religion,Religion,
+white/rich liberals,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+white progressives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+killers,EN,Class,NONE,NONE,NONE,
+planned parenthood,EN,Organisation_or_Institution,NONE,NONE,NONE,
+southern whites,EN,Race,Race,Race,Race,
+pro-white people,EN,Race,Political_Identity,Political_Identity,Political_Identity,
+powerful people,EN,Class,Class,Class,NONE,
+activists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+iranians,EN,Nationality,Nationality,Nationality,Nationality,
+illegal/undocumented people,EN,Nationality,Nationality,NONE,NONE,
+lbgt,EN,Sexuality,Sexuality,Sexuality,Sexuality,
+young white men,EN,Race,Race,Race,Gender,
+labron,EN,Nationality,NONE,NONE,NONE,
+bible publisher,EN,Organisation_or_Institution,Organisation_or_Institution,Religion,Organisation_or_Institution,
+white democrats,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+white handicapped people,EN,Race,Disability,Disability,Body,
+non-christians,EN,Religion,Religion,Religion,Religion,
+right-wing whites,EN,Political_Identity,Political_Identity,Political_Identity,Race,
+non-western countries,EN,Nationality,Organisation_or_Institution,Nationality,Nationality,
+anti-racists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+media,EN,NONE,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+white protestants,EN,Religion,Race,Political_Identity,Race,
+old people,EN,Age,Age,Age,Age,
+spanish,EN,Nationality,Nationality,Nationality,Nationality,
+spanish people,EN,Nationality,Nationality,Nationality,Nationality,
+poor whites,EN,Class,Class,Class,Class,
+politicans,EN,NONE,Political_Identity,Organisation_or_Institution,Organisation_or_Institution,
+mexican nationalists,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,
+progressive journalists,EN,Political_Identity,Organisation_or_Institution,Political_Identity,Political_Identity,
+young,EN,Age,Age,Age,Age,
+right wing,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+confederates,EN,Class,Political_Identity,Organisation_or_Institution,Political_Identity,
+blacks in south africa,EN,Race,Nationality,Race,Race,
+white christian males,EN,Religion,Religion,Religion,Gender,
+conservative whites,EN,Race,Political_Identity,Political_Identity,Race,
+anti-nationals,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,
+latino people,EN,Race,Race,Race,Nationality,
+european refugees,EN,Nationality,Nationality,Nationality,Nationality,
+muslim extremists,EN,Religion,Religion,Religion,Religion,
+indians,EN,Race,Nationality,Nationality,Nationality,
+right wing conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+police,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+obese people,EN,Body,Body,Body,Body,
+progressive people,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+many races,EN,Race,Race,Race,Race,
+white group,EN,Race,Race,Race,Race,
+poc,EN,Body,Race,Race,NONE,
+black conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+white nationalist,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+white america,EN,Race,Race,Nationality,Nationality,
+not specified,EN,Gender,NONE,NONE,NONE,
+new yorkers,EN,Nationality,Nationality,Nationality,Nationality,
+corporate leaders,EN,Class,Class,Organisation_or_Institution,Organisation_or_Institution,
+press,EN,Class,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+white aryans,EN,Race,Race,Race,Race,
+older people,EN,Age,Age,Age,Age,
+minorities in general,EN,Race,Race,NONE,NONE,
+young atheists,EN,Religion,Religion,Age,Religion,
+europeans,EN,Nationality,Nationality,Nationality,Nationality,
+yankees,EN,Nationality,Nationality,Nationality,Race,
+james craig,EN,Nationality,NONE,NONE,NONE,
+non-americans,EN,Nationality,Nationality,Nationality,Nationality,
+anti-whites,EN,Race,Political_Identity,Political_Identity,Race,
+socialists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+south africans,EN,Nationality,Nationality,Nationality,Nationality,
+white christians,EN,Race,Religion,Religion,Religion,
+mexican immigrants,EN,Nationality,Nationality,Nationality,Nationality,
+non white people,EN,Nationality,Race,Race,Race,
+pedophiles,EN,Sexuality,NONE,Sexuality,NONE,
+white cops,EN,Race,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+conservative southerners,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+right-wing americans,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+third worlders,EN,Nationality,Class,Class,NONE,
+arabians,EN,Nationality,Race,Nationality,Race,
+white people are rapists,EN,Race,NONE,NONE,Race,
+non-white refugees,EN,Nationality,Nationality,Race,Race,
+hillary clinton,EN,Political_Identity,NONE,Political_Identity,Organisation_or_Institution,
+white immigrants,EN,Nationality,Nationality,Race,Race,
+northern people,EN,Nationality,Nationality,Nationality,Nationality,
+millennials,EN,Age,Age,Age,Age,
+moderate conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+whores,EN,Class,NONE,Sexuality,Gender,
+fdgfsf,EN,NONE,NONE,NONE,NONE,
+russians,EN,Nationality,Nationality,Nationality,Nationality,
+gays,EN,Sexuality,Sexuality,Sexuality,Sexuality,
+minority marxists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+white heterosexuals,EN,Race,Sexuality,Sexuality,Sexuality,
+islamist savages,EN,Religion,Religion,Religion,Religion,
+older whites,EN,Race,Age,Age,Race,
+third world citizens,EN,Nationality,Class,Class,Nationality,
+non muslims,EN,Religion,Religion,Religion,Political_Identity,
+albino asians,EN,Race,Race,Race,Nationality,
+britains,EN,Nationality,Nationality,Nationality,Nationality,
+chinese guards,EN,Nationality,Organisation_or_Institution,Organisation_or_Institution,Nationality,
+non-black people,EN,Race,Race,Race,Race,
+kanye west,EN,Nationality,NONE,NONE,NONE,
+progressive males,EN,Gender,Gender,Gender,Gender,
+white males,EN,Gender,Gender,Gender,Gender,
+protesters,EN,Gender,NONE,Political_Identity,NONE,
+italians,EN,Nationality,Nationality,Nationality,Nationality,
+black muslims,EN,Religion,Religion,Religion,Religion,
+migrants,EN,Nationality,Nationality,Nationality,NONE,
+nationalists,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,
+terrorists,EN,Religion,NONE,Political_Identity,NONE,
+aap,EN,Body,Political_Identity,NONE,NONE,
+right-wing intellectuals,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+daca activists,EN,Gender,Political_Identity,Political_Identity,Political_Identity,
+indians immigrants,EN,Nationality,Nationality,Nationality,Nationality,
+american gun owner,EN,Nationality,NONE,Political_Identity,Nationality,
+society,EN,NONE,NONE,Organisation_or_Institution,Organisation_or_Institution,
+white democrat men,EN,Political_Identity,Political_Identity,Political_Identity,Gender,
+zoggies,EN,NONE,Religion,NONE,NONE,
+their children,EN,Class,NONE,Age,Age,
+muslim children,EN,Religion,Religion,Religion,Age,
+people with hiv/aids,EN,Disability,Disability,Disability,Sexuality,
+politicians?,EN,Class,Political_Identity,Organisation_or_Institution,Organisation_or_Institution,
+right-wing conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+asians,EN,Race,Race,Nationality,Nationality,
+poor democrats,EN,Class,Political_Identity,Class,Political_Identity,
+blue eyes people,EN,Race,Body,NONE,Body,
+white women,EN,Race,Gender,Gender,Gender,
+men,EN,Gender,Gender,Gender,Gender,
+fatherless people,EN,Gender,NONE,Disability,NONE,
+white antifa members,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+us citizens,EN,Nationality,Nationality,Nationality,Nationality,
+alt right nationalists,EN,Political_Identity,Political_Identity,Political_Identity,Nationality,
+heterosexual whites,EN,Sexuality,Sexuality,Sexuality,Gender,
+us government,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+indian journalists,EN,Nationality,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+southerners,EN,Nationality,Nationality,Nationality,Nationality,
+white nationalism,EN,Race,Political_Identity,Political_Identity,Political_Identity,
+white nationals,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,
+black activists,EN,Race,Race,,Political_Identity,
+people of color/everyone else,EN,Race,Race,Race,Race,
+3rd world countries,EN,Nationality,Class,Class,Nationality,
+black south africans,EN,Race,Nationality,Race,Nationality,
+aryans,EN,Nationality,Race,Race,Race,
+white seniors,EN,Race,Age,Age,Age,
+progressive westerners,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+gingers,EN,"Class 
+
+Body",NONE,Body,Body,
+diverse people,EN,Race,NONE,Disability,NONE,
+mormons,EN,Religion,Religion,Religion,Religion,
+anti-gun activists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+rohingyas,EN,Nationality,Race,Nationality,,
+people of portland,EN,Age,Nationality,Nationality,Nationality,
+white anti-white people,EN,Race,Political_Identity,Political_Identity,Political_Identity,
+arabian muslims,EN,Religion,Religion,Religion,Religion,
+liberals,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+right wing protesters,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+skinny white kids,EN,Body,Race,Age,Age,
+male conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+non-patriotic people,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,
+secular people,EN,Religion,Race,Religion,Age,
+ngos,EN,Organisation_or_Institution,Organisation_or_Institution,Race,NONE,
+white conservatives,EN,Political_Identity,Political_Identity,Political_Identity,Organisation_or_Institution,
+chineses,EN,Nationality,Nationality,Nationality,Nationality,
+autistic people,EN,Disability,Disability,Disability,Body,
+atheists,EN,Religion,Religion,Religion,Religion,
+religious people,EN,Religion,Religion,Religion,Religion,
+multicultured people,EN,Race,Race,Race,Race,
+black progressives,EN,Political_Identity,Race,Race,Political_Identity,
+muslim women,EN,Religion,Religion,Religion,Gender,
+turkish people,EN,Nationality,Nationality,Nationality,Nationality,
+rich people,EN,Class,Class,Class,Class,
+middle easterners,EN,Nationality,Nationality,Nationality,Nationality,
+old white men,EN,Race,Gender,Age,Gender,
+neocons,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+unemployed people,EN,Class,Class,Class,NONE,
+right,EN,Body,Political_Identity,Political_Identity,Political_Identity,
+colored immigrants,EN,Nationality,Race,Race,Race,
+syrians,EN,Nationality,Nationality,Nationality,Nationality,
+boy scout leaders,EN,Organisation_or_Institution,NONE,Organisation_or_Institution,Organisation_or_Institution,
+saudis immigrants,EN,Nationality,Nationality,Nationality,Nationality,
+christians,EN,Religion,Religion,Religion,Religion,
+yankee womens,EN,Gender,Race,Gender,Gender,
+latin americans,EN,Race,Race,Race,Nationality,
+missourians,EN,Nationality,Nationality,Nationality,Nationality,
+foreign labor,EN,Nationality,Nationality,Political_Identity,Nationality,
+no specific group without context,EN,Disability,NONE,NONE,NONE,
+religious figures,EN,Religion,Religion,Religion,Religion,
+people in chicago,EN,,Nationality,Nationality,Nationality,
+scottish people play the bagpipes,EN,Nationality,NONE,NONE,Nationality,
+wealthy jews,EN,Religion,Religion,Class,Race,
+hispanic people,EN,Race,Race,Race,Race,
+minorities,EN,Race,Race,NONE,NONE,
+soviets,EN,Nationality,Political_Identity,Nationality,Nationality,
+alt-right people,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+islam,EN,Religion,Religion,Religion,Religion,
+people who work in sanctuary cities,EN,Nationality,NONE,Religion,NONE,
+twitter,EN,Nationality,NONE,Organisation_or_Institution,Organisation_or_Institution,
+neo nazis,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+unclear,EN,Disability,NONE,NONE,NONE,
+blm supporters,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+muslim refugees,EN,Religion,Religion,Religion,Religion,
+white europeans,EN,Nationality,Nationality,Nationality,Nationality,
+white devils,EN,Race,Race,Race,Race,
+journalists,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+anti-lgbtq organizations,EN,Sexuality,Political_Identity,Political_Identity,Sexuality,
+lgbqti,EN,Sexuality,Sexuality,Sexuality,Sexuality,
+polish people,EN,Nationality,Nationality,Nationality,Nationality,
+felons,EN,Class,NONE,Class,NONE,
+indigenous people,EN,Race,Race,Nationality,Race,
+white genocide,EN,Race,NONE,Race,Race,
+cops,EN,Class,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+progressive indians,EN,Race,Nationality,Political_Identity,Nationality,
+rancids,EN,Body,NONE,NONE,NONE,
+marxists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+non-hindus,EN,Religion,Race,Nationality,Race,
+left-wing progressives,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+refugees immigrants,EN,Nationality,Nationality,Nationality,Nationality,
+germans,EN,Nationality,Nationality,Nationality,Nationality,
+non-whites,EN,Race,Race,Race,Race,
+jews,EN,Religion,Religion,Religion,Race,
+probably lgbt,EN,Sexuality,Sexuality,Sexuality,Sexuality,
+people in poverty situation,EN,Class,Class,Class,Class,
+right-wing extremists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+indigenous,EN,Race,Race,Nationality,NONE,
+african muslims,EN,Religion,Religion,Religion,Religion,
+hinduists,EN,Religion,Religion,Religion,Religion,
+hindus,EN,Religion,Religion,Religion,Race,
+white jews,EN,Religion,Religion,Religion,Race,
+conservative men,EN,Political_Identity,Political_Identity,Political_Identity,Gender,
+australian aboriginals,EN,Race,Race,Nationality,Race,
+african refugees,EN,Nationality,Nationality,Nationality,Nationality,
+left-wing liberals,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+white nationalists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+millenials,EN,Age,Age,Age,Age,
+foreign people,EN,Nationality,Nationality,Nationality,Nationality,
+white kids,EN,Race,Race,Age,Age,
+rural people,EN,Class,NONE,Class,Class,
+right wing media,EN,Political_Identity,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+mideasterners,EN,Nationality,Nationality,Nationality,NONE,
+jewish activists,EN,Religion,Religion,Religion,Political_Identity,
+people in california,EN,Nationality,Nationality,Nationality,Nationality,
+fat women,EN,Body,Body,Body,Gender,
+semites,EN,Race,Race,Nationality,Race,
+heterosexual white men,EN,Sexuality,Gender,Race,Gender,
+lesbians,EN,Sexuality,Sexuality,Sexuality,Sexuality,
+lgbtq,EN,Sexuality,Sexuality,Sexuality,Sexuality,
+working white class,EN,Class,Class,Class,Class,
+aclu,EN,Organisation_or_Institution,Organisation_or_Institution,Political_Identity,Organisation_or_Institution,
+non-white,EN,Race,Race,Race,Race,
+fair complected people,EN,Body,Race,Race,NONE,
+people with left political views,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+non-aryans,EN,Race,Race,Race,Race,
+khazars,EN,Nationality,Nationality,Nationality,Race,
+white babies,EN,Race,Race,Age,Race,
+aliens,EN,Nationality,NONE,Nationality,Nationality,
+puritans,EN,Religion,Political_Identity,Religion,Religion,
+old white guys,EN,Race,Race,Age,Race,
+puerto ricans,EN,Nationality,Nationality,Nationality,Nationality,
+latino/latina immigrants,EN,Nationality,Nationality,Nationality,Nationality,
+syrian refugees,EN,Nationality,Nationality,Nationality,Nationality,
+gen z,EN,Age,Age,Age,Age,
+haitians,EN,Nationality,Nationality,Nationality,Nationality,
+not specfied,EN,Gender,NONE,NONE,NONE,
+canadians,EN,Nationality,Nationality,Nationality,Nationality,
+antifa people,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+israel,EN,Nationality,Nationality,Nationality,Nationality,
+illegal crop migrants,EN,Class,Nationality,Nationality,NONE,
+poor white people,EN,Class,Class,Class,Race,
+senators,EN,Class,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+people working for the new york times,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Class,
+low testosterone males,EN,Gender,Gender,Disability,Sexuality,
+indian women,EN,Gender,Nationality,Nationality,Gender,
+federal government,EN,Nationality,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+kkk,EN,Body,Political_Identity,Political_Identity,Political_Identity,
+liberal media,EN,Political_Identity,Organisation_or_Institution,Political_Identity,Organisation_or_Institution,
+people in seattle,EN,Nationality,Nationality,Nationality,Nationality,
+illegal muslim immigrants,EN,Religion,Religion,Nationality,Religion,
+sjw,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+supremacists,EN,Political_Identity,Political_Identity,Political_Identity,Race,
+media members,EN,Class,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+latinx,EN,Race,Race,Race,NONE,
+palestinians,EN,Nationality,Nationality,Nationality,Nationality,
+anti-white people,EN,Race,Political_Identity,Political_Identity,Race,
+immigrants,EN,Nationality,Nationality,Nationality,NONE,
+pedos,EN,Disability,NONE,Sexuality,NONE,
+alt-leftists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+non-white women,EN,Race,Race,Race,Gender,
+american indians,EN,Race,Race,Race,Race,
+non-muslims,EN,Religion,Religion,Religion,Religion,
+other minority groups,EN,Race,Race,Nationality,NONE,
+white celtic,EN,Race,Race,Nationality,Race,
+stubborn people,EN,Gender,NONE,NONE,Class,
+government,EN,Nationality,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+women,EN,Gender,Gender,Gender,Gender,
+working class white people,EN,Class,Class,Class,Race,
+nazis,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+disables,EN,Disability,Disability,Disability,Body,
+rich black stars,EN,Class,Class,Class,Race,
+catholics & jews,EN,Religion,Religion,Religion,Religion,
+islamist,EN,Religion,Religion,Religion,Religion,
+genid,EN,Gender,NONE,NONE,NONE,
+irish people,EN,Nationality,Nationality,Nationality,Nationality,
+whites,EN,Race,Race,Race,Race,
+zionists,EN,Political_Identity,Political_Identity,Religion,Political_Identity,
+racial minorities,EN,Race,Race,Race,Race,
+leftists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+white working class people,EN,Class,Class,Class,Class,
+swedish people,EN,Nationality,Nationality,Nationality,Nationality,
+entire race,EN,Race,Race,Race,Race,
+brown,EN,Body,Race,Race,Race,
+illegal people,EN,Nationality,Nationality,Nationality,NONE,
+liberal black people,EN,Race,Race,Political_Identity,Race,
+obama administration,EN,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,Organisation_or_Institution,
+french people,EN,Nationality,Nationality,Nationality,Nationality,
+politicians,EN,Political_Identity,Political_Identity,Organisation_or_Institution,Organisation_or_Institution,
+ethnonationalists,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+zhid,EN,Nationality,Religion,Religion,Race,
+rich white people,EN,Class,Class,Class,Race,
+chuck e cheese,EN,Organisation_or_Institution,NONE,Organisation_or_Institution,Organisation_or_Institution,
+dutch people,EN,Nationality,Nationality,Nationality,Nationality,
+ashkinazi,EN,Nationality,Religion,Political_Identity,Race,
+poor countries,EN,Nationality,Nationality,Class,Class,
+southern white men,EN,Race,Gender,Nationality,Gender,
+white liberal women,EN,Gender,Political_Identity,Political_Identity,Gender,
+claire,EN,Gender,NONE,NONE,NONE,
+these people,EN,Race,NONE,NONE,NONE,
+non-jews,EN,Religion,Religion,Religion,Race,
+fat men,EN,Body,Body,Body,Body,
+black lives matter,EN,Race,Political_Identity,Political_Identity,Race,
+perkins,EN,NONE,NONE,Organisation_or_Institution,NONE,
+white people who have interracial relationships,EN,Race,NONE,Race,Race,
+ommogrants,EN,Age,Nationality,NONE,NONE,
+white boys,EN,Race,Race,Race,Race,
+social democrats,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+secular indians,EN,Race,Race,Religion,Political_Identity,
+islanders,EN,Nationality,Nationality,,Nationality,
+progressive egyptians,EN,Nationality,Political_Identity,Political_Identity,Political_Identity,
+robert,EN,NONE,NONE,NONE,NONE,
+capitalists,EN,Class,Political_Identity,Political_Identity,Political_Identity,
+polish citizens,EN,Nationality,Nationality,Nationality,Nationality,
+white males in interracial couples,EN,Race,Race,Race,Gender,
+left,EN,Disability,Political_Identity,Political_Identity,Political_Identity,
+poor minorities,EN,Race,Class,Class,Class,
+al-queda,EN,Religion,Organisation_or_Institution,Political_Identity,Religion,
+isis,EN,Religion,Organisation_or_Institution,Political_Identity,Religion,
+white farmers,EN,Race,Race,Class,Race,
+interracials,EN,Race,Race,Race,Race,
+working class,EN,Class,Class,Class,Class,
+non-white immigrants,EN,Race,Race,Race,Race,
+people who express racial pride,EN,Race,Political_Identity,Race,NONE,
+shemale,EN,Gender,Gender,Sexuality,Sexuality,
+islam people,EN,Religion,Religion,Religion,Religion,
+non-christian whites,EN,Race,Religion,Religion,Race,
+white supremacist,EN,Political_Identity,Political_Identity,Political_Identity,Race,
+usa,EN,Nationality,Nationality,Nationality,Nationality,
+dwarves,EN,Nationality,Body,Organisation_or_Institution,Body,
+jihadists,EN,Religion,Religion,Political_Identity,Religion,
+white separatists,EN,Political_Identity,Political_Identity,Political_Identity,Race,
+non-aryan people,EN,Race,Race,Race,Race,
+anti-liberals,EN,Political_Identity,Political_Identity,Political_Identity,Political_Identity,
+english white jew,EN,Race,Religion,Religion,Race,
+young immigrants,EN,Nationality,Nationality,Nationality,Age,
+obama,EN,Nationality,Organisation_or_Institution,Political_Identity,Organisation_or_Institution,
+turks,EN,Nationality,Nationality,Nationality,Nationality,
+white supremacists,EN,Political_Identity,Political_Identity,Political_Identity,Race,
+lesbian,EN,Sexuality,Sexuality,Sexuality,Sexuality,
+foreigners,EN,Nationality,Nationality,Nationality,Nationality,
+black jews,EN,Race,Religion,Religion,Race,
