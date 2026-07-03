@@ -33,3 +33,26 @@ CONFIDENCE_THRESHOLD = 0.95
 # Number of top candidate tokens requested from Ollama at each generation
 # step, used to approximate the output distribution's entropy.
 LOGPROBS_TOP_K = 5
+
+# --- Semantic (embedding-based) retrieval ---
+# Complements the keyword/substring matching in kg/local_graph.py +
+# kg/explorer.py: embeds every KG target key once (cached under
+# EMBEDDING_CACHE_DIR) and, at query time, retrieves KG entries whose
+# meaning is close to the text/target even without any word overlap.
+ENABLE_SEMANTIC_RETRIEVAL = True
+
+# Small multilingual sentence-transformers model so one index/model works
+# for both the EN and ITA KGs.
+EMBEDDING_MODEL_NAME = "paraphrase-multilingual-MiniLM-L12-v2"
+
+# Where per-KG target-key embeddings are cached to disk (keyed by model
+# name + KG content) to avoid re-embedding/downloading on every run.
+EMBEDDING_CACHE_DIR = "data/embedding_cache"
+
+# How many semantically-closest KG target keys to retrieve per query
+# (per target string, and once for the full text).
+SEMANTIC_TOP_K = 3
+
+# Minimum cosine similarity for a semantic match to be used; below this the
+# KG target is considered unrelated and discarded.
+SEMANTIC_MIN_SIMILARITY = 0.35

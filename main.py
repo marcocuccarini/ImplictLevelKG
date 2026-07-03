@@ -17,6 +17,11 @@ def main():
 
     explorer = KGExplorer(local_graph)
 
+    semantic_index = None
+    if ENABLE_SEMANTIC_RETRIEVAL:
+        from kg.semantic_retrieval import SemanticIndex
+        semantic_index = SemanticIndex(local_graph, EMBEDDING_MODEL_NAME, EMBEDDING_CACHE_DIR)
+
     results = []
     processed_ids = set()
 
@@ -47,7 +52,7 @@ def main():
         print("TARGETS:", targets)
 
         # Run iterative pipeline
-        out = iterative_explanation(text, targets, llm, explorer)
+        out = iterative_explanation(text, targets, llm, explorer, semantic_index=semantic_index)
 
         full_trace = {
             "id": row_id,

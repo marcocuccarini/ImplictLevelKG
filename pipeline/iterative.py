@@ -1,4 +1,9 @@
-from config import CONFIDENCE_THRESHOLD, KG_EXPLORE_DEPTH
+from config import (
+    CONFIDENCE_THRESHOLD,
+    KG_EXPLORE_DEPTH,
+    SEMANTIC_MIN_SIMILARITY,
+    SEMANTIC_TOP_K,
+)
 from utils.json_utils import safe_json_load
 
 
@@ -55,7 +60,7 @@ def _run_llm_step(llm, prompt):
     return parsed, entropy_confidence
 
 
-def iterative_explanation(text, targets, llm, explorer):
+def iterative_explanation(text, targets, llm, explorer, semantic_index=None):
     steps = []
 
     # --- STEP 0: INITIAL LLM GUESS (no KG) ---
@@ -89,7 +94,30 @@ def iterative_explanation(text, targets, llm, explorer):
                 seen.add(key)
                 all_triples.append(t)
 
-    kg_used_by_source = {"local": all_triples} if all_triples else {}
+    # --- Semantic (embedding-based) retrieval, complementing keyword match ---
+    # Catches KG entries related in meaning to the text/targets even when no
+    # words overlap (e.g. paraphrased or non-lexicalized targets).
+    semantic_triples = []
+    if semantic_index is not None:
+        seen_semantic = set()
+        queries = list(targets) + [text]
+        for query in queries:
+            triples = explorer.semantic_explore(
+                query, semantic_index, top_k=SEMANTIC_TOP_K, min_similarity=SEMANTIC_MIN_SIMILARITY
+            )
+            for t in triples:
+                key = tuple(t)
+                if key not in seen and key not in seen_semantic:
+                    seen_semantic.add(key)
+                    semantic_triples.append(t)
+
+    kg_used_by_source = {}
+    if all_triples:
+        kg_used_by_source["local_keyword"] = all_triples
+    if semantic_triples:
+        kg_used_by_source["local_semantic"] = semantic_triples
+
+    all_triples = all_triples + semantic_triples
 
     # --- STEP 2: LLM TRIPLE FILTERING ---
     filtered_triples = []

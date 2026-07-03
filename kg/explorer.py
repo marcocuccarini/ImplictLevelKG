@@ -57,3 +57,30 @@ class KGExplorer:
         triples = self.recursive_explore({target}, max_depth=max_depth)
         unique = [list(t) for t in {tuple(t) for t in triples}]
         return unique[:TOP_N_TRIPLES]
+
+    def semantic_explore(self, query, semantic_index, top_k, min_similarity):
+        """Finds KG target keys that are semantically similar to `query`
+        (e.g. the post text or an extracted target that doesn't lexically
+        match any KG node) via `semantic_index`, and returns their triples.
+
+        This is a complement to keyword/substring matching in
+        get_triples_for_target/explore, not a replacement: it catches cases
+        where there's no word overlap between the input and the KG but the
+        meaning is still close (e.g. "gli immigrati" vs a KG node keyed
+        "migrants").
+        """
+        if semantic_index is None:
+            return []
+
+        matches = semantic_index.top_matches(query, top_k=top_k, min_similarity=min_similarity)
+
+        triples = []
+        seen = set()
+        for key, _score in matches:
+            for t in self.local_graph.index.get(key, []):
+                tt = tuple(t)
+                if tt not in seen:
+                    seen.add(tt)
+                    triples.append(t)
+
+        return triples[:TOP_N_TRIPLES]
