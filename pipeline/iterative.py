@@ -1,6 +1,4 @@
-from collections import defaultdict
-
-from config import CONFIDENCE_THRESHOLD
+from config import CONFIDENCE_THRESHOLD, KG_EXPLORE_DEPTH
 from utils.json_utils import safe_json_load
 
 
@@ -57,7 +55,7 @@ def _run_llm_step(llm, prompt):
     return parsed, entropy_confidence
 
 
-def iterative_explanation(text, targets, llm, explorer, sources):
+def iterative_explanation(text, targets, llm, explorer):
     steps = []
 
     # --- STEP 0: INITIAL LLM GUESS (no KG) ---
@@ -80,19 +78,18 @@ def iterative_explanation(text, targets, llm, explorer, sources):
     if decision_confidence0 is not None and decision_confidence0 >= CONFIDENCE_THRESHOLD:
         return {"steps": steps, "final_step": 0}
 
-    # --- STEP 1: KG EXPLORATION ---
-    combined = defaultdict(list)
-    for target in targets:
-        kg = explorer.explore_per_source(target, sources, max_depth=1)
-        for src, triples in kg.items():
-            combined[src].extend(triples)
-
-    # De-duplicate triples across all sources
+    # --- STEP 1: KG EXPLORATION (local KG only; includes multi-hop chains) ---
     all_triples = []
-    for src in combined:
-        unique = [list(t) for t in {tuple(t) for t in combined[src]}]
-        combined[src] = unique
-        all_triples.extend(unique)
+    seen = set()
+    for target in targets:
+        triples = explorer.explore(target, max_depth=KG_EXPLORE_DEPTH)
+        for t in triples:
+            key = tuple(t)
+            if key not in seen:
+                seen.add(key)
+                all_triples.append(t)
+
+    kg_used_by_source = {"local": all_triples} if all_triples else {}
 
     # --- STEP 2: LLM TRIPLE FILTERING ---
     filtered_triples = []
@@ -120,7 +117,7 @@ def iterative_explanation(text, targets, llm, explorer, sources):
 
     steps.append({
         "step": 1,
-        "kg_used_by_source": dict(combined),
+        "kg_used_by_source": kg_used_by_source,
         "filtered_triples": filtered_triples,
         "parsed": res1,
         "entropy_confidence": entropy_confidence1,

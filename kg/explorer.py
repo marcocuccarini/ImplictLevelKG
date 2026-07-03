@@ -1,11 +1,15 @@
-from collections import defaultdict
-from config import TOP_N_PER_SOURCE
+from config import TOP_N_TRIPLES
 from utils.normalization import term_variants
 
+
 class KGExplorer:
-    def __init__(self, wikidata, conceptnet, local_graph):
-        self.wikidata = wikidata
-        self.conceptnet = conceptnet
+    """
+    Explores the local domain KG (kg/local_graph.py). Wikidata and
+    ConceptNet have been removed: the pipeline now relies entirely on the
+    hand-built + LLM-chain-augmented local KG.
+    """
+
+    def __init__(self, local_graph):
         self.local_graph = local_graph
 
     def extract_nodes(self, triples):
@@ -16,27 +20,11 @@ class KGExplorer:
                 nodes.add(t[2])
         return nodes
 
-    def get_triples_for_target(self, target, sources):
-        triples = []
+    def get_triples_for_target(self, target):
         variants = term_variants(target)
+        return self.local_graph.get_triples(target, variants)
 
-        if "wikidata" in sources:
-
-            qid = self.wikidata.resolve_entity(target)
-            if qid:
-                triples.extend(self.wikidata.extract_triples(qid, target))
-
-        if "conceptnet" in sources:
-
-            triples.extend(self.conceptnet.get_triples(variants))
-
-        if "local" in sources:
-
-            triples.extend(self.local_graph.get_triples(target, variants))
-
-        return triples
-
-    def recursive_explore(self, seeds, sources, depth=0, max_depth=3, visited=None):
+    def recursive_explore(self, seeds, depth=0, max_depth=3, visited=None):
         if visited is None:
             visited = set()
         if depth > max_depth:
@@ -51,22 +39,21 @@ class KGExplorer:
 
             visited.add(seed_norm)
 
-            raw_triples = self.get_triples_for_target(seed, sources)
-            valid = raw_triples[:TOP_N_PER_SOURCE]
+            raw_triples = self.get_triples_for_target(seed)
+            valid = raw_triples[:TOP_N_TRIPLES]
             collected.extend(valid)
 
             if depth < max_depth:
                 next_seeds = self.extract_nodes(valid) - visited
                 collected.extend(
-                    self.recursive_explore(next_seeds, sources, depth+1, max_depth, visited)
+                    self.recursive_explore(next_seeds, depth + 1, max_depth, visited)
                 )
 
         return collected
 
-    def explore_per_source(self, target, sources, max_depth):
-        res = {}
-        for src in sources:
-            triples = self.recursive_explore({target}, (src,), max_depth=max_depth)
-            unique = [list(t) for t in {tuple(t) for t in triples}]
-            res[src] = unique[:TOP_N_PER_SOURCE]
-        return res
+    def explore(self, target, max_depth):
+        """Returns deduplicated triples (direct facts + multi-hop chains)
+        found for `target`, exploring related concepts up to max_depth."""
+        triples = self.recursive_explore({target}, max_depth=max_depth)
+        unique = [list(t) for t in {tuple(t) for t in triples}]
+        return unique[:TOP_N_TRIPLES]

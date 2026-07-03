@@ -5,8 +5,6 @@ import os
 from config import *
 from llm.ollama_client import OllamaChat
 from kg.local_graph import LocalGraph
-from kg.wikidata import WikidataClient
-from kg.conceptnet import ConceptNetClient
 from kg.explorer import KGExplorer
 from pipeline.iterative import iterative_explanation
 from utils.normalization import normalize_target_list
@@ -15,11 +13,9 @@ from utils.normalization import normalize_target_list
 def main():
 
     llm = OllamaChat(LLM_MODEL, top_logprobs=LOGPROBS_TOP_K)
-    wikidata = WikidataClient(CACHE_FILE)
-    conceptnet = ConceptNetClient()
-    local_graph = LocalGraph(LOCAL_KG_PATH, STER_URI)
+    local_graph = LocalGraph(LOCAL_KG_PATH, STER_URI, max_chain_depth=MAX_CHAIN_DEPTH)
 
-    explorer = KGExplorer(wikidata, conceptnet, local_graph)
+    explorer = KGExplorer(local_graph)
 
     results = []
     processed_ids = set()
@@ -32,8 +28,6 @@ def main():
 
     with open(DATASET_PATH, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
-
-    sources = ("wikidata", "conceptnet", "local")
 
     for i, row in enumerate(rows, start=1):
 
@@ -53,7 +47,7 @@ def main():
         print("TARGETS:", targets)
 
         # Run iterative pipeline
-        out = iterative_explanation(text, targets, llm, explorer, sources)
+        out = iterative_explanation(text, targets, llm, explorer)
 
         full_trace = {
             "id": row_id,
