@@ -203,13 +203,32 @@ The unified dataset (`data/out/unified_dataset.csv`) contains (at least):
 ## 1. Train phase — build the KG (once per dataset version)
 
 ```bash
-python normalize_and_join.py           # builds data/out/unified_dataset.csv
+python normalize_and_join.py --data-root data --out-dir data/out
+                                        # builds data/out/unified_dataset.csv
+                                        # (EN rows are still tagged train /
+                                        # train_clean / test at this point)
+
+python assign_en_split.py --unified data/out/unified_dataset.csv
+                                        # reassigns EN train + train_clean
+                                        # rows to graph / joined (Option C,
+                                        # see EN_GRAPH_FRACTION/EN_SPLIT_SEED
+                                        # in config.py); ITA is untouched
+                                        # (already graph/joined/test)
+
 python build_kg.py --unified data/out/unified_dataset.csv --out-dir data/out
 python augment_kg_with_chains.py \
     --chains data/chain_extraction/chains_merged.json \
     --unified data/out/unified_dataset.csv \
     --out-dir data/out
 ```
+
+Note: `normalize_and_join.py` reads raw source files from `--data-root`
+(`EN/final_data/final_train.csv`, `EN/final_data/test_set.csv`,
+`EN/train_clean_stereo.csv`, `ITA/graph_set.csv`, `ITA/test_set.csv`,
+`ITA/joinedClusterizzatiHS - joinedClusterizzatiHS (1).csv`, plus
+`EN/target annotation/*.csv`). These raw datasets are not committed to this
+repo; you need a copy of the original `data/` folder alongside these
+scripts before running step 1.
 
 This produces `kg_en.ttl` / `kg_it.ttl`. Copy/point `LOCAL_KG_PATH_EN` /
 `LOCAL_KG_PATH_IT` in `config.py` at these files.

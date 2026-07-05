@@ -32,7 +32,12 @@ def main():
             processed_ids = {str(r["id"]) for r in results}
 
     with open(DATASET_PATH, encoding="utf-8") as f:
-        rows = list(csv.DictReader(f))
+        all_rows = list(csv.DictReader(f))
+
+    # Prediction phase only ever runs on `joined` + `test` rows -- the KG
+    # was built from `graph` rows (see build_kg.py), so it's never
+    # evaluated on the same rows it was built from.
+    rows = [r for r in all_rows if r.get("split") in ("joined", "test")]
 
     for i, row in enumerate(rows, start=1):
 

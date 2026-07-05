@@ -11,7 +11,12 @@ MAX_CHAIN_DEPTH = None
 
 STER_URI = "http://example.org/stereotype-kg#"
 
-DATASET_PATH = "data/data/dataset_split_test.csv"
+
+# Unified dataset produced by normalize_and_join.py + assign_en_split.py
+# (see "Running the Pipeline" in the README). main.py filters this down to
+# the `joined` + `test` rows itself, so this can point at the same file
+# used by build_kg.py.
+DATASET_PATH = "data/out/unified_dataset.csv"
 RESULTS_PATH = "implicit_results.json"
 
 # Per-language local KGs (train phase output; see data/build_kg.py and
@@ -56,3 +61,11 @@ SEMANTIC_TOP_K = 3
 # Minimum cosine similarity for a semantic match to be used; below this the
 # KG target is considered unrelated and discarded.
 SEMANTIC_MIN_SIMILARITY = 0.35
+
+# --- EN dataset split (Option C) ---
+# normalize_and_join.py emits raw EN rows tagged `train` / `train_clean`
+# (two overlapping source files); assign_en_split.py pools + dedupes them
+# and reassigns EN_GRAPH_FRACTION of the unique rows to `graph` (used to
+# build the KG), the rest to `joined` (held out for the prediction phase).
+EN_GRAPH_FRACTION = 0.179
+EN_SPLIT_SEED = 42
