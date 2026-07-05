@@ -33,7 +33,8 @@ stereotype domain and to avoid noisy, generic world knowledge.
 ├── config.py                     # All tunables (paths, models, thresholds)
 ├── main.py                       # Prediction phase entry point
 ├── build_kg.py                   # Train phase: builds kg_en.ttl / kg_it.ttl from the "graph" split
-├── augment_kg_with_chains.py     # Train phase: adds multi-hop concept chains to the KGs
+├── extract_chains.py             # Train phase: LLM step, generates chains_merged.json (GRAPH_LLM_MODEL)
+├── augment_kg_with_chains.py     # Train phase: merges chains_merged.json into the KGs (no LLM)
 ├── normalize_and_join.py         # Builds the unified dataset (EN + ITA, dedup, splits)
 ├── evaluation.py                 # Scoring / metrics over pipeline results
 │
@@ -216,10 +217,27 @@ python assign_en_split.py --unified data/out/unified_dataset.csv
                                         # (already graph/joined/test)
 
 python build_kg.py --unified data/out/unified_dataset.csv --out-dir data/out
+                                        # builds kg_en.ttl / kg_it.ttl (no LLM)
+
+python extract_chains.py \
+    --unified data/out/unified_dataset.csv \
+    --out data/out/chains_merged.json
+                                        # LLM step: for each `graph`-split row,
+                                        # asks GRAPH_LLM_MODEL (config.py) for a
+                                        # short multi-hop concept chain linking
+                                        # target -> implied_statement. Uses a
+                                        # heavier model than the prediction
+                                        # phase since it only runs once per
+                                        # graph-split row. Resumable; requires
+                                        # Ollama running locally with
+                                        # GRAPH_LLM_MODEL pulled.
+
 python augment_kg_with_chains.py \
-    --chains data/chain_extraction/chains_merged.json \
+    --chains data/out/chains_merged.json \
     --unified data/out/unified_dataset.csv \
     --out-dir data/out
+                                        # merges the chains into kg_en.ttl /
+                                        # kg_it.ttl (no LLM, pure graph edit)
 ```
 
 Note: `normalize_and_join.py` reads raw source files from `--data-root`

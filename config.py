@@ -28,7 +28,17 @@ LOCAL_KG_PATH_IT = "data/kg_it.ttl"
 # Default KG used by main.py. Change to LOCAL_KG_PATH_IT for Italian data.
 LOCAL_KG_PATH = LOCAL_KG_PATH_EN
 
+# Prediction / explanation phase (main.py, pipeline/iterative.py): should be
+# a small, fast model since it runs once per joined/test row.
 LLM_MODEL = "llama3.1:8b"
+
+# Train phase, chain construction only (extract_chains.py): a heavier model
+# is worth the extra cost here since it runs once per `graph`-split row
+# (~1,000-1,500 rows total) and produces the reusable multi-hop chains that
+# get merged into kg_en.ttl / kg_it.ttl for every future prediction run.
+# Change this to whatever heavy tag you have pulled in Ollama, e.g.
+# "gpt-oss:120b", "llama3.1:70b", "mixtral:8x22b".
+GRAPH_LLM_MODEL = "gpt-oss:120b"
 
 # Confidence used for the early-exit decision in the iterative pipeline.
 # Based on token-level entropy (see llm/ollama_client.py), not on the
