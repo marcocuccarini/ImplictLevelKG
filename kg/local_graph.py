@@ -3,7 +3,10 @@ Wraps a per-language `ster:` Turtle knowledge graph and exposes triples for a
 given target. This is the ONLY knowledge source used by the pipeline
 (Wikidata and ConceptNet have been removed).
 
-Two kinds of facts are indexed, both keyed by target name:
+Facts are indexed, keyed by node name (a target name OR a category name --
+see below), so that graph traversal (kg/explorer.py's recursive_explore) can
+genuinely hop BETWEEN entities, not just walk one target's own private
+chain:
 
 1. Direct 1-hop facts (from build_kg.py):
        ster:Stereotype        rdfs:label "<label>" ; ster:involvesTarget <target>
@@ -16,9 +19,25 @@ Two kinds of facts are indexed, both keyed by target name:
                    rdfs:label "<concept>" ; ster:evokes <ImpliedStatement>
    -> walked from <step0> to the final ster:evokes and exposed as a sequence
       of hops: [target, "leads to", concept_1], [concept_1, "leads to",
-      concept_2], ..., [concept_n, "implies", implied_statement]
+      concept_2], ..., [concept_n, "implies", implied_statement]. Each hop
+      may be tagged ster:provenance "text" | "knowledge" (see
+      get_hop_provenance).
 
-get_triples(target, variants) returns the union of both, deduplicated.
+3. Category layer (from augment_kg_with_chains.py, extract_chains.py's
+   CATEGORY_VOCAB): ster:<target> ster:hasCategory ster:category_<slug>.
+   Indexed BOTH ways -- [target, "is a type of", category] under the target
+   key, AND [category, "includes", target] under the category key -- so the
+   category name itself becomes a real node that recursive_explore can seed
+   from, surfacing every OTHER target that shares the category as a
+   candidate next hop.
+
+4. Cross-target relatedTo edges (from extract_chains.py's related_targets,
+   the LLM's own world-knowledge judgment of similar stereotype patterns):
+   ster:<target> ster:relatedTo ster:<other_target>, stored symmetrically.
+   -> exposed as [target, "is related to", other_target] under both keys.
+
+get_triples(target, variants) returns the union of all of the above,
+deduplicated.
 """
 from collections import defaultdict
 
@@ -68,6 +87,15 @@ class LocalGraph:
             .lower()
         )
 
+    def _node_key(self, node):
+        """Best-effort human-readable key for any node: prefer its
+        rdfs:label (used by Category nodes), fall back to slug-of-URI (used
+        by Target nodes)."""
+        label = self._label(node)
+        if label:
+            return label
+        return self._target_key(node)
+
     def _build_index(self):
         idx = defaultdict(list)
 
@@ -108,6 +136,27 @@ class LocalGraph:
                 idx[target_name].append([prev, relation, hop_label])
                 prev = hop_label
 
+        # --- Category layer: bidirectional so the category name itself
+        # becomes a traversable node (recursive_explore can seed from it and
+        # discover every other target sharing the category). ---
+        for target_uri, _, category_uri in self.graph.triples((None, self.STER.hasCategory, None)):
+            if not isinstance(target_uri, URIRef) or not isinstance(category_uri, URIRef):
+                continue
+            target_name = self._target_key(target_uri)
+            category_name = self._label(category_uri)
+            if not category_name:
+                continue
+            idx[target_name].append([target_name, "is a type of", category_name])
+            idx[category_name].append([category_name, "includes", target_name])
+
+        # --- Cross-target relatedTo edges (LLM world-knowledge links) ---
+        for target_uri, _, other_uri in self.graph.triples((None, self.STER.relatedTo, None)):
+            if not isinstance(target_uri, URIRef) or not isinstance(other_uri, URIRef):
+                continue
+            target_name = self._target_key(target_uri)
+            other_name = self._target_key(other_uri)
+            idx[target_name].append([target_name, "is related to", other_name])
+
         return idx
 
     def _walk_chain(self, start_node):
@@ -145,8 +194,9 @@ class LocalGraph:
         return hops
 
     def get_triples(self, target, variants=None):
-        """Returns all triples (direct facts + multi-hop chains) whose
-        target matches `target` or any of its `variants` (substring match)."""
+        """Returns all triples (direct facts + multi-hop chains + category /
+        relatedTo cross-links) whose target matches `target` or any of its
+        `variants` (substring match)."""
         if not variants:
             variants = [target]
 

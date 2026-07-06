@@ -92,9 +92,34 @@ dataset's annotations:
   ster:implied_chain_<id>  rdfs:label "I hope they all sink at sea" .
   ```
 
+  Each `ChainStep` also carries `ster:provenance "text" | "knowledge"`:
+  `extract_chains.py` (GRAPH_LLM_MODEL) is prompted with the row's
+  `text`, stereotype `label`, AND `implied_statement` together, and is
+  explicitly asked to add plausible connecting concepts from its own world
+  knowledge (tagged `"knowledge"`) when that deepens the chain beyond what's
+  literally written in the post, not just paraphrase words already in
+  `text` (tagged `"text"`).
+
+* `ster:Category` — a canonical category node (from a fixed vocabulary in
+  `extract_chains.py`, e.g. "ethnic or national minority", "migrants or
+  refugees") that every target sharing that category attaches to via
+  `ster:hasCategory`. This is what makes multi-hop traversal actually able
+  to move **between different targets**, not just along one target's own
+  chain: `kg/explorer.py`'s `recursive_explore` can seed from a category
+  name and discover every sibling target that shares it.
+
+* `ster:relatedTo` — a symmetric edge between two targets that the LLM's
+  own world knowledge judged to share a similar stereotype pattern (e.g.
+  `roma people` <-> `immigrants`), also produced by `extract_chains.py`.
+  This gives a second, independent path for cross-target generalization
+  beyond the shared-category link above.
+
 Two KGs are built and kept separate: `kg_en.ttl` (English) and `kg_it.ttl`
 (Italian), sharing the same schema and (where possible) the same normalized
-target vocabulary.
+target vocabulary. `config.KG_EXPLORE_DEPTH` controls how many hops
+`recursive_explore` follows outward; it's set to `2` so that a category or
+`relatedTo` hop (depth 1) can be followed one step further into the related
+target's own facts/chains (depth 2).
 
 ## 2. Two retrieval strategies over the KG
 
@@ -166,7 +191,8 @@ LOCAL_KG_PATH_EN = "data/kg_en.ttl"
 LOCAL_KG_PATH_IT = "data/kg_it.ttl"
 LOCAL_KG_PATH = LOCAL_KG_PATH_EN    # Switch to LOCAL_KG_PATH_IT for Italian data
 
-KG_EXPLORE_DEPTH = 1                # Related-concept hops for keyword-based retrieval
+KG_EXPLORE_DEPTH = 2                 # Related-concept hops for keyword-based retrieval (deep enough
+                                      # to walk through a shared Category / relatedTo cross-link)
 MAX_CHAIN_DEPTH = None               # How far along a multi-hop chain to follow (None = full chain)
 
 ENABLE_SEMANTIC_RETRIEVAL = True
@@ -223,11 +249,18 @@ python extract_chains.py \
     --unified data/out/unified_dataset.csv \
     --out data/out/chains_merged.json
                                         # LLM step: for each `graph`-split row,
-                                        # asks GRAPH_LLM_MODEL (config.py) for a
-                                        # short multi-hop concept chain linking
-                                        # target -> implied_statement. Uses a
-                                        # heavier model than the prediction
-                                        # phase since it only runs once per
+                                        # asks GRAPH_LLM_MODEL (config.py) to do
+                                        # a deep analysis of target + text +
+                                        # stereotype label + implied_statement
+                                        # together, producing: a multi-hop
+                                        # concept chain (2-6 hops, each tagged
+                                        # "text"-grounded or "knowledge"-
+                                        # inferred), a canonical category for
+                                        # the target, and 0-3 related targets
+                                        # that plausibly share the same
+                                        # stereotype pattern. Uses a heavier
+                                        # model than the prediction phase
+                                        # since it only runs once per
                                         # graph-split row. Resumable; requires
                                         # Ollama running locally with
                                         # GRAPH_LLM_MODEL pulled.
@@ -237,7 +270,9 @@ python augment_kg_with_chains.py \
     --unified data/out/unified_dataset.csv \
     --out-dir data/out
                                         # merges the chains into kg_en.ttl /
-                                        # kg_it.ttl (no LLM, pure graph edit)
+                                        # kg_it.ttl (no LLM, pure graph edit),
+                                        # adding the Category and relatedTo
+                                        # cross-target edges described above.
 ```
 
 Note: `normalize_and_join.py` reads raw source files from `--data-root`
