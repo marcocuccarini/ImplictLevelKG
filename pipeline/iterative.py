@@ -3,6 +3,7 @@ from config import (
     KG_EXPLORE_DEPTH,
     SEMANTIC_MIN_SIMILARITY,
     SEMANTIC_TOP_K,
+    TOP_N_TRIPLES,
 )
 from utils.json_utils import safe_json_load
 
@@ -42,8 +43,8 @@ def triple_filtering_prompt(text, triples):
     Select the indices of the triples that are RELEVANT to explaining the implicit meaning or stereotypes in the text.
     Ignore facts that are technically true but irrelevant to the specific context of the text.
 
-    Return ONLY a valid JSON list of integers.
-    Example: [0, 2, 5]
+    Return ONLY a valid JSON object with a single key "relevant_indices" mapping to a list of integers.
+    Example: {{"relevant_indices": [0, 2, 5]}}
     """
 
 
@@ -124,18 +125,37 @@ def iterative_explanation(text, targets, llm, explorer, semantic_index=None):
     if all_triples:
         print(f"  [Filter] Reviewing {len(all_triples)} raw triples...")
         filter_raw = llm.send_prompt(triple_filtering_prompt(text, all_triples))
-        relevant_indices = safe_json_load(filter_raw)
+        filter_result = safe_json_load(filter_raw)
+
+        # The model is called with format="json", which constrains output to
+        # a JSON *object*, so the prompt asks for {"relevant_indices": [...]}
+        # rather than a bare list (a bare list would never satisfy that
+        # constraint and would make this filtering step fail on every call).
+        relevant_indices = None
+        if isinstance(filter_result, dict):
+            relevant_indices = filter_result.get("relevant_indices")
+        elif isinstance(filter_result, list):
+            # Tolerate a bare list too, in case a model ever returns one.
+            relevant_indices = filter_result
 
         if isinstance(relevant_indices, list):
             for idx in relevant_indices:
                 try:
                     filtered_triples.append(all_triples[int(idx)])
-                except (IndexError, ValueError):
+                except (IndexError, ValueError, TypeError):
                     continue
             print(f"  [Filter] Kept {len(filtered_triples)} relevant triples.")
-        else:
-            filtered_triples = all_triples
-            print("  [Filter] LLM failed to return JSON list. Using all triples.")
+
+        if not filtered_triples:
+            # Safety fallback: don't silently dump every raw triple (which
+            # can balloon Step 3's prompt and slow/derail generation).
+            # Cap to the first TOP_N_TRIPLES instead.
+            filtered_triples = all_triples[:TOP_N_TRIPLES]
+            print(
+                f"  [Filter] LLM failed to return usable indices. "
+                f"Falling back to top {len(filtered_triples)} of "
+                f"{len(all_triples)} raw triples."
+            )
 
     # --- STEP 3: FINAL EXPLANATION WITH FILTERED KG ---
     res1, entropy_confidence1 = _run_llm_step(
