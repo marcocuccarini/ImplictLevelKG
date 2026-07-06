@@ -58,6 +58,11 @@ def _run_llm_step(llm, prompt):
     """
     content, entropy_confidence = llm.send_prompt_with_confidence(prompt)
     parsed = safe_json_load(content)
+    if parsed is None and content:
+        # safe_json_load swallows the parse error; surface the raw content
+        # here so a malformed/non-JSON response is visible instead of
+        # silently showing up downstream as "Explanation: N/A".
+        print(f"  [LLM] Failed to parse JSON from model output. Raw content was: {content!r}")
     return parsed, entropy_confidence
 
 
