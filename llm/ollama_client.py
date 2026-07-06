@@ -52,8 +52,15 @@ class OllamaChat:
         content = None
         try:
             content = r["message"]["content"].strip()
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"  [OllamaChat] Could not extract content from response: {type(e).__name__}: {e}")
+            print(f"  [OllamaChat] Raw response object was: {r!r}")
+            try:
+                # Fallback: some ollama-python versions expose attrs instead of dict keys
+                content = r.message.content.strip()
+                print("  [OllamaChat] Recovered content via attribute access fallback.")
+            except Exception as e2:
+                print(f"  [OllamaChat] Attribute-access fallback also failed: {type(e2).__name__}: {e2}")
 
         confidence = self._entropy_confidence(r.get("logprobs") if hasattr(r, "get") else getattr(r, "logprobs", None))
 
