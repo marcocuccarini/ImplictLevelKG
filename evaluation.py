@@ -7,37 +7,41 @@ import ast
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from bert_score import score
 
+from config import DATASET_PATH, RESULTS_PATH
+
 # =========================
 # Load CSV dataset (gold data)
 # =========================
-dataset_path = "data/data/dataset_split_test.csv"
-df_dataset = pd.read_csv(dataset_path)
+df_dataset = pd.read_csv(DATASET_PATH)
 
 # =========================
 # Load JSON results (LLM outputs)
 # =========================
-results_path = "implicit_results.json"
-with open(results_path, "r", encoding="utf-8") as f:
+with open(RESULTS_PATH, "r", encoding="utf-8") as f:
     results_json = json.load(f)
 
 # =========================
-# Convert JSON → flat table
+# Convert JSON -> flat table
+#
+# item["steps"] is a variable-length list: step 0 (no KG), then one entry
+# per round in config.KG_EXPLORE_DEPTHS actually run before an early exit
+# (step 1 = single-hop KG, step 2 = multi-hop KG, ...). We flatten whatever
+# steps are present into step{N}_explanation columns.
 # =========================
 rows = []
+max_step_seen = 0
 for item in results_json:
     uid = item["id"]
-    step0_expl = None
-    step1_expl = None
+    step_explanations = {}
     for step in item["steps"]:
-        if step["step"] == 0:
-            step0_expl = step["llm_output"]["explanation"]
-        elif step["step"] == 1:
-            step1_expl = step["llm_output"]["explanation"]
-    rows.append({
-        "unique_id": uid,
-        "step0_explanation": step0_expl,
-        "step1_explanation": step1_expl
-    })
+        step_num = step["step"]
+        max_step_seen = max(max_step_seen, step_num)
+        parsed = step.get("parsed") or {}
+        step_explanations[step_num] = parsed.get("explanation")
+    row = {"unique_id": uid, "final_step": item.get("final_step")}
+    for step_num, expl in step_explanations.items():
+        row[f"step{step_num}_explanation"] = expl
+    rows.append(row)
 df_results = pd.DataFrame(rows)
 
 # =========================
@@ -48,8 +52,12 @@ df = pd.merge(
     df_results,
     left_on="unique_id",
     right_on="unique_id",
-    how="left"
+    how="left",
 )
+
+# Explanation columns actually present (step0_explanation, step1_explanation,
+# step2_explanation, ...), in step order.
+step_cols = [f"step{n}_explanation" for n in range(max_step_seen + 1) if f"step{n}_explanation" in df.columns]
 
 # =========================
 # BLEU smoothing
@@ -72,57 +80,48 @@ for idx, row in df.iterrows():
     if isinstance(text_implied_raw, str) and text_implied_raw.startswith("["):
         try:
             text_implied = ast.literal_eval(text_implied_raw)[0]
-        except:
+        except Exception:
             text_implied = text_implied_raw
     else:
         text_implied = str(text_implied_raw)
 
     print("GOLD text_implied:", text_implied)
 
-    # --- Step 0 ---
-    if pd.isna(row["step0_explanation"]):
+    if pd.isna(row.get("step0_explanation")):
         print("STEP 0 explanation missing. Skipping.")
         continue
 
-    step0 = str(row["step0_explanation"])
     reference = [text_implied.split()]
+    final_bleu, final_bert, final_step_label = None, None, None
 
-    bleu_step0 = sentence_bleu(reference, step0.split(), smoothing_function=smooth)
-    _, _, F0 = score([step0], [text_implied], lang="it")
-    bert_step0 = F0.mean().item()
+    # --- Score every step that's present for this row ---
+    for col in step_cols:
+        step_label = col.replace("_explanation", "")
+        if col not in row or pd.isna(row[col]):
+            print(f"\n{step_label.upper()}: not available")
+            continue
 
-    print("\nSTEP 0")
-    print("Explanation:", step0)
-    print(f"BLEU: {bleu_step0:.4f}")
-    print(f"BERTScore F1: {bert_step0:.4f}")
+        expl = str(row[col])
+        bleu = sentence_bleu(reference, expl.split(), smoothing_function=smooth)
+        _, _, f1 = score([expl], [text_implied], lang="it")
+        bert = f1.mean().item()
 
-    # --- Step 1 ---
-    if "step1_explanation" in row and pd.notna(row["step1_explanation"]):
-        step1 = str(row["step1_explanation"])
-        bleu_step1 = sentence_bleu(reference, step1.split(), smoothing_function=smooth)
-        _, _, F1 = score([step1], [text_implied], lang="it")
-        bert_step1 = F1.mean().item()
+        print(f"\n{step_label.upper()}")
+        print("Explanation:", expl)
+        print(f"BLEU: {bleu:.4f}")
+        print(f"BERTScore F1: {bert:.4f}")
 
-        print("\nSTEP 1")
-        print("Explanation:", step1)
-        print(f"BLEU: {bleu_step1:.4f}")
-        print(f"BERTScore F1: {bert_step1:.4f}")
+        df.at[idx, f"bleu_{step_label}"] = bleu
+        df.at[idx, f"bert_{step_label}"] = bert
 
-        print("\nFINAL USED: STEP 1")
-        final_bleu, final_bert = bleu_step1, bert_step1
-    else:
-        print("\nSTEP 1: not available")
-        print("FINAL USED: STEP 0")
-        final_bleu, final_bert = bleu_step0, bert_step0
+        # The last step with an available explanation is the one the
+        # pipeline actually returned as final_step for this row.
+        final_bleu, final_bert, final_step_label = bleu, bert, step_label
 
-    # --- Update dataframe ---
-    df.at[idx, "bleu_step0"] = bleu_step0
-    df.at[idx, "bert_step0"] = bert_step0
-    if "step1_explanation" in row and pd.notna(row["step1_explanation"]):
-        df.at[idx, "bleu_step1"] = bleu_step1
-        df.at[idx, "bert_step1"] = bert_step1
-    df.at[idx, "final_bleu"] = final_bleu
-    df.at[idx, "final_bert"] = final_bert
+    if final_step_label is not None:
+        print(f"\nFINAL USED: {final_step_label.upper()}")
+        df.at[idx, "final_bleu"] = final_bleu
+        df.at[idx, "final_bert"] = final_bert
 
 print("\n=== Partial evaluation finished ===")
 

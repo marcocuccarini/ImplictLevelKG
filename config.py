@@ -1,12 +1,17 @@
 TOP_N_TRIPLES = 15
 
-# How many related-concept hops KGExplorer.explore() follows outward from
-# each target when gathering candidate triples for a text. Bumped from 1 to
-# 2 now that the KG has real cross-entity edges to traverse (ster:hasCategory
-# / ster:relatedTo, added by augment_kg_with_chains.py): depth 1 reaches a
-# target's own chain + its category/related-target names; depth 2 is needed
-# to actually walk INTO those related targets' own facts/chains.
-KG_EXPLORE_DEPTH = 2
+# The KG-augmented rounds run by pipeline/iterative.py, one increasing
+# depth per round. Round N calls KGExplorer.explore(target, max_depth=depth)
+# with depth = KG_EXPLORE_DEPTHS[N-1]:
+#   - round 1, depth 1: a target's own single-hop facts/chain only.
+#   - round 2, depth 2: also walks INTO related targets reached via
+#     ster:hasCategory / ster:relatedTo edges (added by
+#     augment_kg_with_chains.py) and further along their own chains.
+# After each round, if the model's confidence is already >=
+# CONFIDENCE_THRESHOLD, iterative_explanation() stops early and does not
+# run the remaining (deeper, more expensive) rounds. Add more entries here
+# (e.g. [1, 2, 3]) to allow further rounds at greater depth.
+KG_EXPLORE_DEPTHS = [1, 2]
 
 # How many ster:next hops LocalGraph follows along a single multi-hop chain
 # before stopping early. None = follow the whole chain to its

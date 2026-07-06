@@ -116,10 +116,12 @@ dataset's annotations:
 
 Two KGs are built and kept separate: `kg_en.ttl` (English) and `kg_it.ttl`
 (Italian), sharing the same schema and (where possible) the same normalized
-target vocabulary. `config.KG_EXPLORE_DEPTH` controls how many hops
-`recursive_explore` follows outward; it's set to `2` so that a category or
-`relatedTo` hop (depth 1) can be followed one step further into the related
-target's own facts/chains (depth 2).
+target vocabulary. `config.KG_EXPLORE_DEPTHS` (default `[1, 2]`) controls how
+many hops `recursive_explore` follows outward, one entry per iterative round
+(see section 3): round 1 explores depth 1 (a target's own facts/chain only),
+round 2 explores depth 2, which is deep enough for a category or `relatedTo`
+hop (reached at depth 1) to then be followed one step further into the
+related target's own facts/chains.
 
 ## 2. Two retrieval strategies over the KG
 
@@ -139,14 +141,27 @@ found it (`local_keyword` vs `local_semantic`).
 
 ## 3. Iterative reasoning with entropy-based confidence
 
-For each post, the pipeline runs:
+For each post, `pipeline/iterative.py` runs a genuine multi-round loop, going
+deeper into the graph each round until the model is confident enough to stop:
 
-* **Step 0** — LLM explanation without any KG support (baseline).
-* **Step N** — LLM explanation augmented with retrieved KG triples/chains,
-  repeated until the model's confidence passes `CONFIDENCE_THRESHOLD` or a
-  step limit is reached.
+* **Step 0** — LLM explanation without any KG support (baseline). If the
+  model is already confident here, no KG round runs at all.
+* **Step 1** — LLM explanation augmented with KG triples retrieved at
+  exploration depth 1 (`KG_EXPLORE_DEPTHS[0]`): a target's own single-hop
+  facts/chain only.
+* **Step 2** — if step 1 wasn't confident enough, a second round retrieves
+  triples at depth 2 (`KG_EXPLORE_DEPTHS[1]`): this is where multi-hop
+  traversal actually kicks in, walking *into* related targets reached via
+  `ster:hasCategory` / `ster:relatedTo` edges and their own chains, not just
+  a single target's isolated facts.
+* **Step N** — further entries can be added to `KG_EXPLORE_DEPTHS` for
+  additional, deeper rounds; each one only runs if the previous step's
+  confidence was still below `CONFIDENCE_THRESHOLD`.
 
-Confidence is **entropy-based**: the mean Shannon entropy over the model's
+Confidence is checked after every step, so a post that's already explainable
+from a single-hop fact never pays for the extra multi-hop round, while a
+harder post automatically escalates. Confidence is **entropy-based**: the
+mean Shannon entropy over the model's
 generated tokens (via Ollama's top-logprobs, normalized to `[0, 1]`), which is
 what drives the early-exit decision. The model's own self-reported confidence
 is also recorded, but only for reference — it does not affect control flow.
@@ -173,7 +188,10 @@ numpy
 ```
 
 You'll also need [Ollama](https://ollama.com) running locally with the models
-referenced in `config.py` pulled (e.g. `ollama pull llama3.1:8b`).
+referenced in `config.py` pulled: `LLM_MODEL` (e.g. `ollama pull gemma4`, a
+small/fast model for the prediction phase) and `GRAPH_LLM_MODEL` (e.g.
+`ollama pull gpt-oss:120b`, a heavier model used once during the KG-build
+phase for chain extraction).
 
 ---
 
@@ -182,7 +200,8 @@ referenced in `config.py` pulled (e.g. `ollama pull llama3.1:8b`).
 All tunables live in `config.py`. Key settings:
 
 ```python
-LLM_MODEL = "llama3.1:8b"          # Model used for the prediction-phase explanations
+LLM_MODEL = "gemma4:latest"         # Small/fast model used for the prediction-phase explanations
+GRAPH_LLM_MODEL = "gpt-oss:120b"    # Heavier model used once during the KG-build phase (extract_chains.py)
 CONFIDENCE_THRESHOLD = 0.95        # Entropy-based confidence needed to stop iterating
 LOGPROBS_TOP_K = 5                 # Top-K token logprobs requested per step (entropy estimate)
 
@@ -191,8 +210,10 @@ LOCAL_KG_PATH_EN = "data/kg_en.ttl"
 LOCAL_KG_PATH_IT = "data/kg_it.ttl"
 LOCAL_KG_PATH = LOCAL_KG_PATH_EN    # Switch to LOCAL_KG_PATH_IT for Italian data
 
-KG_EXPLORE_DEPTH = 2                 # Related-concept hops for keyword-based retrieval (deep enough
-                                      # to walk through a shared Category / relatedTo cross-link)
+KG_EXPLORE_DEPTHS = [1, 2]           # One entry per iterative KG round: round 1 = single-hop
+                                      # (KG_EXPLORE_DEPTHS[0]=1), round 2 = multi-hop, deep enough to
+                                      # walk through a shared Category / relatedTo cross-link
+                                      # (KG_EXPLORE_DEPTHS[1]=2). Add more entries for further rounds.
 MAX_CHAIN_DEPTH = None               # How far along a multi-hop chain to follow (None = full chain)
 
 ENABLE_SEMANTIC_RETRIEVAL = True
