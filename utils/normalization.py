@@ -1,4 +1,31 @@
 import ast
+import re
+
+
+def humanize_label(text):
+    """Turns a raw dataset label like 'areIntellectuallyInept' or
+    'ShiftResponsibility' into a readable lowercase phrase:
+    'are intellectually inept' / 'shift responsibility'.
+
+    The raw `label` column in the source datasets is CamelCase with no
+    separators, so a plain `.lower()` mashes it into one unreadable word
+    (e.g. 'areinferior'). This instead splits on case boundaries (and any
+    existing underscores/hyphens) BEFORE lowercasing, so the result reads as
+    normal English words.
+    """
+    if not text:
+        return ""
+    text = text.strip()
+    # Split snake_case / kebab-case separators into spaces first.
+    text = re.sub(r"[_\-]+", " ", text)
+    # Insert a space at lower->Upper and letter->digit boundaries, and
+    # between consecutive capitals followed by a lowercase (e.g. "HTMLParser"
+    # -> "HTML Parser"), so any acronym-like runs stay grouped.
+    text = re.sub(r"(?<=[a-z0-9])(?=[A-Z])", " ", text)
+    text = re.sub(r"(?<=[A-Z])(?=[A-Z][a-z])", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text.lower()
+
 
 def normalize_term(term):
     term = term.lower().strip()

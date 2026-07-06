@@ -23,6 +23,8 @@ import re
 
 from rdflib import Graph, Namespace, RDF, RDFS, Literal, URIRef
 
+from utils.normalization import humanize_label
+
 STER = Namespace("http://example.org/stereotype-kg#")
 
 
@@ -48,7 +50,7 @@ def build_graph(rows):
         if label:
             node = STER[f"stereotype_{row['source']}_{i}"]
             g.add((node, RDF.type, STER.Stereotype))
-            g.add((node, RDFS.label, Literal(label.lower())))
+            g.add((node, RDFS.label, Literal(humanize_label(label))))
             g.add((node, STER.involvesTarget, target_uri))
             g.add((node, STER.sourceText, Literal(row.get("text", ""))))
 

@@ -51,6 +51,7 @@ import os
 
 from config import GRAPH_LLM_MODEL, LOGPROBS_TOP_K
 from llm.ollama_client import OllamaChat
+from utils.normalization import humanize_label
 
 # Fixed category vocabulary. Keeping this closed (rather than letting the
 # LLM invent free-form text every time) means multiple targets that are
@@ -133,7 +134,7 @@ def build_prompt(row):
         target=row.get("target", "").strip(),
         target_en=row.get("target_en", row.get("target", "")).strip(),
         text=row.get("text", "").strip(),
-        label=row.get("label", "").strip(),
+        label=humanize_label(row.get("label", "")),
         implied_statement=row.get("implied_statement", "").strip(),
         category_vocab=", ".join(f'"{c}"' for c in CATEGORY_VOCAB),
     )
