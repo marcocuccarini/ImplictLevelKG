@@ -13,14 +13,32 @@ from utils.normalization import normalize_target_list
 def main():
 
     llm = OllamaChat(LLM_MODEL, top_logprobs=LOGPROBS_TOP_K)
-    local_graph = LocalGraph(LOCAL_KG_PATH, STER_URI, max_chain_depth=MAX_CHAIN_DEPTH)
 
-    explorer = KGExplorer(local_graph)
+    # Load one LocalGraph (+ one SemanticIndex) per language so each row is
+    # explained using the KG that was actually built from its own language's
+    # `graph` split. Using a single KG for every row (regardless of
+    # language) was silently returning irrelevant EN triples for ITA text.
+    kg_paths_by_source = {
+        "EN": LOCAL_KG_PATH_EN,
+        "ITA": LOCAL_KG_PATH_IT,
+    }
 
-    semantic_index = None
-    if ENABLE_SEMANTIC_RETRIEVAL:
-        from kg.semantic_retrieval import SemanticIndex
-        semantic_index = SemanticIndex(local_graph, EMBEDDING_MODEL_NAME, EMBEDDING_CACHE_DIR)
+    local_graphs_by_source = {}
+    explorers_by_source = {}
+    semantic_indexes_by_source = {}
+
+    for source, kg_path in kg_paths_by_source.items():
+        graph = LocalGraph(kg_path, STER_URI, max_chain_depth=MAX_CHAIN_DEPTH)
+        local_graphs_by_source[source] = graph
+        explorers_by_source[source] = KGExplorer(graph)
+
+        if ENABLE_SEMANTIC_RETRIEVAL:
+            from kg.semantic_retrieval import SemanticIndex
+            semantic_indexes_by_source[source] = SemanticIndex(
+                graph, EMBEDDING_MODEL_NAME, EMBEDDING_CACHE_DIR
+            )
+        else:
+            semantic_indexes_by_source[source] = None
 
     results = []
     processed_ids = set()
@@ -51,10 +69,15 @@ def main():
         if not text or not targets:
             continue
 
+        source = row.get("source", "EN")
+        explorer = explorers_by_source.get(source, explorers_by_source["EN"])
+        semantic_index = semantic_indexes_by_source.get(source, semantic_indexes_by_source["EN"])
+
         print("\n" + "=" * 70)
         print(f"Processing ROW {row_id}")
         print("TEXT:", text)
         print("TARGETS:", targets)
+        print("KG:", kg_paths_by_source.get(source, kg_paths_by_source["EN"]))
 
         # Run iterative pipeline
         out = iterative_explanation(text, targets, llm, explorer, semantic_index=semantic_index)
