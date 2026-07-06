@@ -30,7 +30,7 @@ LOCAL_KG_PATH = LOCAL_KG_PATH_EN
 
 # Prediction / explanation phase (main.py, pipeline/iterative.py): should be
 # a small, fast model since it runs once per joined/test row.
-LLM_MODEL = "llama3.1:8b"
+LLM_MODEL = "gemma4:latest"
 
 # Train phase, chain construction only (extract_chains.py): a heavier model
 # is worth the extra cost here since it runs once per `graph`-split row
