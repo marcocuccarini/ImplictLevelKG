@@ -156,6 +156,7 @@ def iterative_explanation(text, targets, llm, explorer, semantic_index=None):
                 f"Falling back to top {len(filtered_triples)} of "
                 f"{len(all_triples)} raw triples."
             )
+            print(f"  [Filter] Raw LLM output was: {filter_raw!r}")
 
     # --- STEP 3: FINAL EXPLANATION WITH FILTERED KG ---
     res1, entropy_confidence1 = _run_llm_step(

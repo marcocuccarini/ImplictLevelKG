@@ -45,7 +45,8 @@ class OllamaChat:
                 logprobs=True,
                 top_logprobs=self.top_logprobs,
             )
-        except Exception:
+        except Exception as e:
+            print(f"  [OllamaChat] LLM call failed: {type(e).__name__}: {e}")
             return None, None
 
         content = None
