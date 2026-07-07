@@ -231,12 +231,35 @@ def _filter_triples(llm, text, all_triples):
     return filtered_triples
 
 
-def _run_kg_round(step_num, depth, text, targets, llm, explorer, semantic_index):
-    """Runs one full KG-augmented round at a given exploration depth:
-    gather triples -> filter -> final explanation. Returns
-    (step_dict, decision_confidence)."""
-    all_triples, kg_used_by_source = _gather_kg_triples(text, targets, explorer, semantic_index, depth)
-    filtered_triples = _filter_triples(llm, text, all_triples)
+def _run_kg_round(step_num, text, seed_targets, llm, explorer, semantic_index, carried_triples):
+    """Runs one KG-augmented round seeded from `seed_targets`:
+
+    1. Explore exactly ONE hop out of each seed target
+       (seed -> relation -> object).
+    2. Merge those brand-new triples with `carried_triples` -- the triples
+       already kept as relevant in earlier rounds, so the prompt keeps
+       showing the whole path built up so far, not just this hop.
+    3. Filter the combined set down to what's actually relevant to `text`.
+    4. Generate the explanation from that filtered set and score it.
+
+    Returns (step_dict, decision_confidence, filtered_triples). The
+    returned filtered_triples is what the caller should both keep as the
+    next round's `carried_triples` AND use to derive the next round's seed
+    targets (their objects) -- i.e. exploration only continues along
+    branches that survived filtering, instead of blindly re-exploring
+    deeper from the original targets.
+    """
+    new_triples, kg_used_by_source = _gather_kg_triples(text, seed_targets, explorer, semantic_index, depth=1)
+
+    combined_triples = list(carried_triples)
+    seen = {tuple(t) for t in combined_triples}
+    for t in new_triples:
+        key = tuple(t)
+        if key not in seen:
+            seen.add(key)
+            combined_triples.append(t)
+
+    filtered_triples = _filter_triples(llm, text, combined_triples)
 
     res, entropy_confidence = _run_llm_step(
         llm, implicit_explanation_prompt(text, kg_triples=filtered_triples, force_kg=True)
@@ -245,14 +268,14 @@ def _run_kg_round(step_num, depth, text, targets, llm, explorer, semantic_index)
 
     step = {
         "step": step_num,
-        "kg_explore_depth": depth,
+        "seed_targets": list(seed_targets),
         "kg_used_by_source": kg_used_by_source,
         "filtered_triples": filtered_triples,
         "parsed": res,
         "entropy_confidence": entropy_confidence,
         "self_reported_confidence": self_reported_confidence,
     }
-    return step, decision_confidence
+    return step, decision_confidence, filtered_triples
 
 
 def iterative_explanation(text, targets, llm, explorer, semantic_index=None):
@@ -260,15 +283,22 @@ def iterative_explanation(text, targets, llm, explorer, semantic_index=None):
     Multi-round explanation pipeline:
 
     - Step 0: initial guess with no KG at all.
-    - Step 1..N: one KG-augmented round per entry in KG_EXPLORE_DEPTHS,
-      each exploring further out into the graph than the last (step 1 is
-      single-hop / distance 1; step 2 is multi-hop, walking into related
-      targets via shared-category / relatedTo edges; further entries go
-      deeper still).
+    - Step 1: explore one hop out of the original `targets`
+      (target -> relation -> object), filter for relevance, then explain
+      and score with only those filtered triples.
+    - Step 2..N: if confidence is still below CONFIDENCE_THRESHOLD, expand
+      the graph by exactly one more hop -- but ONLY from the objects of the
+      triples that survived filtering in the previous round (not from the
+      original targets again). So step 2 explores
+      object -> relation -> other_object for whichever objects step 1 kept
+      as relevant, step 3 would continue from step 2's surviving objects,
+      and so on. This keeps exploration focused on the branch the model
+      actually found useful instead of blindly widening the whole graph.
 
     After every step, if the model's confidence already meets
     CONFIDENCE_THRESHOLD, the loop stops early and the remaining (deeper,
-    more expensive) rounds are skipped.
+    more expensive) rounds are skipped. It also stops early if a round's
+    filtered triples don't yield any new objects to expand into.
     """
     steps = []
 
@@ -287,15 +317,30 @@ def iterative_explanation(text, targets, llm, explorer, semantic_index=None):
     if decision_confidence0 is not None and decision_confidence0 >= CONFIDENCE_THRESHOLD:
         return {"steps": steps, "final_step": 0}
 
-    # --- STEP 1..N: successively deeper KG-augmented rounds ---
+    # --- STEP 1..N: each round expands one hop further, but only along
+    # branches the previous round's filtering kept as relevant ---
     final_step = 0
-    for step_num, depth in enumerate(KG_EXPLORE_DEPTHS, start=1):
-        print(f"  [Step {step_num}] Exploring KG at depth {depth}...")
-        step, decision_confidence = _run_kg_round(step_num, depth, text, targets, llm, explorer, semantic_index)
+    seed_targets = list(targets)
+    carried_triples = []
+    for step_num in range(1, len(KG_EXPLORE_DEPTHS) + 1):
+        if not seed_targets:
+            print(f"  [Step {step_num}] Nothing left to explore (previous round kept no new triples). Stopping.")
+            break
+
+        print(f"  [Step {step_num}] Exploring one hop out of: {seed_targets}")
+        step, decision_confidence, filtered_triples = _run_kg_round(
+            step_num, text, seed_targets, llm, explorer, semantic_index, carried_triples
+        )
         steps.append(step)
         final_step = step_num
+        carried_triples = filtered_triples
 
         if decision_confidence is not None and decision_confidence >= CONFIDENCE_THRESHOLD:
             break
+
+        # Expand by one more hop next round, but only from objects that
+        # are new (i.e. weren't already a seed this round) -- otherwise
+        # we'd just re-explore the same node and loop in place.
+        seed_targets = sorted({t[2] for t in filtered_triples} - set(seed_targets))
 
     return {"steps": steps, "final_step": final_step}
