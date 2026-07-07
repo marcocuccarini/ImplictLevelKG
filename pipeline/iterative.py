@@ -278,7 +278,7 @@ def _run_kg_round(step_num, text, seed_targets, llm, explorer, semantic_index, c
     return step, decision_confidence, filtered_triples
 
 
-def iterative_explanation(text, targets, llm, explorer, semantic_index=None):
+def iterative_explanation(text, targets, llm, explorer, semantic_index=None, on_step=None):
     """
     Multi-round explanation pipeline:
 
@@ -299,6 +299,13 @@ def iterative_explanation(text, targets, llm, explorer, semantic_index=None):
     CONFIDENCE_THRESHOLD, the loop stops early and the remaining (deeper,
     more expensive) rounds are skipped. It also stops early if a round's
     filtered triples don't yield any new objects to expand into.
+
+    If `on_step` is given, it's called with each step's dict *immediately*
+    after that step finishes (step 0, then step 1, etc.), instead of only
+    being visible once the whole function returns. Without this, a caller
+    that prints `out["steps"]` only after this function returns won't show
+    anything -- not even step 0's KG-free guess -- until every requested
+    round (including any slow/hanging later hop) has completed.
     """
     steps = []
 
@@ -306,13 +313,16 @@ def iterative_explanation(text, targets, llm, explorer, semantic_index=None):
     res0, entropy_confidence0 = _run_llm_step(llm, implicit_explanation_prompt(text))
     decision_confidence0, self_reported_confidence0 = _decision_confidence(res0, entropy_confidence0)
 
-    steps.append({
+    step0 = {
         "step": 0,
         "kg_used_by_source": {},
         "parsed": res0,
         "entropy_confidence": entropy_confidence0,
         "self_reported_confidence": self_reported_confidence0,
-    })
+    }
+    steps.append(step0)
+    if on_step is not None:
+        on_step(step0)
 
     if decision_confidence0 is not None and decision_confidence0 >= CONFIDENCE_THRESHOLD:
         return {"steps": steps, "final_step": 0}
@@ -332,6 +342,8 @@ def iterative_explanation(text, targets, llm, explorer, semantic_index=None):
             step_num, text, seed_targets, llm, explorer, semantic_index, carried_triples
         )
         steps.append(step)
+        if on_step is not None:
+            on_step(step)
         final_step = step_num
         carried_triples = filtered_triples
 

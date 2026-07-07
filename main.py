@@ -79,9 +79,6 @@ def main():
         print("TARGETS:", targets)
         print("KG:", kg_paths_by_source.get(source, kg_paths_by_source["EN"]))
 
-        # Run iterative pipeline
-        out = iterative_explanation(text, targets, llm, explorer, semantic_index=semantic_index)
-
         full_trace = {
             "id": row_id,
             "text": text,
@@ -89,8 +86,13 @@ def main():
             "steps": []
         }
 
-        # ---- PRINT EACH STEP ----
-        for step_info in out["steps"]:
+        # ---- PRINT EACH STEP AS SOON AS IT FINISHES ----
+        # `on_step` is invoked by iterative_explanation() the moment each
+        # round completes, so step 0's KG-free guess (and every later hop)
+        # shows up immediately in the console instead of only appearing
+        # once the entire row -- including any slow/hanging deeper KG
+        # exploration round -- has finished.
+        def _print_and_record_step(step_info):
             step_num = step_info.get("step")
             parsed = step_info.get("parsed") or {}
             kg_by_source = step_info.get("kg_used_by_source", {})
@@ -124,6 +126,10 @@ def main():
             print("  Explanation:", explanation)
             print("  Entropy confidence (token-level, used for decisions):", entropy_confidence)
             print("  Self-reported confidence (model's own claim, informational only):", self_reported_confidence)
+            # Flush immediately -- otherwise stdout buffering can make it
+            # look like nothing printed until the process exits/hangs.
+            import sys
+            sys.stdout.flush()
 
             # Save step
             step_record = {
@@ -134,6 +140,12 @@ def main():
                 "self_reported_confidence": self_reported_confidence,
             }
             full_trace["steps"].append(step_record)
+
+        # Run iterative pipeline
+        out = iterative_explanation(
+            text, targets, llm, explorer, semantic_index=semantic_index,
+            on_step=_print_and_record_step,
+        )
 
         results.append(full_trace)
         processed_ids.add(row_id)
