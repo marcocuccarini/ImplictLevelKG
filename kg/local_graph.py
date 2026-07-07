@@ -13,28 +13,34 @@ chain:
        ster:ImpliedStatement  rdfs:label "<label>" ; ster:involvesTarget <target>
    -> exposed as [target, "has stereotype", label] / [target, "implies", label]
 
-2. Multi-hop concept chains (from augment_kg_with_chains.py):
+2. Multi-hop concept chains (from augment_kg_with_chains.py, current
+   format): each LLM-extracted hop is merged as a plain generic triple
+   directly on ster: nodes --
+       ster:<subject_slug>  ster:<predicate_slug>  ster:<object_slug> .
+   e.g. ster:blacks ster:has_stereotype ster:are_wildlife, or
+   ster:migrante ster:has_stereotype ster:illegal_entry,
+   ster:illegal_entry ster:associated_with ster:danger.
+   Every such edge (any predicate that isn't part of the fixed schema below)
+   is indexed generically as [subject_label, predicate_label, object_label]
+   under the subject's key. Because a hop's object slug is the same ster:
+   node as the next hop's subject slug, chains connect automatically --
+   recursive_explore just keeps following the object of one hop as the seed
+   for the next, no separate chain-step bookkeeping required.
+
+2b. Legacy multi-hop format (older kg_*.ttl files, kept for backward
+    compatibility only -- new builds no longer produce this shape):
        ster:Chain  ster:involvesTarget <target> ; ster:startsChain <step0>
        <step_i>    rdfs:label "<concept>" ; ster:next <step_i+1>   (or)
                    rdfs:label "<concept>" ; ster:evokes <ImpliedStatement>
    -> walked from <step0> to the final ster:evokes and exposed as a sequence
-      of hops: [target, "leads to", concept_1], [concept_1, "leads to",
-      concept_2], ..., [concept_n, "implies", implied_statement]. Each hop
-      may be tagged ster:provenance "text" | "knowledge" (see
-      get_hop_provenance).
+      of hops: [target, "leads to", concept_1], ..., [concept_n, "implies",
+      implied_statement].
 
-3. Category layer (from augment_kg_with_chains.py, extract_chains.py's
-   CATEGORY_VOCAB): ster:<target> ster:hasCategory ster:category_<slug>.
-   Indexed BOTH ways -- [target, "is a type of", category] under the target
-   key, AND [category, "includes", target] under the category key -- so the
-   category name itself becomes a real node that recursive_explore can seed
-   from, surfacing every OTHER target that shares the category as a
-   candidate next hop.
+3. Legacy category layer (older kg_*.ttl files only):
+   ster:<target> ster:hasCategory ster:category_<slug>, indexed both ways.
 
-4. Cross-target relatedTo edges (from extract_chains.py's related_targets,
-   the LLM's own world-knowledge judgment of similar stereotype patterns):
+4. Legacy cross-target relatedTo edges (older kg_*.ttl files only):
    ster:<target> ster:relatedTo ster:<other_target>, stored symmetrically.
-   -> exposed as [target, "is related to", other_target] under both keys.
 
 get_triples(target, variants) returns the union of all of the above,
 deduplicated.
@@ -96,6 +102,12 @@ class LocalGraph:
             return label
         return self._target_key(node)
 
+    def _predicate_label(self, pred_uri):
+        """Turns a ster:<predicate_slug> URI into a readable relation label,
+        e.g. ster:has_stereotype -> "has stereotype"."""
+        local = str(pred_uri).rsplit("#", 1)[-1].rsplit("/", 1)[-1]
+        return local.replace("_", " ").replace("-", " ").strip().lower()
+
     def _build_index(self):
         idx = defaultdict(list)
 
@@ -114,7 +126,36 @@ class LocalGraph:
                     target_name = self._target_key(t)
                     idx[target_name].append([target_name, relation, label])
 
-        # --- Multi-hop concept chains ---
+        # --- Generic concept-chain edges (current augment_kg_with_chains.py
+        # format): any ster:<subj> ster:<predicate> ster:<obj> triple whose
+        # predicate isn't part of the fixed schema below is a chain hop
+        # produced by extract_chains.py. Indexed generically by subject key;
+        # since a hop's object slug is reused as the next hop's subject
+        # slug, recursive_explore naturally walks multi-hop chains without
+        # any extra bookkeeping. ---
+        schema_predicates = {
+            RDF.type,
+            RDFS.label,
+            self.STER.involvesTarget,
+            self.STER.sourceText,
+            self.STER.startsChain,
+            self.STER.next,
+            self.STER.evokes,
+            self.STER.provenance,
+            self.STER.hasCategory,
+            self.STER.relatedTo,
+        }
+        for s, p, o in self.graph:
+            if p in schema_predicates:
+                continue
+            if not isinstance(s, URIRef) or not isinstance(o, URIRef):
+                continue
+            subj_key = self._node_key(s)
+            obj_key = self._node_key(o)
+            pred_label = self._predicate_label(p)
+            idx[subj_key].append([subj_key, pred_label, obj_key])
+
+        # --- Legacy multi-hop concept chains (older kg_*.ttl only) ---
         for chain in self.graph.subjects(RDF.type, self.STER.Chain):
             targets = [
                 t for t in self.graph.objects(chain, self.STER.involvesTarget)

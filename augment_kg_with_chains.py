@@ -1,44 +1,40 @@
 """
 Augments the per-language KGs (kg_en.ttl / kg_it.ttl) with multi-hop concept
-chains extracted by extract_chains.py, linking a Target to an
-ImpliedStatement through a sequence of intermediate ChainStep nodes, PLUS two
-new kinds of cross-entity edges that let multi-hop retrieval actually move
-BETWEEN targets instead of only walking along one target's own private
-chain:
+chains extracted by extract_chains.py.
 
-    ster:chain_<uid>  a ster:Chain ;
-        ster:involvesTarget  ster:<target_slug> ;
-        ster:startsChain     ster:chain_<uid>_step0 .
+extract_chains.py emits a FLAT list of generic RDF triples, one entry per
+chain hop, e.g.:
 
-    ster:chain_<uid>_step0  a ster:ChainStep ;
-        rdfs:label     "<concept phrase 1>" ;
-        ster:provenance "text" | "knowledge" ;
-        ster:next      ster:chain_<uid>_step1 .   # omitted on the last step
+    {"unique_id": "en_123",
+     "subject":   "http://example.org/ontology/blacks",
+     "predicate": "http://example.org/ontology/has_stereotype",
+     "object":    "http://example.org/ontology/are_wildlife"}
 
-    ster:chain_<uid>_step<N-1>  a ster:ChainStep ;
-        rdfs:label   "<concept phrase N>" ;
-        ster:evokes  ster:implied_chain_<uid> .
+Multiple hops belonging to the same row form a connected path implicitly:
+the LLM is instructed to make the "object" slug of hop N equal the "subject"
+slug of hop N+1 (e.g. migrante -[has_stereotype]-> illegal_entry
+-[associated_with]-> danger). No explicit chain-step/category bookkeeping is
+needed any more -- we just merge each hop directly into the ster: graph as:
 
-    ster:implied_chain_<uid>  a ster:ImpliedStatement ;
-        rdfs:label          "<implied statement>" ;
-        ster:involvesTarget ster:<target_slug> .
+    ster:<subject_slug>  ster:<predicate_slug>  ster:<object_slug> .
 
-    # NEW: canonical category layer. Multiple targets sharing a category
-    # (from extract_chains.py's fixed CATEGORY_VOCAB) become siblings
-    # reachable from one another via the shared ster:Category node.
-    ster:<target_slug>  ster:hasCategory  ster:category_<category_slug> .
-    ster:category_<category_slug>  a ster:Category ; rdfs:label "<category>" .
+with an rdfs:label on every concept node so kg/local_graph.py can expose
+human-readable triples for retrieval, e.g.:
 
-    # NEW: explicit cross-target edges asserted by the LLM's own world
-    # knowledge (e.g. "roma people" <-> "immigrants" for a shared
-    # criminality stereotype pattern), stored symmetrically.
-    ster:<target_slug>  ster:relatedTo  ster:<other_target_slug> .
+    ['blacks', 'has stereotype', 'are wildlife']
+    ['migrante', 'has stereotype', 'illegal entry']
+    ['illegal entry', 'associated with', 'danger']
+
+Because shared slugs (e.g. "illegal_entry" appearing as both an object and a
+later subject) land on the very same ster: node, kg/local_graph.py's
+multi-hop traversal can walk straight through them -- no separate Chain/
+Category/relatedTo machinery required.
 
 Usage:
     python augment_kg_with_chains.py \
-        --chains out/chains_merged.json \
-        --unified out/unified_dataset.csv \
-        --out-dir out
+        --chains data/out/chains_merged.json \
+        --unified data/out/unified_dataset.csv \
+        --out-dir data/out
 """
 import argparse
 import csv
@@ -56,6 +52,18 @@ def slugify(text):
     return text or "unknown"
 
 
+def uri_to_slug(uri):
+    """Takes a full ontology URI (e.g. http://example.org/ontology/are_wildlife)
+    -- or a bare slug, defensively -- and returns a clean slug."""
+    text = str(uri).strip()
+    tail = text.rsplit("/", 1)[-1].rsplit("#", 1)[-1]
+    return slugify(tail)
+
+
+def slug_to_label(slug):
+    return slug.replace("_", " ").strip()
+
+
 def load_source_map(unified_path):
     """unique_id -> source (EN/ITA), so we know which .ttl to augment."""
     mapping = {}
@@ -65,109 +73,53 @@ def load_source_map(unified_path):
     return mapping
 
 
-def _ensure_target(graph, target_en):
-    target_uri = STER[slugify(target_en)]
-    graph.add((target_uri, RDF.type, STER.Target))
-    graph.add((target_uri, RDFS.label, Literal(target_en)))
-    return target_uri
-
-
-def _normalize_chain(chain):
-    """Accepts either the new [{"concept":..,"source":..}, ...] shape or the
-    legacy list-of-strings shape, returns a list of (concept, source)."""
-    out = []
-    for step in chain:
-        if isinstance(step, dict):
-            concept = str(step.get("concept", "")).strip()
-            source = str(step.get("source", "text")).strip().lower()
-            if source not in ("text", "knowledge"):
-                source = "text"
-        else:
-            concept = str(step).strip()
-            source = "text"
-        if concept:
-            out.append((concept, source))
-    return out
-
-
-def augment(graph, chain_rows, source_map, expected_source):
+def augment(graph, chain_triples, source_map, expected_source):
     added = 0
     skipped = 0
-    categories_added = 0
-    related_added = 0
 
-    for row in chain_rows:
-        uid = row.get("unique_id", "")
+    for triple in chain_triples:
+        uid = triple.get("unique_id", "")
         source = source_map.get(uid)
         if source != expected_source:
             continue
-        target_en = (row.get("target_en") or "").strip()
-        raw_chain = row.get("chain") or []
-        chain = _normalize_chain(raw_chain)
-        implied = (row.get("implied_statement") or "").strip()
-        if not target_en or not chain or not implied:
+
+        subj_uri = triple.get("subject")
+        pred_uri = triple.get("predicate")
+        obj_uri = triple.get("object")
+        if not (subj_uri and pred_uri and obj_uri):
             skipped += 1
             continue
 
-        target_uri = _ensure_target(graph, target_en)
+        subj_slug = uri_to_slug(subj_uri)
+        pred_slug = uri_to_slug(pred_uri)
+        obj_slug = uri_to_slug(obj_uri)
+        if not (subj_slug and pred_slug and obj_slug):
+            skipped += 1
+            continue
 
-        # --- Chain nodes (as before, now with provenance per step) ---
-        chain_uri = STER[f"chain_{uid}"]
-        graph.add((chain_uri, RDF.type, STER.Chain))
-        graph.add((chain_uri, STER.involvesTarget, target_uri))
+        s = STER[subj_slug]
+        p = STER[pred_slug]
+        o = STER[obj_slug]
 
-        step_uris = [STER[f"chain_{uid}_step{i}"] for i in range(len(chain))]
-        graph.add((chain_uri, STER.startsChain, step_uris[0]))
-
-        implied_uri = STER[f"implied_chain_{uid}"]
-
-        for i, ((step_text, step_source), step_uri) in enumerate(zip(chain, step_uris)):
-            graph.add((step_uri, RDF.type, STER.ChainStep))
-            graph.add((step_uri, RDFS.label, Literal(step_text.strip().lower())))
-            graph.add((step_uri, STER.provenance, Literal(step_source)))
-            if i + 1 < len(step_uris):
-                graph.add((step_uri, STER.next, step_uris[i + 1]))
-            else:
-                graph.add((step_uri, STER.evokes, implied_uri))
-
-        graph.add((implied_uri, RDF.type, STER.ImpliedStatement))
-        graph.add((implied_uri, RDFS.label, Literal(implied.lower())))
-        graph.add((implied_uri, STER.involvesTarget, target_uri))
+        graph.add((s, RDF.type, STER.ConceptNode))
+        graph.add((s, RDFS.label, Literal(slug_to_label(subj_slug))))
+        graph.add((o, RDF.type, STER.ConceptNode))
+        graph.add((o, RDFS.label, Literal(slug_to_label(obj_slug))))
+        graph.add((s, p, o))
         added += 1
 
-        # --- Category layer ---
-        category = (row.get("category") or "").strip()
-        if category:
-            category_uri = STER[f"category_{slugify(category)}"]
-            graph.add((category_uri, RDF.type, STER.Category))
-            graph.add((category_uri, RDFS.label, Literal(category.lower())))
-            if (target_uri, STER.hasCategory, category_uri) not in graph:
-                graph.add((target_uri, STER.hasCategory, category_uri))
-                categories_added += 1
-
-        # --- Cross-target relatedTo edges (symmetric) ---
-        for other in row.get("related_targets") or []:
-            other = str(other).strip()
-            if not other or other.lower() == target_en.lower():
-                continue
-            other_uri = _ensure_target(graph, other)
-            if (target_uri, STER.relatedTo, other_uri) not in graph:
-                graph.add((target_uri, STER.relatedTo, other_uri))
-                graph.add((other_uri, STER.relatedTo, target_uri))
-                related_added += 1
-
-    return added, skipped, categories_added, related_added
+    return added, skipped
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--chains", default="out/chains_merged.json")
-    parser.add_argument("--unified", default="out/unified_dataset.csv")
-    parser.add_argument("--out-dir", default="out")
+    parser.add_argument("--chains", default="data/out/chains_merged.json")
+    parser.add_argument("--unified", default="data/out/unified_dataset.csv")
+    parser.add_argument("--out-dir", default="data/out")
     args = parser.parse_args()
 
     with open(args.chains, encoding="utf-8") as f:
-        chain_rows = json.load(f)
+        chain_triples = json.load(f)
 
     source_map = load_source_map(args.unified)
 
@@ -177,12 +129,11 @@ def main():
         g.bind("ster", STER)
         g.parse(path, format="turtle")
         before = len(g)
-        added, skipped, cats, related = augment(g, chain_rows, source_map, source)
+        added, skipped = augment(g, chain_triples, source_map, source)
         g.serialize(destination=path, format="turtle")
         print(
             f"{ttl_name}: {before} -> {len(g)} triples "
-            f"({added} chains added, {skipped} rows skipped, "
-            f"{cats} category edges, {related} relatedTo edges)"
+            f"({added} chain-hop triples added, {skipped} rows skipped)"
         )
 
 
