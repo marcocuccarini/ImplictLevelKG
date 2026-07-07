@@ -8,12 +8,88 @@ from config import (
 from utils.json_utils import safe_json_load
 
 
+def _chain_kg_triples(triples):
+    """Groups flat (subject, predicate, object) triples into connected
+    multi-hop chains wherever the object of one triple matches the subject
+    of another (e.g. two hops from the same explore() walk get merged into
+    one path: A -> rel1 -> B -> rel2 -> C instead of two separate lines).
+
+    Returns a list of chains, where each chain is a list of
+    (subject, predicate, object) triples in walk order. Triples that don't
+    connect to anything else are returned as their own single-triple chain.
+    """
+    triples = [tuple(t) for t in triples]
+    remaining = list(triples)
+
+    # subject -> list of triple indices (in `remaining`) starting there
+    by_subject = {}
+    for i, t in enumerate(remaining):
+        by_subject.setdefault(t[0], []).append(i)
+
+    # A node that is never used as an object is a chain root/start.
+    objects = {t[2] for t in remaining}
+    used = [False] * len(remaining)
+    chains = []
+
+    def walk_from(i):
+        chain = [remaining[i]]
+        used[i] = True
+        current_object = remaining[i][2]
+        # Follow the chain forward as long as some *unused* triple starts
+        # exactly where the previous one left off.
+        while True:
+            next_i = None
+            for j in by_subject.get(current_object, []):
+                if not used[j]:
+                    next_i = j
+                    break
+            if next_i is None:
+                break
+            chain.append(remaining[next_i])
+            used[next_i] = True
+            current_object = remaining[next_i][2]
+        return chain
+
+    # Start with roots (subjects that are never anyone else's object) so
+    # chains are walked from the beginning, then mop up any leftovers
+    # (e.g. cycles, or triples reached only mid-chain).
+    roots = [i for i, t in enumerate(remaining) if t[0] not in objects]
+    for i in roots:
+        if not used[i]:
+            chains.append(walk_from(i))
+    for i in range(len(remaining)):
+        if not used[i]:
+            chains.append(walk_from(i))
+
+    return chains
+
+
+def _format_kg_triples(kg_triples):
+    """Renders triples for the prompt, collapsing connected multi-hop chains
+    into a single arrow-linked line (subject -pred-> obj -pred2-> obj2) so
+    it's explicit how each step is appended onto the previous one. Isolated
+    (single-hop) triples are still printed as plain "subject — predicate —
+    object" lines."""
+    lines = []
+    for chain in _chain_kg_triples(kg_triples):
+        if len(chain) == 1:
+            s, p, o = chain[0]
+            lines.append(f"- {s} — {p} — {o}")
+        else:
+            s0 = chain[0][0]
+            path = s0
+            for s, p, o in chain:
+                path += f" --[{p}]--> {o}"
+            lines.append(f"- {path}")
+    return lines
+
+
 def implicit_explanation_prompt(text, kg_triples=None, force_kg=False):
     kg = ""
     if kg_triples:
         kg += "\nBACKGROUND KNOWLEDGE:\n"
-        for t in kg_triples:
-            kg += f"- {t[0]} — {t[1]} — {t[2]}\n"
+        for line in _format_kg_triples(kg_triples):
+            kg += line + "\n"
         if force_kg:
             kg += "\nYou MUST use some of the above knowledge.\n"
 
